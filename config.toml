@@ -1,0 +1,32 @@
+baseURL = 'https://rivieradev2024-crazytrain.netlify.app/'
+languageCode = 'en-us'
+title = 'Riviera Dev 2024 - Lab "Crazy Train"'
+
+theme = 'hugo-theme-learn'
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+showVisitedLinks = true
+disableBreadcrumb = false
+disableNextPrev = false
+themeVariant = "red"
+openshift_domain = "cluster-GUID.GUID.sandboxID.opentlc.com"
+
+# Anglais est la langue par défaut
+defaultContentLanguage = "fr"
+# Force d'avoir /en/ma-page et /fr/ma-page routes, même avec la langue par défaut.
+defaultContentLanguageInSubdir= true
+
+[Languages]
+[Languages.en]
+title = "Documentation for Hugo Learn Theme"
+weight = 1
+languageName = "English"
+
+[Languages.fr]
+title = "Documentation du thème Hugo Learn"
+weight = 2
+languageName = "Français"
