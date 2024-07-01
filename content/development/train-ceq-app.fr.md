@@ -4,9 +4,9 @@ draft = false
 weight = 5
 +++
 
-Le `train-ceq-app` est une application basée sur Apache Camel, une bibliothèque Java pour la mise en œuvre des intégrations d'applications à l'aide de l'Enterprise Integration Patterns (EIP). 
+Le **train-ceq-app** est une application basée sur Apache Camel, une bibliothèque Java pour la mise en œuvre des intégrations d'applications à l'aide de l'Enterprise Integration Patterns (EIP). 
 
-L'application `train-ceq-app` est principalement composée de routes Camel définies dans le fichier `PostProcessingRoute.xml`. Ces routes définissent comment les messages sont consommés, transformés et transmis à d'autres services ou destinations.
+L'application **train-ceq-app** est principalement composée de routes Camel définies dans le fichier `PostProcessingRoute.xml`. Ces routes définissent comment les messages sont consommés, transformés et transmis à d'autres services ou destinations.
 
 Voici une explication détaillée du fonctionnement de la route `postproscesing-route` :
 
@@ -28,14 +28,14 @@ Voici une explication détaillée du fonctionnement de la route `postproscesing-
 
 9. **Publication de l'événement cloud** : L'événement cloud est publié sur un topic Kafka à l'aide de l'URI `kafka:{{monitoring.kafka.destination.topicName}}?brokers={{train.kafka.brokerUrl}}`.
 
-La route `command-capture-image` fonctionne de manière similaire, mais consomme les messages d'un topic Kafka, extrait une commande à partir du message, et envoie une requête HTTP POST à une URL spécifiée avec la commande comme paramètre.
+La route **command-capture-image** fonctionne de manière similaire, mais consomme les messages d'un topic Kafka, extrait une commande à partir du message, et envoie une requête HTTP POST à une URL spécifiée avec la commande comme paramètre.
 
 
 
-Dans une route camel les données sont continuellement transformés par les différentes actions qui se trouvent dans le fichier `PostProcessingRoute.xml. Parfois il est nécessaire d'effectuer un contrôle sur le message d'origine et non pas sur le message transformé. Il est de bonne pratique de sauvgrader le message initial afin de pouvoir le récupérer plus tard. Avec Camel ceci se fait via les propriétés de l'entete du message. Demande à l'utilisateur d'ajouter l'instruction suivante ' ${body}' et ensuite cette instruction '${header.origin}' 
+Dans une route camel les données sont continuellement transformés par les différentes actions qui se trouvent dans le fichier `PostProcessingRoute.xml. Parfois il est nécessaire d'effectuer un contrôle sur le message d'origine et non pas sur le message transformé. Il est de bonne pratique de sauvgrader le message initial afin de pouvoir le récupérer plus tard. Avec Camel ceci se fait via les propriétés de l'entete du message. 
 
 
-Dans le projet `train-ceq-app`, vous allez modifier le fichier `PostProcessingRoute.xml` pour sauvegarder le message initial et pouvoir le récupérer plus tard.
+Dans le projet **train-ceq-app**, vous allez modifier le fichier `PostProcessingRoute.xml` pour sauvegarder le message initial et pouvoir le récupérer plus tard.
 
 1. Ouvrez le fichier `src/main/resources/PostProcessingRoute.xml`.
 2. Ajoutez l'instruction suivante juste après la ligne `<log loggingLevel="DEBUG" message="${body}"/>` :
