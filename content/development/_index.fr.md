@@ -1,13 +1,11 @@
 +++
 title = "Développement (1h)"
-weight = 2
+weight = 3
 chapter = true
 pre = "<b>2. </b>"
 +++
 
-### Partie 1
-
-# Développement
+### Partie 2
 
 ## Objectif 
 
