@@ -1,5 +1,5 @@
 +++
-title = "Service intelligent-train"
+title = "Service train-ceq-app"
 draft = false
 weight = 5
 +++
