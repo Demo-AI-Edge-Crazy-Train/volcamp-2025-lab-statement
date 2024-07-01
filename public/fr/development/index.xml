@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Développement (1h) on Documentation du thème Hugo Learn</title>
+    <link>http://localhost:1313/fr/development/</link>
+    <description>Recent content in Développement (1h) on Documentation du thème Hugo Learn</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="http://localhost:1313/fr/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/fr/development/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/development/introduction/</guid>
+      <description>Voici une description de chaque service et de leur interaction :&#xA;train-capture-image-app : C&amp;rsquo;est un service Quarkus qui permet de démarrer, tester et d&amp;rsquo;arrêter la capture vidéo. Il expose des points de terminaison RESTful qui peuvent être appelés par d&amp;rsquo;autres services ou clients pour contrôler la capture vidéo.&#xA;intelligent-train : Ce service est responsable de l&amp;rsquo;analyse des données de la vidéo capturée. Il utilise des techniques d&amp;rsquo;apprentissage automatique pour interpréter les données de la vidéo et de fournir des informations basées sur cette analyse.</description>
+    </item>
+    <item>
+      <title>Service train-capture-image-app</title>
+      <link>http://localhost:1313/fr/development/capture-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/development/capture-app/</guid>
+      <description>train-capture-image-app est construite avec Quarkus, un framework Java complet, natif de Kubernetes, conçu pour les machines virtuelles Java (JVM) et la compilation native, optimisant Java spécifiquement pour les conteneurs et lui permettant de devenir une plateforme efficace pour les environnements serverless, cloud et Kubernetes.&#xA;La fonctionnalité principale de la Capture-App est de contrôler la capture vidéo. Elle offre la possibilité de démarrer et d&amp;rsquo;arrêter la capture vidéo, probablement via des points de terminaison RESTful exposés.</description>
+    </item>
+    <item>
+      <title>Service intelligent-train</title>
+      <link>http://localhost:1313/fr/development/intelligent-train/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/development/intelligent-train/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Service intelligent-train</title>
+      <link>http://localhost:1313/fr/development/train-ceq-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/development/train-ceq-app/</guid>
+      <description>Le train-ceq-app est une application basée sur Apache Camel, une bibliothèque Java pour la mise en œuvre des intégrations d&amp;rsquo;applications à l&amp;rsquo;aide de l&amp;rsquo;Enterprise Integration Patterns (EIP).&#xA;L&amp;rsquo;application train-ceq-app est principalement composée de routes Camel définies dans le fichier PostProcessingRoute.xml. Ces routes définissent comment les messages sont consommés, transformés et transmis à d&amp;rsquo;autres services ou destinations.&#xA;Voici une explication détaillée du fonctionnement de la route postproscesing-route :&#xA;Consommation des messages : La route commence par consommer les messages du broker MQTT à l&amp;rsquo;aide de l&amp;rsquo;URI paho:{{train.</description>
+    </item>
+    <item>
+      <title>Service train-controller</title>
+      <link>http://localhost:1313/fr/development/train-controller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/development/train-controller/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Service train-monitoring-app</title>
+      <link>http://localhost:1313/fr/development/train-monitoring-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/development/train-monitoring-app/</guid>
+      <description>Le train-monitoring-app est une application qui surveille l&amp;rsquo;état et le comportement du train et de ses composants associés. Ce microservice est en charge de la /l&amp;rsquo; :&#xA;Collecte de données : L&amp;rsquo;application train-monitoring-app collecte des données à partir d&amp;rsquo;un topic kafka. Cela inclut les événements produit par train-ceq-app.&#xA;Analyse des données : Une fois les données collectées, l&amp;rsquo;application train-monitoring-app ajoute à l&amp;rsquo;image d&amp;rsquo;origine les prédiction calculées précedement.&#xA;Visualisation des données : L&amp;rsquo;application train-monitoring-app fournit une interface utilisateur pour visualiser les données du train en temps réel.</description>
+    </item>
+    <item>
+      <title>Start services</title>
+      <link>http://localhost:1313/fr/development/start-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/development/start-services/</guid>
+      <description>Pour lancer les services :&#xA;Ouvrez le terminal intégré. Vous pouvez le faire en allant dans le menu &amp;ldquo;View&amp;rdquo; et en sélectionnant &amp;ldquo;Terminal&amp;rdquo;, ou en utilisant le raccourci clavier correspondant.&#xA;Dans le terminal, vous pouvez lancer les commandes définies dans le devfile en utilisant la commande dev suivie de l&amp;rsquo;ID de la commande. Par exemple, pour lancer la commande start-all-apps, vous pouvez utiliser la commande suivante :&#xA;dev start-all-apps De même, pour arrêter toutes les applications, vous pouvez utiliser la commande suivante : dev stop-all-apps Ces commandes lanceront ou arrêteront toutes les applications définies dans le devfile.</description>
+    </item>
+    <item>
+      <title>Start services</title>
+      <link>http://localhost:1313/fr/development/test-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/development/test-services/</guid>
+      <description>Maintenant que vous avez modifié plusieurs parties de l&amp;rsquo;application, il est temps de tester l&amp;rsquo;application dans son ensemble.&#xA;lancer la commande suivante curl -X &amp;#39;POST&amp;#39; &amp;#39;http://localhost:8082/capture/test&amp;#39; -H &amp;#39;accept: */*&amp;#39; a partir de votre browser visualiser le résultat en utilisant ce lien http://localhost:8086/ </description>
+    </item>
+    <item>
+      <title>Service train-controller</title>
+      <link>http://localhost:1313/fr/development/conclusion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/development/conclusion/</guid>
+      <description>Félicitations, vous avez terminé le lab ! Vous devriez maintenant avoir une meilleure compréhension de l&amp;rsquo;application Train et de son architecture basée sur les microservices. Continuez à explorer et à modifier le code pour en apprendre encore plus.</description>
+    </item>
+  </channel>
+</rss>
