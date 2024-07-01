@@ -1,7 +1,7 @@
 +++
 title = "Service train-capture-image-app"
-draft: false
-weight: 3
+draft= false
+weight= 3
 +++
 
 **train-capture-image-app** est construite avec Quarkus, un framework Java complet, natif de Kubernetes, conçu pour les machines virtuelles Java (JVM) et la compilation native, optimisant Java spécifiquement pour les conteneurs et lui permettant de devenir une plateforme efficace pour les environnements serverless, cloud et Kubernetes.

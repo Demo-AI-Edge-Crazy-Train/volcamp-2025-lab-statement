@@ -1,7 +1,7 @@
 +++
 title = "Service train-monitoring-app"
-draft: false
-weight: 7
+draft = false
+weight = 7
 +++
 
 

@@ -1,7 +1,7 @@
 +++
 title = "Start services"
-draft: false
-weight: 8
+draft= false
+weight= 8
 +++
 
 Pour lancer les services :

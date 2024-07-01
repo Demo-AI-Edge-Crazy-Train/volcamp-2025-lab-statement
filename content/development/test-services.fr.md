@@ -1,7 +1,7 @@
 +++
 title = "Start services"
-draft: false
-weight: 9
+draft = false
+weight = 9
 +++
 
 Maintenant que vous avez modifié plusieurs parties de l'application, il est temps de tester l'application dans son ensemble.

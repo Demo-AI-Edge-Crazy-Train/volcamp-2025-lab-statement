@@ -1,7 +1,7 @@
 +++
 title = "Service intelligent-train"
-draft: false
-weight: 5
+draft = false
+weight = 5
 +++
 
 Le `train-ceq-app` est une application basée sur Apache Camel, une bibliothèque Java pour la mise en œuvre des intégrations d'applications à l'aide de l'Enterprise Integration Patterns (EIP). 
