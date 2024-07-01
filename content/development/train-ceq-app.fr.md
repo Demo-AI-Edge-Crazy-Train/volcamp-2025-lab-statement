@@ -89,10 +89,9 @@ Voici à quoi devrait ressembler la route après vos modifications :
     </route>
 </routes>
 ```
-5. Compilation du projet 
+5. Compilation du projet
+
 Avant de committer vos modifications, vous devez construire le projet  pour vous assurer qu'il n'y a pas d'erreurs de compilation.
-
-
 Ouvrez un terminal à la racine du projet train-capture-app.
 
 ```

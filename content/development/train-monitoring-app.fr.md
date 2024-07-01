@@ -46,10 +46,9 @@ Notez que la méthode `process` doit être capable de gérer des chaînes de car
 Ces modifications permettent à votre application de consommer des messages du topic Kafka `train-monitoring` et de les traiter avec la méthode `process` de la classe `ImageProcessing`.
 
 
-3. Compilation du projet 
+3. Compilation du projet
+
 Avant de committer vos modifications, vous devez construire le projet  pour vous assurer qu'il n'y a pas d'erreurs de compilation.
-
-
 Ouvrez un terminal à la racine du projet train-capture-app.
 
 ```
