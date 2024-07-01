@@ -14,6 +14,6 @@ Voici une description de chaque service et de leur interaction :
 
 **train-controller** : Comme son nom l'indique, ce service est probablement responsable du contrôle du train lui-même. Il recevrait des commandes de services comme le train-ceq et effectuerait des actions sur le train, comme le démarrage, l'arrêt, le changement de vitesse, etc.
 
-**train-monitoring** : Ce service est responsable de la surveillance de l'ensemble du système. Il recueillerait des données de tous les autres services, comme les événements déclenchés, les actions effectuées, l'état du train, etc., et fournirait une vue d'ensemble de l'état du système. Il pourrait également fournir des alertes ou des notifications en cas de problèmes détectés.
+**train-monitoring-app** : Ce service est responsable de la surveillance de l'ensemble du système. Il recueillerait des données de tous les autres services, comme les événements déclenchés, les actions effectuées, l'état du train, etc., et fournirait une vue d'ensemble de l'état du système. Il pourrait également fournir des alertes ou des notifications en cas de problèmes détectés.
 
 Chaque service est indépendant et communique avec les autres en mode asynchrone (MQTT/Kafka). Cela permet une grande flexibilité et évolutivité, car chaque service peut être développé, déployé et mis à l'échelle indépendamment des autres.
