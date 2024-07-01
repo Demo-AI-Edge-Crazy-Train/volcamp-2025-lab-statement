@@ -5,17 +5,17 @@ weight = 7
 +++
 
 
-Le `train-monitoring-app` est une application qui surveille l'état et le comportement du train et de ses composants associés. Ce microservice est en charge de la /l' :
+Le **train-monitoring-app** est une application qui surveille l'état et le comportement du train et de ses composants associés. Ce microservice est en charge de la /l' :
 
-1. **Collecte de données** : L'application `train-monitoring-app` collecte des données à partir d'un topic kafka. Cela inclut les événements produit par `train-ceq-app`.
+1. **Collecte de données** : L'application **train-monitoring-app** collecte des données à partir d'un topic kafka. Cela inclut les événements produit par `train-ceq-app`.
 
-2. **Analyse des données** : Une fois les données collectées, l'application `train-monitoring-app` ajoute à l'image d'origine les prédiction calculées précedement.
+2. **Analyse des données** : Une fois les données collectées, l'application **train-monitoring-app** ajoute à l'image d'origine les prédiction calculées précedement.
 
-3. **Visualisation des données** : L'application `train-monitoring-app` fournit une interface utilisateur pour visualiser les données du train en temps réel. 
+3. **Visualisation des données** : L'application **train-monitoring-app** fournit une interface utilisateur pour visualiser les données du train en temps réel. 
 
 
 
-Dans le projet `train-monitoring-app`, vous allez modifier certaines propriétés et le code, suivez les instructions ci-dessous :
+Dans le projet **train-monitoring-app**, vous allez modifier certaines propriétés et le code, suivez les instructions ci-dessous :
 
 1. **Modifier le fichier de configuration** : Ouvrez le fichier de configuration de votre application. Il s'agit généralement d'un fichier nommé `application.properties` ou `application.yml`. Ajoutez les propriétés suivantes :
 
