@@ -16,7 +16,7 @@ In the **capture-app** project, you will add two new properties to the **applica
 
 ```properties
 %dev.capture.mock=true
-%dev.capture.videoPath=/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi)
+%dev.capture.videoPath=/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi
 ```
 
 3. Save your changes.

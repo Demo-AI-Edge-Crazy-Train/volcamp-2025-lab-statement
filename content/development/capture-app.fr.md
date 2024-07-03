@@ -16,7 +16,7 @@ Dans le projet **capture-app**, vous allez ajouter deux nouvelles propriétés d
 
 ```properties
 %dev.capture.mock=true
-%dev.capture.videoPath=/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi)
+%dev.capture.videoPath=/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi
 ```
 
 3. Enregistrez vos modifications.
