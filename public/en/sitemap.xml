@@ -38,18 +38,6 @@
                 href="http://localhost:1313/overview/architecture/"
                 />
   </url><url>
-    <loc>http://localhost:1313/development/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/development/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/development/"
-                />
-  </url><url>
     <loc>http://localhost:1313/ai/</loc>
     <xhtml:link
                 rel="alternate"
@@ -60,6 +48,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/ai/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/development/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/development/"
                 />
   </url><url>
     <loc>http://localhost:1313/overview/organization/</loc>

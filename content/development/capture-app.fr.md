@@ -1,22 +1,22 @@
 +++
-title = "Service train-capture-image-app"
+title = "Service Capture images"
 draft= false
 weight= 3
 +++
 
-**train-capture-image-app** est construite avec Quarkus, un framework Java complet, natif de Kubernetes, conçu pour les machines virtuelles Java (JVM) et la compilation native, optimisant Java spécifiquement pour les conteneurs et lui permettant de devenir une plateforme efficace pour les environnements serverless, cloud et Kubernetes.
+**capture-app** est construite avec Quarkus, un framework Java complet, natif de Kubernetes, conçu pour les machines virtuelles Java (JVM) et la compilation native, optimisant Java spécifiquement pour les conteneurs et lui permettant de devenir une plateforme efficace pour les environnements serverless, cloud et Kubernetes.
 
-La fonctionnalité principale de la Capture-App est de contrôler la capture vidéo. Elle offre la possibilité de démarrer et d'arrêter la capture vidéo, probablement via des points de terminaison RESTful exposés. Ces points de terminaison peuvent être appelés à partir de n'importe quel client (comme un navigateur web ou une commande curl dans un terminal) qui supporte HTTP, ce qui en fait une solution flexible et interopérable pour contrôler la capture vidéo.
+La fonctionnalité principale du microservice capture-App est de contrôler la capture vidéo. Elle offre la possibilité de démarrer et d'arrêter le streaming vidéo, via des points de terminaison RESTful exposés. Ces points de terminaison peuvent être appelés à partir de n'importe quel client (comme un navigateur web ou une commande curl dans un terminal) qui supporte HTTP.
 
 
-Dans le projet `train-capture-app/capture-app`, vous allez ajouter deux nouvelles propriétés dans le fichier `application.properties` et modifier la classe `ScheduledCapture.java` pour charger ces propriétés.
+Dans le projet **capture-app**, vous allez ajouter deux nouvelles propriétés dans le fichier **application.properties** et modifier la classe **ScheduledCapture.java** pour charger ces propriétés.
 
-1. Ouvrez le fichier `src/main/resources/application.properties`.
+1. **Modifier le fichier de configuration** : Ouvrez le fichier de configuration de votre application. Il s'agit du fichier nommé `src/main/application.properties`. Ajoutez les propriétés suivantes :
 2. Ajoutez les deux nouvelles propriétés à la fin du fichier :
 
 ```properties
 %dev.capture.mock=true
-%dev.capture.videoPath=chemin/vers/votre/video.mp4
+%dev.capture.videoPath=/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi)
 ```
 
 3. Enregistrez vos modifications.
@@ -32,9 +32,9 @@ boolean mock;
 String videoPath;
 ```
 
-4. Vérification du code 
+6. Vérification du code 
 
-La classe `src/main/java/com/train/capture/app/ScheduledCapture.java` :
+La classe **src/main/java/com/train/capture/app/ScheduledCapture.java** devrait ressembler à :
 
 ```Java
 package org.redhat.demo.crazytrain.captureimage;
@@ -286,16 +286,15 @@ public class ScheduledCapture {
 }
 ```
 
-Le fichier application.properties
+Le fichier **application.properties** devrait ressembler à :
+
 ```properties
 %dev.quarkus.http.port=8082
 %dev.capture.mock=true
-%dev.catpure.videoPath=/Users/mouchan/projects/Demo-AI-Edge-Crazy-Train/train-capture-image-app/capture-app/src/main/resources/track7.mp4
+%dev.catpure.videoPath=/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi
 %dev.catpure.videoPeriodicCapture=30
 quarkus.kafka.devservices.enabled=false
 quarkus.swagger-ui.always-include=true
-#quarkus.native.container-build=true
-#quarkus.native.native-image-xmx=16g
 capture.videoDeviceIndex=${VIDE0_DEVICE_INDEX:0}
 capture.dropbox.token=${DROPBOX_TOKEN:null}
 capture.tmpFolder=${TMP_FOLDER:/Users/mouchan/crazy-train-images}
@@ -303,18 +302,22 @@ capture.interval=${INTERVAL:100}
 capture.periodicCapture=${PERIODIC_CAPTURE:30}
 capture.brokerMqtt=${MQTT_BROKER:tcp://localhost:1883}
 capture.topic=${MQTT_TOPIC:train-image}
-capture.videoPath=${VIDEO_PATH:/Users/mouchan/projects/Demo-AI-Edge-Crazy-Train/train-capture-image-app/capture-app/src/main/resources/track-stop.mp4}
+capture.videoPath=${VIDEO_PATH:/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi}
 capture.videoPeriodicCapture=${VIDEO_PERIODIC_CAPTURE:30}
 capture.saveImage=${SAVE_IMAGE:false}
 capture.mock=${MOCK:false}
 quarkus.log.level=${LOGGER_LEVEL:INFO}
 ```
 
-5. Compilation du projet 
+7. Compilation du projet
+
 Avant de committer vos modifications, vous devez construire le projet  pour vous assurer qu'il n'y a pas d'erreurs de compilation.
 
+- Ouverez un nouveau terminal
 
-Ouvrez un terminal à la racine du projet train-capture-app.
+![terminal](/images/dev-section/new-terminal-bash.png)
+
+- Lancez la commande ci-dessous 
 
 ```
 ./mvnw clean package

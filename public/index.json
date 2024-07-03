@@ -1,0 +1,71 @@
+[
+{
+	"uri": "http://localhost:1313/overview/goal/",
+	"title": "Objectif",
+	"tags": [],
+	"description": "",
+	"content": "Your goal will be to TODO\n"
+},
+{
+	"uri": "http://localhost:1313/overview/",
+	"title": "Presentation",
+	"tags": [],
+	"description": "",
+	"content": "Chapter 1 Presentation Welcome to this lab where TODO\n"
+},
+{
+	"uri": "http://localhost:1313/overview/architecture/",
+	"title": "Architecture",
+	"tags": [],
+	"description": "",
+	"content": "Architecture TODO\n"
+},
+{
+	"uri": "http://localhost:1313/ai/",
+	"title": "Artificial Intelligence (1h)",
+	"tags": [],
+	"description": "",
+	"content": "Part 2 Artificial Intelligence "
+},
+{
+	"uri": "http://localhost:1313/development/",
+	"title": "Développement (30min)",
+	"tags": [],
+	"description": "",
+	"content": "Development "
+},
+{
+	"uri": "http://localhost:1313/overview/organization/",
+	"title": "Organization",
+	"tags": [],
+	"description": "",
+	"content": "TODO\n"
+},
+{
+	"uri": "http://localhost:1313/overview/openshift/",
+	"title": "OpenShift",
+	"tags": [],
+	"description": "",
+	"content": "OpenShift cluster TODO\nOpenShift cluster details OCP Cluster console URL : https://console-openshift-console.apps.TODO\nOCP Cluster API URL : https://api.TODO:6443\nThere is a dedicated OpenShift user for each utilisateur. On your table you will find a poster with the relevant information.\nTo connect to your Openshift cluster, click on the OCP Cluster console URL above and fill in your username and password. You will have acces to the Web Terminal by clicking on the \u0026gt;_ icon on the top right. The Web Terminal provides the oc client.\n"
+},
+{
+	"uri": "http://localhost:1313/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://localhost:1313/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://localhost:1313/",
+	"title": "Welcome",
+	"tags": [],
+	"description": "",
+	"content": "Riviera Dev 2024 - Lab \u0026ldquo;Crazy Train\u0026rdquo; Welcome, dear Red Hatter, in this Lab where you will discover a part of the Red Hat offering related to Edge Computing and AI.\nYou will play with the following technologies:\nTODO In this lab, you will TODO\nFun are expected ahead!\n"
+}]

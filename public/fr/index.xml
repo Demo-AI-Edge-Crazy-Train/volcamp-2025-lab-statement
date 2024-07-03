@@ -36,11 +36,11 @@
       <description>TODO</description>
     </item>
     <item>
-      <title>Service train-capture-image-app</title>
+      <title>Service Capture images</title>
       <link>http://localhost:1313/fr/development/capture-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/fr/development/capture-app/</guid>
-      <description>train-capture-image-app est construite avec Quarkus, un framework Java complet, natif de Kubernetes, conçu pour les machines virtuelles Java (JVM) et la compilation native, optimisant Java spécifiquement pour les conteneurs et lui permettant de devenir une plateforme efficace pour les environnements serverless, cloud et Kubernetes.&#xA;La fonctionnalité principale de la Capture-App est de contrôler la capture vidéo. Elle offre la possibilité de démarrer et d&amp;rsquo;arrêter la capture vidéo, probablement via des points de terminaison RESTful exposés.</description>
+      <description>capture-app est construite avec Quarkus, un framework Java complet, natif de Kubernetes, conçu pour les machines virtuelles Java (JVM) et la compilation native, optimisant Java spécifiquement pour les conteneurs et lui permettant de devenir une plateforme efficace pour les environnements serverless, cloud et Kubernetes.&#xA;La fonctionnalité principale du microservice capture-App est de contrôler la capture vidéo. Elle offre la possibilité de démarrer et d&amp;rsquo;arrêter le streaming vidéo, via des points de terminaison RESTful exposés.</description>
     </item>
     <item>
       <title>OpenShift</title>
@@ -57,11 +57,11 @@
       <description></description>
     </item>
     <item>
-      <title>Service intelligent-train</title>
+      <title>Service train-ceq-app</title>
       <link>http://localhost:1313/fr/development/train-ceq-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/fr/development/train-ceq-app/</guid>
-      <description>Le train-ceq-app est une application basée sur Apache Camel, une bibliothèque Java pour la mise en œuvre des intégrations d&amp;rsquo;applications à l&amp;rsquo;aide de l&amp;rsquo;Enterprise Integration Patterns (EIP).&#xA;L&amp;rsquo;application train-ceq-app est principalement composée de routes Camel définies dans le fichier PostProcessingRoute.xml. Ces routes définissent comment les messages sont consommés, transformés et transmis à d&amp;rsquo;autres services ou destinations.&#xA;Voici une explication détaillée du fonctionnement de la route postproscesing-route :&#xA;Consommation des messages : La route commence par consommer les messages du broker MQTT à l&amp;rsquo;aide de l&amp;rsquo;URI paho:{{train.</description>
+      <description>Le train-ceq-app est une application basée sur Apache Camel, une bibliothèque Java pour la mise en œuvre des intégrations d&amp;rsquo;applications à l&amp;rsquo;aide de l&amp;rsquo;Enterprise Integration Patterns (EIP). Cette application est principalement composée de routes Camel définies dans le fichier PostProcessingRoute.xml. Ces routes définissent comment les messages sont consommés, transformés et transmis à d&amp;rsquo;autres services ou destinations.&#xA;La route postproscesing-route effectue les opérations suivantes:&#xA;Consommation des messages : La route commence par consommer les messages du broker MQTT à l&amp;rsquo;aide de l&amp;rsquo;URI paho:{{train.</description>
     </item>
     <item>
       <title>Service train-controller</title>
@@ -71,32 +71,32 @@
       <description></description>
     </item>
     <item>
-      <title>Service train-monitoring-app</title>
-      <link>http://localhost:1313/fr/development/train-monitoring-app/</link>
+      <title>Service monitoring-appp</title>
+      <link>http://localhost:1313/fr/development/monitoring-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/development/train-monitoring-app/</guid>
-      <description>Le train-monitoring-app est une application qui surveille l&amp;rsquo;état et le comportement du train et de ses composants associés. Ce microservice est en charge de la /l&amp;rsquo; :&#xA;Collecte de données : L&amp;rsquo;application train-monitoring-app collecte des données à partir d&amp;rsquo;un topic kafka. Cela inclut les événements produit par train-ceq-app.&#xA;Analyse des données : Une fois les données collectées, l&amp;rsquo;application train-monitoring-app ajoute à l&amp;rsquo;image d&amp;rsquo;origine les prédiction calculées précedement.&#xA;Visualisation des données : L&amp;rsquo;application train-monitoring-app fournit une interface utilisateur pour visualiser les données du train en temps réel.</description>
+      <guid>http://localhost:1313/fr/development/monitoring-app/</guid>
+      <description>Le monitoring-appp est une application qui surveille l&amp;rsquo;état et le comportement du train et de ses composants associés. Ce microservice est en charge de la /l&amp;rsquo; :&#xA;Collecte de données : L&amp;rsquo;application monitoring-appp collecte des données à partir d&amp;rsquo;un topic kafka. Cela inclut les événements produit par train-ceq-app.&#xA;Analyse des données : Une fois les données collectées, l&amp;rsquo;application monitoring-appp ajoute à l&amp;rsquo;image d&amp;rsquo;origine les prédiction calculées précedement.&#xA;Visualisation des données : L&amp;rsquo;application monitoring-appp fournit une interface utilisateur pour visualiser les données du train en temps réel.</description>
     </item>
     <item>
       <title>Start services</title>
       <link>http://localhost:1313/fr/development/start-services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/fr/development/start-services/</guid>
-      <description>Pour lancer les services :&#xA;Ouvrez le terminal intégré. Vous pouvez le faire en allant dans le menu &amp;ldquo;View&amp;rdquo; et en sélectionnant &amp;ldquo;Terminal&amp;rdquo;, ou en utilisant le raccourci clavier correspondant.&#xA;Dans le terminal, vous pouvez lancer les commandes définies dans le devfile en utilisant la commande dev suivie de l&amp;rsquo;ID de la commande. Par exemple, pour lancer la commande start-all-apps, vous pouvez utiliser la commande suivante :&#xA;dev start-all-apps De même, pour arrêter toutes les applications, vous pouvez utiliser la commande suivante : dev stop-all-apps Ces commandes lanceront ou arrêteront toutes les applications définies dans le devfile.</description>
+      <description>A partir de Devspaces, cliquez sur la barre de recherche en hat et choisir dans la liste déroulante &amp;ldquo;Run Task&amp;rdquo; Sélectionnez la tâche start-all-apps, cette tâches lance en parallèles toutes les applications modifiées précédement.&#xA;Cliquez sur Continue without scanning the task outoput Chaque application démarrera dans un terminal. Les terminaux sont accessible en bas à droite, Séléctionnez &amp;rsquo;no&amp;rsquo; sur les pop-up qui indique qu&amp;rsquo;un nouveau processus a démarré et qu&amp;rsquo;il est possible de faire une redirection de port.</description>
     </item>
     <item>
-      <title>Start services</title>
+      <title>Test services</title>
       <link>http://localhost:1313/fr/development/test-services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/fr/development/test-services/</guid>
-      <description>Maintenant que vous avez modifié plusieurs parties de l&amp;rsquo;application, il est temps de tester l&amp;rsquo;application dans son ensemble.&#xA;lancer la commande suivante curl -X &amp;#39;POST&amp;#39; &amp;#39;http://localhost:8082/capture/test&amp;#39; -H &amp;#39;accept: */*&amp;#39; a partir de votre browser visualiser le résultat en utilisant ce lien http://localhost:8086/ </description>
+      <description>Nous allons simuler le fonctionnement du train :&#xA;Ouverez un nouveau terminal Executez la commande ci-dessous pour récupérer l&amp;rsquo;URL de la console de monitoring : oc get routes -o jsonpath=&amp;#39;{range .items[*]}{.metadata.annotation s.che\.routing\.controller\.devfile\.io/endpoint-name}{&amp;#34;\t&amp;#34;}{.spec.host}{&amp;#34;\n&amp;#34;}{end}&amp;#39; | gre p monitoring-svc | cut -f 2 Copiez l&amp;rsquo;URL, lancez une nouvelle fênetre de votre navigateur en mode anonyme (afin d&amp;rsquo;avoir un cache vide), insérez l&amp;rsquo;URL. Retournez à votre terminal et exécutez la commande suivante : curl -X &amp;#39;POST&amp;#39; &amp;#39;http://localhost:8082/capture/test&amp;#39; -H &amp;#39;accept: */*&amp;#39; A partir de votre navigateur vous devriez visualiser en temps réel la simulation du train et la détéction des panneaux de signalisation Bravo !</description>
     </item>
     <item>
-      <title>Service train-controller</title>
+      <title>Conclusion</title>
       <link>http://localhost:1313/fr/development/conclusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/fr/development/conclusion/</guid>
-      <description>Félicitations, vous avez terminé le lab ! Vous devriez maintenant avoir une meilleure compréhension de l&amp;rsquo;application Train et de son architecture basée sur les microservices. Continuez à explorer et à modifier le code pour en apprendre encore plus.</description>
+      <description>Félicitations, vous avez terminé la section développement ! Vous devriez maintenant avoir une meilleure compréhension de l&amp;rsquo;application Crazy Train et de son architecture basée sur les microservices. Le lab n&amp;rsquo;est pas encore fini ! Dans la section suivante, nous allons découvrir comment déployer nos applications en utilisant les outils gitops</description>
     </item>
   </channel>
 </rss>
