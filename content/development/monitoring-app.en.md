@@ -45,7 +45,7 @@ These modifications allow our application to consume messages from the Kafka **t
 
 4. Checking the code 
 
-The **src/main/java/org/redhat/demo/crazytrain/ImageProcessing.java** class should look like this: 
+The **src/main/java/org/redhat/demo/crazytrain/processing/ImageProcessing.java** class should look like this: 
 
 ```java
 package org.redhat.demo.crazytrain.processing;
