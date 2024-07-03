@@ -7,7 +7,7 @@ weight= 4
 Dans cette section nous allons importer le nouveau model entraîné dans la première section.
 
 
-- Ouverez un nouveau terminal
+- Ouvrez un nouveau terminal
 
 ![terminal](/images/dev-section/new-terminal-bash.png)
 

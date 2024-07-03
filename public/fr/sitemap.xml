@@ -39,6 +39,16 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/development/introduction/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/development/introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/development/introduction/"
+                />
   </url><url>
     <loc>http://localhost:1313/fr/development/</loc>
     <xhtml:link
@@ -77,6 +87,16 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/development/capture-app/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/development/capture-app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/development/capture-app/"
+                />
   </url><url>
     <loc>http://localhost:1313/fr/overview/openshift/</loc>
     <xhtml:link
@@ -91,18 +111,88 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/development/intelligent-train/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/development/intelligent-train/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/development/intelligent-train/"
+                />
   </url><url>
     <loc>http://localhost:1313/fr/development/train-ceq-app/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/development/train-ceq-app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/development/train-ceq-app/"
+                />
   </url><url>
     <loc>http://localhost:1313/fr/development/train-controller/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/development/train-controller/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/development/train-controller/"
+                />
   </url><url>
     <loc>http://localhost:1313/fr/development/monitoring-app/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/development/monitoring-app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/development/monitoring-app/"
+                />
   </url><url>
     <loc>http://localhost:1313/fr/development/start-services/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/development/start-services/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/development/start-services/"
+                />
   </url><url>
     <loc>http://localhost:1313/fr/development/test-services/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/development/test-services/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/development/test-services/"
+                />
   </url><url>
     <loc>http://localhost:1313/fr/development/conclusion/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/development/conclusion/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/development/conclusion/"
+                />
   </url><url>
     <loc>http://localhost:1313/fr/categories/</loc>
     <xhtml:link

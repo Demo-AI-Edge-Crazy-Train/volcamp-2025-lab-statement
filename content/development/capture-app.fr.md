@@ -313,7 +313,7 @@ quarkus.log.level=${LOGGER_LEVEL:INFO}
 
 Avant de committer vos modifications, vous devez construire le projet  pour vous assurer qu'il n'y a pas d'erreurs de compilation.
 
-- Ouverez un nouveau terminal
+- Ouvrez un nouveau terminal
 
 ![terminal](/images/dev-section/new-terminal-bash.png)
 
@@ -322,3 +322,5 @@ Avant de committer vos modifications, vous devez construire le projet  pour vous
 ```
 ./mvnw clean package
 ```
+
+Vérifiez qu'il n'existe aucune erreur et passez à la section suivante.

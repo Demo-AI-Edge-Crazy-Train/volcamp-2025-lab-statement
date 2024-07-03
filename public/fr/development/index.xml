@@ -12,7 +12,7 @@
       <link>http://localhost:1313/fr/development/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/fr/development/introduction/</guid>
-      <description>Voici une description de chaque service et de leur interaction :&#xA;train-capture-image-app : C&amp;rsquo;est un service Quarkus qui permet de démarrer, tester et d&amp;rsquo;arrêter la capture vidéo. Il expose des points de terminaison RESTful qui peuvent être appelés par d&amp;rsquo;autres services ou clients pour contrôler la capture vidéo.&#xA;intelligent-train : Ce service est responsable de l&amp;rsquo;analyse des données de la vidéo capturée. Il utilise des techniques d&amp;rsquo;apprentissage automatique pour interpréter les données de la vidéo et de fournir des informations basées sur cette analyse.</description>
+      <description>L&amp;rsquo;application Crazy Train est composée de plusieurs microservices. L&amp;rsquo;image ci-dessous décrit le fonctionnement global :&#xA;![architecture](/images/dev-section/architecture]&#xA;Ci-dessous une description de chaque service :&#xA;train-capture-image-app : C&amp;rsquo;est un service Quarkus qui permet de démarrer, tester et d&amp;rsquo;arrêter la capture vidéo. Il expose des points de terminaison RESTful qui peuvent être appelés par d&amp;rsquo;autres services ou clients pour contrôler la capture vidéo.&#xA;intelligent-train : Ce service est responsable de l&amp;rsquo;analyse des données de la vidéo capturée.</description>
     </item>
     <item>
       <title>Service Capture images</title>
@@ -26,7 +26,7 @@
       <link>http://localhost:1313/fr/development/intelligent-train/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/fr/development/intelligent-train/</guid>
-      <description></description>
+      <description>Dans cette section nous allons importer le nouveau model entraîné dans la première section.&#xA;Ouvrez un nouveau terminal Lancez les commandes ci-dessous : cd intelligent-train curl -o models/model.onnx http://minio.minio:9000/&amp;lt;remplacez user_id par le nom d&amp;#39;utiliseur qui vous a été assigné&amp;gt;/models/model.onnx </description>
     </item>
     <item>
       <title>Service train-ceq-app</title>

@@ -4,7 +4,11 @@ draft= false
 weight= 2
 +++
 
-Voici une description de chaque service et de leur interaction :
+L'application **Crazy Train** est composée de plusieurs microservices. L'image ci-dessous décrit le fonctionnement global :
+
+![architecture](/images/dev-section/architecture.png)
+
+Ci-dessous une description de chaque service :
 
 **train-capture-image-app** : C'est un service Quarkus qui permet de démarrer, tester et d'arrêter la capture vidéo. Il expose des points de terminaison RESTful qui peuvent être appelés par d'autres services ou clients pour contrôler la capture vidéo.
 
