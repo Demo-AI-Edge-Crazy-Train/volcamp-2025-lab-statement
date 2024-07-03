@@ -12,22 +12,22 @@
     <title>Introduction :: Documentation for Hugo Learn Theme</title>
 
     
-    <link href="/css/nucleus.css?1720011961" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1720011961" rel="stylesheet">
-    <link href="/css/hybrid.css?1720011961" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1720011961" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1720011961" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720011961" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1720011961" rel="stylesheet">
-    <link href="/css/theme.css?1720011961" rel="stylesheet">
-    <link href="/css/tabs.css?1720011961" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1720011961" rel="stylesheet">
+    <link href="/css/nucleus.css?1720016278" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1720016278" rel="stylesheet">
+    <link href="/css/hybrid.css?1720016278" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1720016278" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1720016278" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720016278" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1720016278" rel="stylesheet">
+    <link href="/css/theme.css?1720016278" rel="stylesheet">
+    <link href="/css/tabs.css?1720016278" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1720016278" rel="stylesheet">
     
-    <link href="/css/theme-red.css?1720011961" rel="stylesheet">
+    <link href="/css/theme-red.css?1720016278" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1720011961"></script>
+    <script src="/js/jquery-3.3.1.min.js?1720016278"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1720011961"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1720011961"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1720016278"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1720016278"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1720011961"></script>
+<script type="text/javascript" src="/js/search.js?1720016278"></script>
 
     
   </div>
@@ -591,6 +591,9 @@
         
 
 
+<ol>
+<li>Introduction</li>
+</ol>
 <p>The <strong>Crazy Train</strong> application is made up of several microservices. The image below describes the overall operation</p>
 <p><img alt="architecture" src="/images/dev-section/architecture.png"></p>
 <p>Below is a description of each service:</p>
@@ -600,6 +603,17 @@
 <p><strong>train-controller</strong>: As its name suggests, this service is probably responsible for controlling the train itself. It would receive commands from services such as train-ceq and perform actions on the train, such as starting, stopping, changing speed, etc.</p>
 <p><strong>train-monitoring-app</strong>: This service is responsible for monitoring the entire system. It would collect data from all the other services, such as events triggered, actions performed, train status, etc., and provide an overview of the state of the system. It could also provide alerts or notifications in the event of problems being detected.</p>
 <p>Each service is independent and communicates with the others asynchronously (MQTT/Kafka). This allows great flexibility and scalability, as each service can be developed, deployed and scaled independently of the others.</p>
+<ol start="2">
+<li>Your lab environment</li>
+</ol>
+<p>You are going to use OpenShift Dev Spaces. OpenShift Dev Spaces uses Kubernetes and containers to provide a consistent, secure, and zero-configuration development environment, accessible from a browser window.</p>
+<p>Use the following link to generate your Openshift Dev Space environment :</p>
+<p><a href="https://devspaces.apps.riviera-dev-2024.sandbox2830.opentlc.com/f?url=https://github.com/Demo-AI-Edge-Crazy-Train/rivieradev-app"><img alt="Contribute" src="https://www.eclipse.org/che/contribute.svg"></a></p>
+<p>Login in with your OpenShift credentials (userX/yourpassword). If this is the first time you access Dev Spaces, you have to authorize Dev Spaces to access your account. In the Authorize Access window click on Allow selected permissions.</p>
+<p>This opens the workspace, which will look pretty familiar if you are used to work with VS Code. Before opening the workspace, a pop-up might appear asking if you trust the contents of the workspace. Click Yes, I trust the authors to continue.</p>
+<p><img alt="trust-authors" src="/images/dev-section/trust-authors.png"></p>
+<p>The workspace contains all the resources you are going to use during the workshop. In the project explorer on the left of the workspace, navigate to the rivieradev-app folder and look at the different projects.</p>
+<p><img alt="workspace" src="/images/dev-section/workspace.png"></p>
 
 
 <footer class="footline">
@@ -918,19 +932,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1720011961"></script>
-    <script src="/js/perfect-scrollbar.min.js?1720011961"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1720011961"></script>
-    <script src="/js/jquery.sticky.js?1720011961"></script>
-    <script src="/js/featherlight.min.js?1720011961"></script>
-    <script src="/js/highlight.pack.js?1720011961"></script>
+    <script src="/js/clipboard.min.js?1720016278"></script>
+    <script src="/js/perfect-scrollbar.min.js?1720016278"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1720016278"></script>
+    <script src="/js/jquery.sticky.js?1720016278"></script>
+    <script src="/js/featherlight.min.js?1720016278"></script>
+    <script src="/js/highlight.pack.js?1720016278"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1720011961"></script>
-    <script src="/js/learn.js?1720011961"></script>
-    <script src="/js/hugo-learn.js?1720011961"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1720016278"></script>
+    <script src="/js/learn.js?1720016278"></script>
+    <script src="/js/hugo-learn.js?1720016278"></script>
     
         
-            <script src="/mermaid/mermaid.js?1720011961"></script>
+            <script src="/mermaid/mermaid.js?1720016278"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

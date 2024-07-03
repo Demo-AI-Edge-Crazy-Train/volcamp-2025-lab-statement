@@ -12,22 +12,22 @@
     <title>Introduction :: Documentation du thème Hugo Learn</title>
 
     
-    <link href="/css/nucleus.css?1720011961" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1720011961" rel="stylesheet">
-    <link href="/css/hybrid.css?1720011961" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1720011961" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1720011961" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720011961" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1720011961" rel="stylesheet">
-    <link href="/css/theme.css?1720011961" rel="stylesheet">
-    <link href="/css/tabs.css?1720011961" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1720011961" rel="stylesheet">
+    <link href="/css/nucleus.css?1720016278" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1720016278" rel="stylesheet">
+    <link href="/css/hybrid.css?1720016278" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1720016278" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1720016278" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720016278" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1720016278" rel="stylesheet">
+    <link href="/css/theme.css?1720016278" rel="stylesheet">
+    <link href="/css/tabs.css?1720016278" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1720016278" rel="stylesheet">
     
-    <link href="/css/theme-red.css?1720011961" rel="stylesheet">
+    <link href="/css/theme-red.css?1720016278" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1720011961"></script>
+    <script src="/js/jquery-3.3.1.min.js?1720016278"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1720011961"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1720011961"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1720016278"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1720016278"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/\/fr";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1720011961"></script>
+<script type="text/javascript" src="/js/search.js?1720016278"></script>
 
     
   </div>
@@ -591,15 +591,29 @@
         
 
 
-<p>L&rsquo;application <strong>Crazy Train</strong> est composée de plusieurs microservices. L&rsquo;image ci-dessous décrit le fonctionnement global :</p>
+<ol>
+<li>Introduction</li>
+</ol>
+<p>L&rsquo;application <strong>Crazy Train</strong> est composée de plusieurs microservices. L&rsquo;image ci-dessous décrit le fonctionnement global</p>
 <p><img alt="architecture" src="/images/dev-section/architecture.png"></p>
-<p>Ci-dessous une description de chaque service :</p>
-<p><strong>train-capture-image-app</strong> : C&rsquo;est un service Quarkus qui permet de démarrer, tester et d&rsquo;arrêter la capture vidéo. Il expose des points de terminaison RESTful qui peuvent être appelés par d&rsquo;autres services ou clients pour contrôler la capture vidéo.</p>
-<p><strong>intelligent-train</strong> : Ce service est  responsable de l&rsquo;analyse des données de la vidéo capturée. Il  utilise des techniques d&rsquo;apprentissage automatique pour interpréter les données de la vidéo et de fournir des informations basées sur cette analyse.</p>
-<p><strong>train-ceq-app</strong> : est un service de gestion des événements qui reçoit des informations de l&rsquo;Intelligent Train et d&rsquo;autres services, et déclenche des actions appropriées. Par exemple, si l&rsquo;Intelligent Train détecte un obstacle sur la voie, le service déclenche un événement pour arrêter le train.</p>
-<p><strong>train-controller</strong> : Comme son nom l&rsquo;indique, ce service est probablement responsable du contrôle du train lui-même. Il recevrait des commandes de services comme le train-ceq et effectuerait des actions sur le train, comme le démarrage, l&rsquo;arrêt, le changement de vitesse, etc.</p>
-<p><strong>train-monitoring-app</strong> : Ce service est responsable de la surveillance de l&rsquo;ensemble du système. Il recueillerait des données de tous les autres services, comme les événements déclenchés, les actions effectuées, l&rsquo;état du train, etc., et fournirait une vue d&rsquo;ensemble de l&rsquo;état du système. Il pourrait également fournir des alertes ou des notifications en cas de problèmes détectés.</p>
-<p>Chaque service est indépendant et communique avec les autres en mode asynchrone (MQTT/Kafka). Cela permet une grande flexibilité et évolutivité, car chaque service peut être développé, déployé et mis à l&rsquo;échelle indépendamment des autres.</p>
+<p>Voici une description de chaque service :</p>
+<p><strong>train-capture-image-app</strong>: Il s&rsquo;agit d&rsquo;un service Quarkus qui permet de démarrer, de tester et d&rsquo;arrêter la capture vidéo. Il expose des points d&rsquo;extrémité RESTful qui peuvent être appelés par d&rsquo;autres services ou clients pour contrôler la capture vidéo.</p>
+<p><strong>intelligent-train</strong>: Ce service est chargé d&rsquo;analyser les données de la vidéo capturée. Il utilise des techniques d&rsquo;apprentissage automatique pour interpréter les données vidéo et fournir des informations basées sur cette analyse.</p>
+<p><strong>train-ceq-app</strong>: il s&rsquo;agit d&rsquo;un service de gestion des événements qui reçoit des informations du train intelligent et d&rsquo;autres services, et qui déclenche les actions appropriées. Par exemple, si le train intelligent détecte un obstacle sur la voie, le service déclenche un événement pour arrêter le train.</p>
+<p><strong>contrôleur de train</strong>: Comme son nom l&rsquo;indique, ce service est probablement responsable du contrôle du train lui-même. Il reçoit des commandes de services tels que train-ceq et effectue des actions sur le train, telles que le démarrage, l&rsquo;arrêt, la modification de la vitesse, etc.</p>
+<p><strong>application de surveillance du train</strong>: Ce service est responsable de la surveillance de l&rsquo;ensemble du système. Il recueille les données de tous les autres services, telles que les événements déclenchés, les actions effectuées, l&rsquo;état du train, etc. et fournit une vue d&rsquo;ensemble de l&rsquo;état du système. Il pourrait également fournir des alertes ou des notifications en cas de détection de problèmes.</p>
+<p>Chaque service est indépendant et communique avec les autres de manière asynchrone (MQTT/Kafka). Cela permet une grande flexibilité et une grande évolutivité, car chaque service peut être développé, déployé et mis à l&rsquo;échelle indépendamment des autres.</p>
+<ol start="2">
+<li>Votre environnement de laboratoire</li>
+</ol>
+<p>Vous allez utiliser OpenShift Dev Spaces. OpenShift Dev Spaces utilise Kubernetes et les conteneurs pour fournir un environnement de développement cohérent, sécurisé et sans configuration, accessible depuis une fenêtre de navigateur.</p>
+<p>Utilisez le lien suivant pour générer votre environnement OpenShift Dev Spaces :</p>
+<p><a href="https://devspaces.apps.riviera-dev-2024.sandbox2830.opentlc.com/f?url=https://github.com/Demo-AI-Edge-Crazy-Train/rivieradev-app"> <img alt="Contribuer" src="https://www.eclipse.org/che/contribute.svg"></a></p>
+<p>Connectez-vous avec vos identifiants OpenShift (userX/mot-de-passe). Si c&rsquo;est la première fois que vous accédez à Dev Spaces, vous devez autoriser Dev Spaces à accéder à votre compte. Dans la fenêtre Autoriser l&rsquo;accès, cliquez sur Autoriser les permissions sélectionnées.</p>
+<p>Cela ouvre l&rsquo;espace de travail, qui vous semblera assez familier si vous avez l&rsquo;habitude de travailler avec VS Code. Avant d&rsquo;ouvrir l&rsquo;espace de travail, une fenêtre contextuelle peut apparaître pour vous demander si vous avez confiance dans le contenu de l&rsquo;espace de travail. Cliquez sur Oui, je fais confiance aux auteurs pour continuer.</p>
+<p><img alt="trust-authors" src="/images/dev-section/trust-authors.png"></p>
+<p>L&rsquo;espace de travail contient toutes les ressources que vous allez utiliser pendant l&rsquo;atelier. Dans l&rsquo;explorateur de projets situé à gauche de l&rsquo;espace de travail, naviguez jusqu&rsquo;au dossier rivieradev-app et regardez les différents projets.</p>
+<p>![espace de travail](/images/dev-section/espace de travail.png)</p>
 
 
 <footer class="footline">
@@ -918,19 +932,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1720011961"></script>
-    <script src="/js/perfect-scrollbar.min.js?1720011961"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1720011961"></script>
-    <script src="/js/jquery.sticky.js?1720011961"></script>
-    <script src="/js/featherlight.min.js?1720011961"></script>
-    <script src="/js/highlight.pack.js?1720011961"></script>
+    <script src="/js/clipboard.min.js?1720016278"></script>
+    <script src="/js/perfect-scrollbar.min.js?1720016278"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1720016278"></script>
+    <script src="/js/jquery.sticky.js?1720016278"></script>
+    <script src="/js/featherlight.min.js?1720016278"></script>
+    <script src="/js/highlight.pack.js?1720016278"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1720011961"></script>
-    <script src="/js/learn.js?1720011961"></script>
-    <script src="/js/hugo-learn.js?1720011961"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1720016278"></script>
+    <script src="/js/learn.js?1720016278"></script>
+    <script src="/js/hugo-learn.js?1720016278"></script>
     
         
-            <script src="/mermaid/mermaid.js?1720011961"></script>
+            <script src="/mermaid/mermaid.js?1720016278"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

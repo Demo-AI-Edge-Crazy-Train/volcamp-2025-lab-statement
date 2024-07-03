@@ -4,6 +4,9 @@ draft= false
 weight= 2
 +++
 
+1. Introduction 
+
+
 The **Crazy Train** application is made up of several microservices. The image below describes the overall operation
 
 ![architecture](/images/dev-section/architecture.png)
@@ -21,3 +24,23 @@ Below is a description of each service:
 **train-monitoring-app**: This service is responsible for monitoring the entire system. It would collect data from all the other services, such as events triggered, actions performed, train status, etc., and provide an overview of the state of the system. It could also provide alerts or notifications in the event of problems being detected.
 
 Each service is independent and communicates with the others asynchronously (MQTT/Kafka). This allows great flexibility and scalability, as each service can be developed, deployed and scaled independently of the others.
+
+2. Your lab environment
+
+You are going to use OpenShift Dev Spaces. OpenShift Dev Spaces uses Kubernetes and containers to provide a consistent, secure, and zero-configuration development environment, accessible from a browser window.
+
+Use the following link to generate your Openshift Dev Space environment : 
+
+[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://devspaces.apps.riviera-dev-2024.sandbox2830.opentlc.com/f?url=https://github.com/Demo-AI-Edge-Crazy-Train/rivieradev-app)
+
+
+Login in with your OpenShift credentials (userX/yourpassword). If this is the first time you access Dev Spaces, you have to authorize Dev Spaces to access your account. In the Authorize Access window click on Allow selected permissions.
+
+This opens the workspace, which will look pretty familiar if you are used to work with VS Code. Before opening the workspace, a pop-up might appear asking if you trust the contents of the workspace. Click Yes, I trust the authors to continue.
+
+![trust-authors](/images/dev-section/trust-authors.png)
+
+
+The workspace contains all the resources you are going to use during the workshop. In the project explorer on the left of the workspace, navigate to the rivieradev-app folder and look at the different projects.
+
+![workspace](/images/dev-section/workspace.png)
