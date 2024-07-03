@@ -4,16 +4,16 @@ draft= false
 weight= 4
 +++
 
-In this section we will import the new model trained in the first section.
+In this section we will import the new model trained before.
 
 
 - Open a new terminal
 
 ![terminal](/images/dev-section/new-terminal-bash.png)
 
-- Run the commands below: 
+- Run the commands below, replace user_id with your assigned user name: 
 
 ```
 cd intelligent-train
-curl -o models/model.onnx http://minio.minio:9000/<replace user_id with your assigned user name>/models/model.onnx
+curl -o models/model.onnx http://minio.minio:9000/<user_id>/models/model.onnx
 ```
