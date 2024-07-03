@@ -4,7 +4,7 @@ draft = false
 weight = 5
 +++
 
-The **train-ceq-app** is an application based on Apache Camel, a Java library for implementing application integrations using Enterprise Integration Patterns (EIP). 
+**train-ceq-app** is an application based on Apache Camel, a Java library for implementing application integrations using Enterprise Integration Patterns (EIP). 
 This application is mainly composed of Camel routes defined in the **PostProcessingRoute.xml** file. These routes define how messages are consumed, transformed and forwarded to other services or destinations.
 
 The **postproscessing-route** performs the following operations:
@@ -36,8 +36,8 @@ In a camel route the data is continuously transformed by various actions. Someti
 
 In the **train-ceq-app** project, you are going to modify the **PostProcessingRoute.xml** file to save the initial message so that you can retrieve it later.
 
-1. Open the file `src/main/resources/PostProcessingRoute.xml`.
-2. Add the following instruction just after the line `<log loggingLevel="DEBUG" message="${body}"/>` :
+1. Open the file `src/main/resources/camel/PostProcessingRoute.xml`.
+2. Add the following instruction at the line `<!-- add setHeader here -->` :
 
 ```xml
 <setHeader name="origin"><simple>${body}</simple></setHeader>
@@ -45,7 +45,7 @@ In the **train-ceq-app** project, you are going to modify the **PostProcessingRo
 
 This instruction saves the initial message in the message header under the name "origin".
 
-3. Next, add the following statement just after the line `<toD uri="paho:{{command.mqtt.destination.topicName}}?brokerUrl={{train.mqtt.brokerUrl}}"/>` :
+3. Next, add the following statement at the line `<!-- add setBody here -->` :
 
 ```xml
 <setBody><simple>${header.origin}</simple></setBody>
@@ -99,5 +99,5 @@ Before committing your changes, you need to build the project to ensure that the
 - Run the command below 
 
 ```
-./mvnw clean package
+mvn clean package
 ```

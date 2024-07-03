@@ -323,7 +323,7 @@ Avant de committer vos modifications, vous devez construire le projet  pour vous
 
 ```
 cd capture-app
-./mvnw clean package
+mvn clean package
 ```
 
 Vérifiez qu'il n'existe aucune erreur et passez à la section suivante.

@@ -4,7 +4,7 @@ draft = false
 weight = 5
 +++
 
-Le **train-ceq-app** est une application basée sur Apache Camel, une bibliothèque Java pour la mise en œuvre des intégrations d'applications à l'aide de l'Enterprise Integration Patterns (EIP). 
+**train-ceq-app** est une application basée sur Apache Camel, une bibliothèque Java pour la mise en œuvre des intégrations d'applications à l'aide de l'Enterprise Integration Patterns (EIP). 
 Cette application est principalement composée de routes Camel définies dans le fichier **PostProcessingRoute.xml**. Ces routes définissent comment les messages sont consommés, transformés et transmis à d'autres services ou destinations.
 
 La route **postproscesing-route** effectue les opérations suivantes:
@@ -36,8 +36,8 @@ Dans une route camel les données sont continuellement transformés par différe
 
 Dans le projet **train-ceq-app**, vous allez modifier le fichier **PostProcessingRoute.xml** pour sauvegarder le message initial et pouvoir le récupérer plus tard.
 
-1. Ouvrez le fichier `src/main/resources/PostProcessingRoute.xml`.
-2. Ajoutez l'instruction suivante juste après la ligne `<log loggingLevel="DEBUG" message="${body}"/>` :
+1. Ouvrez le fichier `src/main/resources/camel/PostProcessingRoute.xml`.
+2. Ajoutez l'instruction suivante à la place de la ligne `<!-- add setHeader here -->`:
 
 ```xml
 <setHeader name="origin"><simple>${body}</simple></setHeader>
@@ -45,7 +45,7 @@ Dans le projet **train-ceq-app**, vous allez modifier le fichier **PostProcessin
 
 Cette instruction sauvegarde le message initial dans l'entête du message sous le nom "origin".
 
-3. Ensuite, ajoutez l'instruction suivante juste après la ligne `<toD uri="paho:{{command.mqtt.destination.topicName}}?brokerUrl={{train.mqtt.brokerUrl}}"/>` :
+3. Ensuite, ajoutez l'instruction suivante à la place de la ligne `<!-- add setBody here -->` :
 
 ```xml
 <setBody><simple>${header.origin}</simple></setBody>
@@ -99,5 +99,5 @@ Avant de committer vos modifications, vous devez construire le projet  pour vous
 - Lancez la commande ci-dessous 
 
 ```
-./mvnw clean package
+mvn clean package
 ```

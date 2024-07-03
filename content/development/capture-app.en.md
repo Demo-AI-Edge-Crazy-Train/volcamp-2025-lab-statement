@@ -321,7 +321,7 @@ Before committing your changes, you need to build the project to ensure that the
 
 ```
 cd capture-app
-./mvnw clean package
+mvn clean package
 ```
 
 Check that there are no errors and move on to the next section.
