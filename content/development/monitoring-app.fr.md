@@ -5,17 +5,17 @@ weight = 7
 +++
 
 
-Le **monitoring-appp** est une application qui surveille l'état et le comportement du train et de ses composants associés. Ce microservice est en charge de la /l' :
+Le **monitoring-app** est une application qui surveille l'état et le comportement du train et de ses composants associés. Ce microservice est en charge de  :
 
-1. **Collecte de données** : L'application **monitoring-appp** collecte des données à partir d'un topic kafka. Cela inclut les événements produit par **train-ceq-app**.
+1. **La collecte de données** : L'application **monitoring-appp** collecte des données à partir d'un topic kafka. Cela inclut les événements produit par **train-ceq-app**.
 
-2. **Analyse des données** : Une fois les données collectées, l'application **monitoring-appp** ajoute à l'image d'origine les prédiction calculées précedement.
+2. **L'Analyse des données** : Une fois les données collectées, l'application **monitoring-appp** ajoute à l'image d'origine les prédiction calculées précedement.
 
-3. **Visualisation des données** : L'application **monitoring-appp** fournit une interface utilisateur pour visualiser les données du train en temps réel. 
+3. **La Visualisation des données** : L'application **monitoring-appp** fournit une interface utilisateur pour visualiser les données du train en temps réel. 
 
 
 
-Dans le projet **monitoring-appp**, vous allez modifier certaines propriétés et le code, suivez les instructions ci-dessous :
+Dans le projet **monitoring-app**, vous allez modifier certaines propriétés et le code via les instructions ci-dessous :
 
 1. **Modifier le fichier de configuration** : Ouvrez le fichier de configuration de votre application. Il s'agit du fichier nommé `src/main/resources/application.properties`. Ajoutez les propriétés suivantes :
 
@@ -28,7 +28,7 @@ mp.messaging.incoming.train-monitoring.value.deserializer=org.apache.kafka.commo
 
 Ces propriétés configurent l'application pour utiliser le connecteur SmallRye Kafka pour lire les messages du topic Kafka `train-monitoring`. Le deserialiseur est configuré pour convertir les messages de Kafka, qui sont des bytes, en chaînes de caractères.
 
-2. **Modifier la classe ImageProcessing** : Ouvrez le fichier `src/main/java/org/redhat/demo/crazytrain/ImageProcessing.java`.
+2. **Modifier la classe ImageProcessing** : Ouvrez le fichier `src/main/java/org/redhat/demo/crazytrain/processing/ImageProcessing.java`.
 
 Ajoutez l'annotation `@Incoming("train-monitoring")` à la méthode `process`. Ci-dessous le résultat :
 
@@ -45,7 +45,7 @@ Ces modifications permettent à notre application de consommer des messages du t
 
 4. Vérification du code 
 
-La classe **src/main/java/org/redhat/demo/crazytrain/ImageProcessing.java** devrait ressembler à : 
+La classe **src/main/java/org/redhat/demo/crazytrain/processing/ImageProcessing.java** devrait ressembler à : 
 
 ```Java
 package org.redhat.demo.crazytrain.processing;

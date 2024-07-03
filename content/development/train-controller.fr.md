@@ -1,5 +1,5 @@
 +++
-title = "Service train-controller"
+title = "Control train"
 draft = false
 weight = 6
 +++

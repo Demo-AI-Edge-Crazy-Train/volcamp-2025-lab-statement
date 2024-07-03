@@ -5,7 +5,7 @@ weight = 7
 +++
 
 
-The **monitoring-appp** is an application which monitors the status and behaviour of the train and its associated components. This microservice is responsible for /l' :
+The **monitoring-app** is an application which monitors the status and behaviour of the train and its associated components. This microservice is responsible for  :
 
 1. **Data collection**: The **monitoring-appp** application collects data from a kafka topic. This includes events produced by **train-ceq-app**.
 
@@ -15,7 +15,7 @@ The **monitoring-appp** is an application which monitors the status and behaviou
 
 
 
-In the **monitoring-appp** project, you will modify certain properties and the code, follow the instructions below:
+In the **monitoring-app** project, you will modify certain properties and the code with the following instructions:
 
 1. **Modify the configuration file**: Open the configuration file for your application. This is the file named `src/main/resources/application.properties`. Add the following properties:
 
@@ -28,7 +28,7 @@ mp.messaging.incoming.train-monitoring.value.deserializer=org.apache.kafka.commo
 
 These properties configure the application to use the SmallRye Kafka connector to read messages from the Kafka `train-monitoring` topic. The deserializer is configured to convert the Kafka messages, which are bytes, into character strings.
 
-2. **Modify the ImageProcessing class: Open the file `src/main/java/org/redhat/demo/crazytrain/ImageProcessing.java`.
+2. **Modify the ImageProcessing class: Open the file `src/main/java/org/redhat/demo/crazytrain/processing/ImageProcessing.java`.
 
 Add the `@Incoming("train-monitoring")` annotation to the `process` method. Below is the result:
 
