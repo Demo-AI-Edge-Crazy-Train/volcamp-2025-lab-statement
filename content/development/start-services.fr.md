@@ -5,7 +5,7 @@ weight= 8
 +++
 
 
-1. A partir de Devspaces, cliquez sur la barre de recherche en hat et choisir dans la liste déroulante "Run Task"
+1. A partir de Devspaces, cliquez sur la barre de recherche en haut et choisir dans la liste déroulante "Run Task"
  ![Menu Run Task](/images/dev-section/select-run-task.png)
 
 2. Sélectionnez la tâche **start-all-apps**, cette tâches lance en parallèles toutes les applications modifiées précédement. 

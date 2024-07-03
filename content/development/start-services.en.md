@@ -5,7 +5,7 @@ weight= 8
 +++
 
 
-1. From Devspaces, click on the search bar in the hat and choose "Run Task" from the drop-down list.
+1. From Devspaces, click on the search bar on the top and choose "Run Task" from the drop-down list.
 ! [Run Task menu](/images/dev-section/select-run-task.png)
 
 2. Select the **start-all-apps** task, this task will run all the previously modified applications in parallel. 
