@@ -1,12 +1,12 @@
 +++
-title = "Service Capture images"
+title = "Capture and pre process image"
 draft= false
 weight= 3
 +++
 
 **capture-app** est construite avec Quarkus, un framework Java complet, natif de Kubernetes, conçu pour les machines virtuelles Java (JVM) et la compilation native, optimisant Java spécifiquement pour les conteneurs et lui permettant de devenir une plateforme efficace pour les environnements serverless, cloud et Kubernetes.
 
-La fonctionnalité principale du microservice capture-App est de contrôler la capture vidéo. Elle offre la possibilité de démarrer et d'arrêter le streaming vidéo, via des points de terminaison RESTful exposés. Ces points de terminaison peuvent être appelés à partir de n'importe quel client (comme un navigateur web ou une commande curl dans un terminal) qui supporte HTTP.
+La fonctionnalité principale du microservice **capture-app** est de contrôler la capture vidéo. Elle offre la possibilité de démarrer et d'arrêter le streaming vidéo, via des points de terminaison RESTful exposés. Ces points de terminaison peuvent être appelés à partir de n'importe quel client http (comme un navigateur web ou une commande curl dans un terminal).
 
 
 Dans le projet **capture-app**, vous allez ajouter deux nouvelles propriétés dans le fichier **application.properties** et modifier la classe **ScheduledCapture.java** pour charger ces propriétés.
@@ -21,7 +21,9 @@ Dans le projet **capture-app**, vous allez ajouter deux nouvelles propriétés d
 
 3. Enregistrez vos modifications.
 
-4. Ouvrez le fichier `src/main/java/com/train/capture/app/ScheduledCapture.java`.
+4. Ouvrez le fichier `src/main/java/org/redhat/demo/crazytrain/captureimage/ScheduledCapture.java`.
+
+
 5. Ajoutez les annotations `@ConfigProperty` pour charger les nouvelles propriétés. Ajoutez ces lignes en haut de la classe, juste en dessous de la déclaration de la classe :
 
 ```java
@@ -320,6 +322,7 @@ Avant de committer vos modifications, vous devez construire le projet  pour vous
 - Lancez la commande ci-dessous 
 
 ```
+cd capture-app
 ./mvnw clean package
 ```
 

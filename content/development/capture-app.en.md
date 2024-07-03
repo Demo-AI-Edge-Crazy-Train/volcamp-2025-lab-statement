@@ -1,12 +1,12 @@
 +++
-title = "Service Capture images"
+title = "Capture and pre process image"
 draft= false
 weight= 3
 +++
 
 **capture-app** is built using Quarkus, a full Java framework native to Kubernetes, designed for Java Virtual Machines (JVMs) and native compilation, optimising Java specifically for containers and enabling it to become an effective platform for serverless, cloud and Kubernetes environments.
 
-The main functionality of the **capture-app** microservice is to control video capture. It offers the ability to start and stop video streaming, via exposed RESTful endpoints. These endpoints can be called from any client (such as a web browser or a curl command in a terminal) that supports HTTP.
+The main functionality of the **capture-app** microservice is to control video capture. It offers the ability to start and stop video streaming, via exposed RESTful endpoints. These endpoints can be called from any http client (such as a web browser or a curl command in a terminal).
 
 
 In the **capture-app** project, you will add two new properties to the **application.properties** file and modify the **ScheduledCapture.java** class to load these properties.
@@ -14,14 +14,14 @@ In the **capture-app** project, you will add two new properties to the **applica
 1. **Modify the configuration file**: Open the configuration file for your application. This is the file named `src/main/application.properties`. Add the following properties:
 2. Add the two new properties:
 
-``properties
+```properties
 %dev.capture.mock=true
 %dev.capture.videoPath=/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi)
 ```
 
 3. Save your changes.
 
-4. Open the file `src/main/java/com/train/capture/app/ScheduledCapture.java`.
+4. Open the file `src/main/java/org/redhat/demo/crazytrain/captureimage/ScheduledCapture.java`.
 5. Add the `@ConfigProperty` annotations to load the new properties. Add these lines to the top of the class, just below the class declaration:
 
 ```properties
@@ -320,6 +320,7 @@ Before committing your changes, you need to build the project to ensure that the
 - Run the command below 
 
 ```
+cd capture-app
 ./mvnw clean package
 ```
 

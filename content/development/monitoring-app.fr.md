@@ -1,5 +1,5 @@
 +++
-title = "Service monitoring-appp"
+title = "Monitoring"
 draft = false
 weight = 7
 +++

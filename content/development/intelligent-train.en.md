@@ -1,5 +1,5 @@
 +++
-title = "Service intelligent-train"
+title = "Predict command"
 draft= false
 weight= 4
 +++

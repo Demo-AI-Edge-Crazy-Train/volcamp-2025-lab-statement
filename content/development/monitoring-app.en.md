@@ -1,5 +1,5 @@
 +++
-title = "Service monitoring-app"
+title = "Monitoring"
 draft = false
 weight = 7
 +++
