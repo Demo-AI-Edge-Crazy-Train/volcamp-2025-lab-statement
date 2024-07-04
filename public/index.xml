@@ -2,94 +2,193 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome on Documentation for Hugo Learn Theme</title>
-    <link>http://localhost:1313/</link>
+    <link>https://rivieradev2024-crazytrain.netlify.app/</link>
     <description>Recent content in Welcome on Documentation for Hugo Learn Theme</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://rivieradev2024-crazytrain.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Connected</title>
+      <link>https://rivieradev2024-crazytrain.netlify.app/ai/getting-connected/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/ai/getting-connected/</guid>
+      <description>For the purposes of this training session, we have provisioned a single OpenShift cluster, with OpenShift AI deployed on it.
+Each person attending this lab will have a unique user account in which to do their work.
+Environment information In a new window or tab, open the following URL and log in:
+The Red Hat OpenShift AI Dashboard URL for our shared environment: https://rhods-dashboard-redhat-ods-applications.apps.riviera-dev-2024.sandbox2830.opentlc.com Enter your credentials (distributed on a paper during the lab) The result should look like: Because the password is so simple, your browser might display a scary message such as: It is safe here to ignore this message when it pops up.</description>
+    </item>
+    
     <item>
       <title>Objectif</title>
-      <link>http://localhost:1313/overview/goal/</link>
+      <link>https://rivieradev2024-crazytrain.netlify.app/overview/goal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/overview/goal/</guid>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/overview/goal/</guid>
       <description>Your goal will be to TODO</description>
     </item>
+    
     <item>
       <title>Architecture</title>
-      <link>http://localhost:1313/overview/architecture/</link>
+      <link>https://rivieradev2024-crazytrain.netlify.app/overview/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/overview/architecture/</guid>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/overview/architecture/</guid>
       <description>Architecture TODO</description>
     </item>
+    
+    <item>
+      <title>Connecting to your project and pipeline server</title>
+      <link>https://rivieradev2024-crazytrain.netlify.app/ai/creating-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/ai/creating-project/</guid>
+      <description>As a preliminary step, each of you is going to
+Connect to a Data Science project
+this will help keep your things together Create a Data Connection
+we need that for the pipeline server to store its artifacts Deploy a Data Science Pipeline Server
+we will need one, and it&amp;rsquo;s better to create it from the start Launch a Workbench
+we will use it to review content and notebooks Clone the git repo into your Workbench</description>
+    </item>
+    
     <item>
       <title>Introduction</title>
-      <link>http://localhost:1313/development/introduction/</link>
+      <link>https://rivieradev2024-crazytrain.netlify.app/development/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/development/introduction/</guid>
-      <description>1. Introduction The aim of this part is to familiarise you with the different microservices in the Crazy Train application. You will modify the code of several Quarkus, Python and Nodejs projects, understand how they interact and test the application as a whole.&#xA;The image below describes the overall operation&#xA;Below is a description of each service:&#xA;Capture and process image (projectt capture-app): This is a Quarkus service that allows you to start, test and stop video capture.</description>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/development/introduction/</guid>
+      <description>1. Introduction The aim of this part is to familiarise you with the different microservices in the Crazy Train application. You will modify the code of several Quarkus, Python and Nodejs projects, understand how they interact and test the application as a whole.
+The image below describes the overall operation
+Below is a description of each service:
+Capture and process image (projectt capture-app): This is a Quarkus service that allows you to start, test and stop video capture.</description>
     </item>
+    
     <item>
       <title>Capture and pre process image</title>
-      <link>http://localhost:1313/development/capture-app/</link>
+      <link>https://rivieradev2024-crazytrain.netlify.app/development/capture-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/development/capture-app/</guid>
-      <description>capture-app is built using Quarkus, a full Java framework native to Kubernetes, designed for Java Virtual Machines (JVMs) and native compilation, optimising Java specifically for containers and enabling it to become an effective platform for serverless, cloud and Kubernetes environments.&#xA;The main functionality of the capture-app microservice is to control video capture. It offers the ability to start and stop video streaming, via exposed RESTful endpoints. These endpoints can be called from any http client (such as a web browser or a curl command in a terminal).</description>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/development/capture-app/</guid>
+      <description>capture-app is built using Quarkus, a full Java framework native to Kubernetes, designed for Java Virtual Machines (JVMs) and native compilation, optimising Java specifically for containers and enabling it to become an effective platform for serverless, cloud and Kubernetes environments.
+The main functionality of the capture-app microservice is to control video capture. It offers the ability to start and stop video streaming, via exposed RESTful endpoints. These endpoints can be called from any http client (such as a web browser or a curl command in a terminal).</description>
     </item>
+    
+    <item>
+      <title>Creating a workbench</title>
+      <link>https://rivieradev2024-crazytrain.netlify.app/ai/creating-workbench/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/ai/creating-workbench/</guid>
+      <description>Launch a Workbench Once the Data Connection and Pipeline Server are fully created
+Create a workbench Make sure it has the following characteristics:
+Choose a name for it, like: My Workbench Image Selection: CUSTOM Crazy train lab Container Size: Small Keep the default cluster storage settings On the bottom, tick &amp;ldquo;Use a data connection&amp;rdquo; Scroll down to &amp;ldquo;Use existing data connection&amp;rdquo; Select from the list the &amp;ldquo;pipelines&amp;rdquo; data connection you previously created.</description>
+    </item>
+    
     <item>
       <title>Organization</title>
-      <link>http://localhost:1313/overview/organization/</link>
+      <link>https://rivieradev2024-crazytrain.netlify.app/overview/organization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/overview/organization/</guid>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/overview/organization/</guid>
       <description>TODO</description>
     </item>
+    
     <item>
       <title>OpenShift</title>
-      <link>http://localhost:1313/overview/openshift/</link>
+      <link>https://rivieradev2024-crazytrain.netlify.app/overview/openshift/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/overview/openshift/</guid>
-      <description>OpenShift cluster TODO&#xA;OpenShift cluster details OCP Cluster console URL : https://console-openshift-console.apps.TODO&#xA;OCP Cluster API URL : https://api.TODO:6443&#xA;There is a dedicated OpenShift user for each utilisateur. On your table you will find a poster with the relevant information.&#xA;To connect to your Openshift cluster, click on the OCP Cluster console URL above and fill in your username and password. You will have acces to the Web Terminal by clicking on the &amp;gt;_ icon on the top right.</description>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/overview/openshift/</guid>
+      <description>OpenShift cluster TODO
+OpenShift cluster details OCP Cluster console URL : https://console-openshift-console.apps.TODO
+OCP Cluster API URL : https://api.TODO:6443
+There is a dedicated OpenShift user for each utilisateur. On your table you will find a poster with the relevant information.
+To connect to your Openshift cluster, click on the OCP Cluster console URL above and fill in your username and password. You will have acces to the Web Terminal by clicking on the &amp;gt;_ icon on the top right.</description>
     </item>
+    
     <item>
       <title>Predict command</title>
-      <link>http://localhost:1313/development/intelligent-train/</link>
+      <link>https://rivieradev2024-crazytrain.netlify.app/development/intelligent-train/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/development/intelligent-train/</guid>
-      <description>In this section we will import the new model trained before.&#xA;Open a new terminal Run the commands below, replace user_id with your assigned user name: cd intelligent-train curl -o models/model.onnx http://minio.minio:9000/&amp;lt;user_id&amp;gt;/models/model.onnx If you have not finish the training of the model use the commands below,&#xA;cd intelligent-train curl -o models/model.onnx http://minio.minio:9000/models/model.onnx </description>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/development/intelligent-train/</guid>
+      <description>In this section we will import the new model trained before.
+Open a new terminal Run the commands below, replace user_id with your assigned user name: cd intelligent-train curl -o models/model.onnx http://minio.minio:9000/&amp;lt;user_id&amp;gt;/models/model.onnx If you have not finish the training of the model use the commands below,
+cd intelligent-train curl -o models/model.onnx http://minio.minio:9000/models/model.onnx </description>
     </item>
+    
+    <item>
+      <title>Retrain the model</title>
+      <link>https://rivieradev2024-crazytrain.netlify.app/ai/retrain-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/ai/retrain-model/</guid>
+      <description>In this section you will navigate through the python code used to retrain the model. You will then adapt a data science pipeline and run it on Openshift. You will finally visualize your pipeline in Openshift AI dashboard and retreive it&amp;rsquo;s output in different formats.
+WARNING: You will run only the first steps of the model training inside the Jupyter Notebooks. The full traning will happen on Openshift side in order to limit the RAM needed for each participant.</description>
+    </item>
+    
     <item>
       <title>Post process image</title>
-      <link>http://localhost:1313/development/train-ceq-app/</link>
+      <link>https://rivieradev2024-crazytrain.netlify.app/development/train-ceq-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/development/train-ceq-app/</guid>
-      <description>train-ceq-app is an application based on Apache Camel, a Java library for implementing application integrations using Enterprise Integration Patterns (EIP). This application is mainly composed of Camel routes defined in the PostProcessingRoute.xml file. These routes define how messages are consumed, transformed and forwarded to other services or destinations.&#xA;The postproscessing-route performs the following operations:&#xA;Message consumption: The route first consumes messages from the MQTT broker using the paho:{{train.mqtt.source.topicName}}?brokerUrl={{train.mqtt.brokerUrl}} URI. The messages consumed are then recorded in the log.</description>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/development/train-ceq-app/</guid>
+      <description>train-ceq-app is an application based on Apache Camel, a Java library for implementing application integrations using Enterprise Integration Patterns (EIP). This application is mainly composed of Camel routes defined in the PostProcessingRoute.xml file. These routes define how messages are consumed, transformed and forwarded to other services or destinations.
+The postproscessing-route performs the following operations:
+Message consumption: The route first consumes messages from the MQTT broker using the paho:{{train.mqtt.source.topicName}}?brokerUrl={{train.mqtt.brokerUrl}} URI. The messages consumed are then recorded in the log.</description>
     </item>
+    
+    <item>
+      <title>Model Serving</title>
+      <link>https://rivieradev2024-crazytrain.netlify.app/ai/model-serving/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/ai/model-serving/</guid>
+      <description>At this point, you will deploy the model the just created into RHOAI model serving. If something went wrong with the model traning you can still do this section. Just follow the first &amp;ldquo;Fallback&amp;rdquo; section.
+Once again, in the following objects that you will create, please change &amp;ldquo;userX&amp;rdquo; with your real user ID.
+Fallback - You can skip if you have a tranined model In your Data Science project, create a data connection that refers to the global model registry where we stored a pre tranined model.</description>
+    </item>
+    
     <item>
       <title>Monitoring</title>
-      <link>http://localhost:1313/development/monitoring-app/</link>
+      <link>https://rivieradev2024-crazytrain.netlify.app/development/monitoring-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/development/monitoring-app/</guid>
-      <description>The monitoring-app is an application which monitors the status and behaviour of the train and its associated components. This microservice is responsible for :&#xA;Data collection: The monitoring-appp application collects data from a kafka topic. This includes events produced by train-ceq-app.&#xA;Data analysis: Once the data has been collected, the monitoring-appp application adds the predictions calculated above to the original image.&#xA;Data visualisation: The monitoring-appp application provides a user interface for viewing train data in real time.</description>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/development/monitoring-app/</guid>
+      <description>The monitoring-app is an application which monitors the status and behaviour of the train and its associated components. This microservice is responsible for :
+Data collection: The monitoring-appp application collects data from a kafka topic. This includes events produced by train-ceq-app.
+Data analysis: Once the data has been collected, the monitoring-appp application adds the predictions calculated above to the original image.
+Data visualisation: The monitoring-appp application provides a user interface for viewing train data in real time.</description>
     </item>
+    
     <item>
       <title>Start services</title>
-      <link>http://localhost:1313/development/start-services/</link>
+      <link>https://rivieradev2024-crazytrain.netlify.app/development/start-services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/development/start-services/</guid>
-      <description>From Devspaces, click on the search bar on the top and choose &amp;ldquo;Run Task&amp;rdquo; from the drop-down list. ! Run Task menu&#xA;Select the start-all-apps task, this task will run all the previously modified applications in parallel.&#xA;Click on Continue without scanning the task outoput. Each application will start in a terminal. Terminals are accessible from the bottom right, Select &amp;rsquo;no&amp;rsquo; on the pop-up which indicates that a new process has started and that it is possible to make a port redirection.</description>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/development/start-services/</guid>
+      <description>From Devspaces, click on the search bar on the top and choose &amp;ldquo;Run Task&amp;rdquo; from the drop-down list. ! Run Task menu
+Select the start-all-apps task, this task will run all the previously modified applications in parallel.
+Click on Continue without scanning the task outoput. Each application will start in a terminal. Terminals are accessible from the bottom right, Select &amp;rsquo;no&amp;rsquo; on the pop-up which indicates that a new process has started and that it is possible to make a port redirection.</description>
     </item>
+    
     <item>
       <title>Test services</title>
-      <link>http://localhost:1313/development/test-services/</link>
+      <link>https://rivieradev2024-crazytrain.netlify.app/development/test-services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/development/test-services/</guid>
-      <description>We are going to simulate the operation of the train:&#xA;Open a new terminal Execute the command below to retrieve the URL of the monitoring console: oc get routes -o jsonpath=&amp;#39;{range .items[*]}{.metadata.annotations.che\.routing\.controller\.devfile\.io/endpoint-name}{&amp;#34;\t&amp;#34;}{.spec.host}{&amp;#34;\n&amp;#34;}{end}&amp;#39; | grep monitoring-svc | cut -f 2 Copy the URL, launch a new browser window in anonymous mode (in order to have an empty cache), insert the URL. Return to your terminal and run the following command: curl -X &amp;#39;POST&amp;#39; &amp;#39;http://localhost:8082/capture/test&amp;#39; -H &amp;#39;accept: */*&amp;#39; From your browser, you should be able to see the train simulation and the traffic sign detection in real time Well done!</description>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/development/test-services/</guid>
+      <description>We are going to simulate the operation of the train:
+Open a new terminal Execute the command below to retrieve the URL of the monitoring console: oc get routes -o jsonpath=&amp;#39;{range .items[*]}{.metadata.annotations.che\.routing\.controller\.devfile\.io/endpoint-name}{&amp;#34;\t&amp;#34;}{.spec.host}{&amp;#34;\n&amp;#34;}{end}&amp;#39; | grep monitoring-svc | cut -f 2 Copy the URL, launch a new browser window in anonymous mode (in order to have an empty cache), insert the URL. Return to your terminal and run the following command: curl -X &amp;#39;POST&amp;#39; &amp;#39;http://localhost:8082/capture/test&amp;#39; -H &amp;#39;accept: */*&amp;#39; From your browser, you should be able to see the train simulation and the traffic sign detection in real time.</description>
     </item>
+    
     <item>
       <title>Conclusion</title>
-      <link>http://localhost:1313/development/conclusion/</link>
+      <link>https://rivieradev2024-crazytrain.netlify.app/development/conclusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/development/conclusion/</guid>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/development/conclusion/</guid>
       <description>Congratulations, you&amp;rsquo;ve finished the development section! You should now have a better understanding of the Crazy Train application and its microservices-based architecture. The lab isn&amp;rsquo;t over yet! In the next section, we&amp;rsquo;re going to find out how to deploy our applications using gitops tools.</description>
     </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.111.3">
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Model Serving :: Documentation for Hugo Learn Theme</title>
+
+    
+    <link href="/css/nucleus.css?1720085683" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1720085683" rel="stylesheet">
+    <link href="/css/hybrid.css?1720085683" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1720085683" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1720085683" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720085683" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1720085683" rel="stylesheet">
+    <link href="/css/theme.css?1720085683" rel="stylesheet">
+    <link href="/css/tabs.css?1720085683" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1720085683" rel="stylesheet">
+    
+    <link href="/css/theme-red.css?1720085683" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1720085683"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/ai/model-serving/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="/images/logo.svg" />
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1720085683"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1720085683"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/rivieradev2024-crazytrain.netlify.app\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1720085683"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/overview/" title="Presentation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/overview/">
+          <b>1. </b>Presentation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/overview/goal/" title="Objectif" class="dd-item ">
+        <a href="/overview/goal/">
+        Objectif
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/overview/architecture/" title="Architecture" class="dd-item ">
+        <a href="/overview/architecture/">
+        Architecture
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/overview/organization/" title="Organization" class="dd-item ">
+        <a href="/overview/organization/">
+        Organization
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/overview/openshift/" title="OpenShift" class="dd-item ">
+        <a href="/overview/openshift/">
+        OpenShift
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ai/" title="Artificial Intelligence (1h)" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/ai/">
+          <b>3. </b>Artificial Intelligence (1h)
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ai/getting-connected/" title="Getting Connected" class="dd-item ">
+        <a href="/ai/getting-connected/">
+        Getting Connected
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ai/creating-project/" title="Connecting to your project and pipeline server" class="dd-item ">
+        <a href="/ai/creating-project/">
+        Connecting to your project and pipeline server
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ai/creating-workbench/" title="Creating a workbench" class="dd-item ">
+        <a href="/ai/creating-workbench/">
+        Creating a workbench
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ai/retrain-model/" title="Retrain the model" class="dd-item ">
+        <a href="/ai/retrain-model/">
+        Retrain the model
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/ai/model-serving/" title="Model Serving" class="dd-item active">
+        <a href="/ai/model-serving/">
+        Model Serving
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/development/" title="Développement (30min)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/development/">
+          <b>2. </b>Développement (30min)
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/development/introduction/" title="Introduction" class="dd-item ">
+        <a href="/development/introduction/">
+        Introduction
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/development/capture-app/" title="Capture and pre process image" class="dd-item ">
+        <a href="/development/capture-app/">
+        Capture and pre process image
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/development/intelligent-train/" title="Predict command" class="dd-item ">
+        <a href="/development/intelligent-train/">
+        Predict command
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/development/train-ceq-app/" title="Post process image" class="dd-item ">
+        <a href="/development/train-ceq-app/">
+        Post process image
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/development/monitoring-app/" title="Monitoring" class="dd-item ">
+        <a href="/development/monitoring-app/">
+        Monitoring
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/development/start-services/" title="Start services" class="dd-item ">
+        <a href="/development/start-services/">
+        Start services
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/development/test-services/" title="Test services" class="dd-item ">
+        <a href="/development/test-services/">
+        Test services
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/development/conclusion/" title="Conclusion" class="dd-item ">
+        <a href="/development/conclusion/">
+        Conclusion
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="https://rivieradev2024-crazytrain.netlify.app/ai/model-serving/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Welcome</a> > <a href='/ai/'>Artificial Intelligence (1h)</a> > Model Serving
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#fallback---you-can-skip-if-you-have-a-tranined-model">Fallback - You can skip if you have a tranined model</a></li>
+    <li><a href="#create-a-model-server">Create a Model Server</a></li>
+    <li><a href="#deploy-the-model">Deploy the Model</a></li>
+    <li><a href="#querying-the-served-model">Querying the served Model</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Model Serving
+            </h1>
+          
+
+        
+
+
+<p>At this point, you will deploy the model the just created into RHOAI model serving. If something went wrong with the model traning you can still do this section. Just follow the first &ldquo;Fallback&rdquo; section.</p>
+<p>Once again, in the following objects that you will create, <strong>please change &ldquo;userX&rdquo;</strong> with your real user ID.</p>
+<h2 id="fallback---you-can-skip-if-you-have-a-tranined-model">Fallback - You can skip if you have a tranined model</h2>
+<ul>
+<li>In your Data Science project, create a data connection that refers to the global model registry where we stored a pre tranined model. To do so, go to your data science project, scroll down and click &ldquo;Data Connections&rdquo; or click directly to the &ldquo;Data Connections&rdquo; tab on the top menu. Please refer to <a href="/ai/creating-project/#create-a-data-connection-for-the-pipeline-server">this section</a> if you have difficulties to create a data connection.</li>
+<li>Here is the info you need to enter:
+<ul>
+<li>Name: <code>Model Registry</code></li>
+<li>Access Key: <code>userX</code> - <strong>Change with your USER ID</strong></li>
+<li>Secret Key: <code>minio123</code></li>
+<li>Endpoint: <code>https://minio-s3-minio.apps.riviera-dev-2024.sandbox2830.opentlc.com</code></li>
+<li>Region: <code>none</code></li>
+<li>Bucket: <code>model-registry</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="create-a-model-server">Create a Model Server</h2>
+<p>In your project create a model server. You can click here to go to see all your deployed models:
+<img src="go-to-models.png" alt="go-to-models"></p>
+<ul>
+<li>
+<p>Click <strong>Add model server</strong>
+<img src="add-model-server.png" alt="add-model-server.png"></p>
+</li>
+<li>
+<p>Here is the info you need to enter:</p>
+</li>
+</ul>
+<ul>
+<li>Model server name: <code>Traffic Sign Detection</code></li>
+<li>Serving runtime: <code>OpenVINO Model Server</code></li>
+<li>Number of model server replicas to deploy: <code>1</code></li>
+<li>Model server size <code>Small</code></li>
+<li>Accelerator <code>None</code></li>
+<li>Model route <code>unchecked</code></li>
+<li>Token authorization <code>unchecked</code></li>
+</ul>
+<ul>
+<li>
+<p>The result should look like:
+<img src="add-model-server-config.png" alt="add-model-server-config.png"></p>
+</li>
+<li>
+<p>You can click on <strong>Add</strong> to create the model server.</p>
+</li>
+</ul>
+<h2 id="deploy-the-model">Deploy the Model</h2>
+<p>In your project, under <strong>Models and model servers</strong> select <strong>Deploy model</strong>.</p>
+<ul>
+<li>
+<p>Click <strong>Deploy model</strong>
+<img src="select-deploy-model.png" alt="select-deploy-model.png"></p>
+</li>
+<li>
+<p>Here is the information you will need to enter. <strong>If are on the fallback track, please change the &ldquo;Existing data connection - Name&rdquo; with the name of the data connection you created (Model Registry)</strong>:</p>
+<ul>
+<li>Model name: <code>new</code></li>
+<li>Model server: <code>Traffic Sign Detection</code></li>
+<li>Model server - Model framework: <code>onnx-1</code></li>
+<li>Existing data connection - Name: <code>pipelines</code> - <strong>FOR FALLBACK track: use <code>Model Registry</code></strong></li>
+<li>Existing data connection - Path: <code>models/model.onnx</code></li>
+</ul>
+</li>
+<li>
+<p>The result should look like:
+<img src="deploy-a-model.png" alt="deploy-a-model.png"></p>
+</li>
+<li>
+<p>Click on <strong>Deploy</strong>.</p>
+</li>
+<li>
+<p>If the model is successfully deployed you will see its status as green after few seconds.
+<img src="model-deployed-success.png" alt="model-deployed-success.png"></p>
+</li>
+</ul>
+<p>We will now confirm that the model is indeed working by querying it!</p>
+<h2 id="querying-the-served-model">Querying the served Model</h2>
+<p>Once the model is served, we can use it as an endpoint that can be queried. We&rsquo;ll send a request to it, and get a result. This applies to anyone working within our cluster. This could either be colleagues, or applications.</p>
+<ul>
+<li>
+<p>First, we need to get the URL of the model server.</p>
+</li>
+<li>
+<p>To do this, click on the <strong>Internal Service</strong> link under the <strong>Inference endpoint</strong> column.</p>
+</li>
+<li>
+<p>In the popup, you will see a few URLs for our model server.
+<img src="inference-url.png" alt="inference-url.png"></p>
+</li>
+<li>
+<p>Note or copy the <strong>RestUrl</strong>, which should be something like <code>http://modelmesh-serving.{user}:8008</code></p>
+</li>
+</ul>
+<p>We will now use this URL to query the model. Go back to the your running workbench i.e the jupyter notebooks environment.</p>
+<ul>
+<li>In your running workbench, navigate to the notebook <code>inference/inference.ipynb</code>.</li>
+<li>Execute the cells of the notebook, and ensure you understand what is happening.</li>
+</ul>
+<p>The first section queries the base model that has been deployed globally for everyone. The second section takes your RestUrl endpoint and queries the model that you have tranined and deploy. You should see that with the base model, only the speed limit traffic signs are recognized. After your model re-training you now have a model that can better detect lego traffic signs. Congratulations!</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/ai/retrain-model/" title="Retrain the model"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/development/" title="Développement (30min)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1720085683"></script>
+    <script src="/js/perfect-scrollbar.min.js?1720085683"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1720085683"></script>
+    <script src="/js/jquery.sticky.js?1720085683"></script>
+    <script src="/js/featherlight.min.js?1720085683"></script>
+    <script src="/js/highlight.pack.js?1720085683"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1720085683"></script>
+    <script src="/js/learn.js?1720085683"></script>
+    <script src="/js/hugo-learn.js?1720085683"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1720085683"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

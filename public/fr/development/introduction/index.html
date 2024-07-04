@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr" class="js csstransforms3d">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Hugo 0.111.3">
     <meta name="description" content="">
 
 
@@ -12,22 +12,22 @@
     <title>Introduction :: Documentation du thème Hugo Learn</title>
 
     
-    <link href="/css/nucleus.css?1720081586" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1720081586" rel="stylesheet">
-    <link href="/css/hybrid.css?1720081586" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1720081586" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1720081586" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720081586" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1720081586" rel="stylesheet">
-    <link href="/css/theme.css?1720081586" rel="stylesheet">
-    <link href="/css/tabs.css?1720081586" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1720081586" rel="stylesheet">
+    <link href="/css/nucleus.css?1720085683" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1720085683" rel="stylesheet">
+    <link href="/css/hybrid.css?1720085683" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1720085683" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1720085683" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720085683" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1720085683" rel="stylesheet">
+    <link href="/css/theme.css?1720085683" rel="stylesheet">
+    <link href="/css/tabs.css?1720085683" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1720085683" rel="stylesheet">
     
-    <link href="/css/theme-red.css?1720081586" rel="stylesheet">
+    <link href="/css/theme-red.css?1720085683" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1720081586"></script>
+    <script src="/js/jquery-3.3.1.min.js?1720085683"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1720081586"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1720081586"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1720085683"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1720085683"></script>
 <script type="text/javascript">
     
-        var baseurl = "http:\/\/localhost:1313\/\/fr";
+        var baseurl = "https:\/\/rivieradev2024-crazytrain.netlify.app\/\/fr";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1720081586"></script>
+<script type="text/javascript" src="/js/search.js?1720085683"></script>
 
     
   </div>
@@ -412,13 +412,13 @@
  
   
     
-    <li data-nav-id="/fr/ai/" title="RHACS (1h)" class="dd-item
+    <li data-nav-id="/fr/ai/" title="Intelligence Artificielle (1h)" class="dd-item
         
         
         
         ">
       <a href="/fr/ai/">
-          <b>3. </b>RHACS (1h)
+          <b>3. </b>Intelligence Artificielle (1h)
           
             <i class="fas fa-check read-icon"></i>
           
@@ -454,7 +454,7 @@
                   
                     
                     
-                      <option id="en" value="http://localhost:1313/development/introduction/">English</option>
+                      <option id="en" value="https://rivieradev2024-crazytrain.netlify.app/development/introduction/">English</option>
                     
                   
               
@@ -468,7 +468,7 @@
                   
                     
                     
-                      <option id="fr" value="http://localhost:1313/fr/development/introduction/" selected>Français</option>
+                      <option id="fr" value="https://rivieradev2024-crazytrain.netlify.app/fr/development/introduction/" selected>Français</option>
                     
                   
               
@@ -578,7 +578,7 @@
 <h2 id="1-introduction">1. Introduction</h2>
 <p>L&rsquo;objectif de cette partie est de vous familiariser avec les différents microservices de l&rsquo;application <strong>Crazy Train</strong>. Vous allez modifier le code de plusieurs projets Quarkus, Python et Nodejs, comprendre comment ils interagissent et tester l&rsquo;application dans son ensemble.</p>
 <p>L&rsquo;image ci-dessous décrit le fonctionnement global</p>
-<p><img alt="architecture" src="/images/dev-section/architecture.png"></p>
+<p><img src="/images/dev-section/architecture.png" alt="architecture"></p>
 <p>Voici une description de chaque service :</p>
 <p><strong>Capture and process image</strong> (projet capture-app): Il s&rsquo;agit d&rsquo;un service Quarkus qui permet de démarrer, de tester et d&rsquo;arrêter la capture vidéo. Il expose des points d&rsquo;extrémité RESTful qui peuvent être appelés par d&rsquo;autres services ou clients pour contrôler la capture vidéo.</p>
 <p><strong>Predict command</strong> (projet intelligent-train): Ce service est chargé d&rsquo;analyser les données de la vidéo capturée. Il utilise des techniques d&rsquo;apprentissage automatique pour interpréter les données vidéo et fournir des informations basées sur cette analyse.</p>
@@ -589,12 +589,12 @@
 <h2 id="2-votre-environnement-de-laboratoire">2. Votre environnement de laboratoire</h2>
 <p>Vous allez utiliser OpenShift Dev Spaces. OpenShift Dev Spaces utilise Kubernetes et les conteneurs pour fournir un environnement de développement cohérent, sécurisé et sans configuration, accessible depuis une fenêtre de navigateur.</p>
 <p>Utilisez le lien suivant pour générer votre environnement OpenShift Dev Spaces :</p>
-<p><a href="https://devspaces.apps.riviera-dev-2024.sandbox2830.opentlc.com/f?url=https://github.com/Demo-AI-Edge-Crazy-Train/rivieradev-app"> <img alt="Contribuer" src="https://www.eclipse.org/che/contribute.svg"></a></p>
+<p><a href="https://devspaces.apps.riviera-dev-2024.sandbox2830.opentlc.com/f?url=https://github.com/Demo-AI-Edge-Crazy-Train/rivieradev-app"> <img src="https://www.eclipse.org/che/contribute.svg" alt="Contribuer"></a></p>
 <p>Connectez-vous avec vos identifiants OpenShift (userX/mot-de-passe). Si c&rsquo;est la première fois que vous accédez à Dev Spaces, vous devez autoriser Dev Spaces à accéder à votre compte. Dans la fenêtre Autoriser l&rsquo;accès, cliquez sur Autoriser les permissions sélectionnées.</p>
 <p>Cela ouvre l&rsquo;espace de travail, qui vous semblera assez familier si vous avez l&rsquo;habitude de travailler avec VS Code. Avant d&rsquo;ouvrir l&rsquo;espace de travail, une fenêtre contextuelle peut apparaître pour vous demander si vous avez confiance dans le contenu de l&rsquo;espace de travail. Cliquez sur Oui, je fais confiance aux auteurs pour continuer.</p>
-<p><img alt="trust-authors" src="/images/dev-section/trust-authors.png"></p>
+<p><img src="/images/dev-section/trust-authors.png" alt="trust-authors"></p>
 <p>L&rsquo;espace de travail contient toutes les ressources que vous allez utiliser pendant l&rsquo;atelier. Dans l&rsquo;explorateur de projets situé à gauche de l&rsquo;espace de travail, naviguez jusqu&rsquo;au dossier rivieradev-app et regardez les différents projets.</p>
-<p><img alt="espace de travail" src="/images/dev-section/workspace.png"></p>
+<p><img src="/images/dev-section/workspace.png" alt="espace de travail"></p>
 
 
 <footer class="footline">
@@ -897,19 +897,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1720081586"></script>
-    <script src="/js/perfect-scrollbar.min.js?1720081586"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1720081586"></script>
-    <script src="/js/jquery.sticky.js?1720081586"></script>
-    <script src="/js/featherlight.min.js?1720081586"></script>
-    <script src="/js/highlight.pack.js?1720081586"></script>
+    <script src="/js/clipboard.min.js?1720085683"></script>
+    <script src="/js/perfect-scrollbar.min.js?1720085683"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1720085683"></script>
+    <script src="/js/jquery.sticky.js?1720085683"></script>
+    <script src="/js/featherlight.min.js?1720085683"></script>
+    <script src="/js/highlight.pack.js?1720085683"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1720081586"></script>
-    <script src="/js/learn.js?1720081586"></script>
-    <script src="/js/hugo-learn.js?1720081586"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1720085683"></script>
+    <script src="/js/learn.js?1720085683"></script>
+    <script src="/js/hugo-learn.js?1720085683"></script>
     
         
-            <script src="/mermaid/mermaid.js?1720081586"></script>
+            <script src="/mermaid/mermaid.js?1720085683"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

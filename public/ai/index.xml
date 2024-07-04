@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artificial Intelligence (1h) on Documentation for Hugo Learn Theme</title>
+    <link>https://rivieradev2024-crazytrain.netlify.app/ai/</link>
+    <description>Recent content in Artificial Intelligence (1h) on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://rivieradev2024-crazytrain.netlify.app/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Connected</title>
+      <link>https://rivieradev2024-crazytrain.netlify.app/ai/getting-connected/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/ai/getting-connected/</guid>
+      <description>For the purposes of this training session, we have provisioned a single OpenShift cluster, with OpenShift AI deployed on it.
+Each person attending this lab will have a unique user account in which to do their work.
+Environment information In a new window or tab, open the following URL and log in:
+The Red Hat OpenShift AI Dashboard URL for our shared environment: https://rhods-dashboard-redhat-ods-applications.apps.riviera-dev-2024.sandbox2830.opentlc.com Enter your credentials (distributed on a paper during the lab) The result should look like: Because the password is so simple, your browser might display a scary message such as: It is safe here to ignore this message when it pops up.</description>
+    </item>
+    
+    <item>
+      <title>Connecting to your project and pipeline server</title>
+      <link>https://rivieradev2024-crazytrain.netlify.app/ai/creating-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/ai/creating-project/</guid>
+      <description>As a preliminary step, each of you is going to
+Connect to a Data Science project
+this will help keep your things together Create a Data Connection
+we need that for the pipeline server to store its artifacts Deploy a Data Science Pipeline Server
+we will need one, and it&amp;rsquo;s better to create it from the start Launch a Workbench
+we will use it to review content and notebooks Clone the git repo into your Workbench</description>
+    </item>
+    
+    <item>
+      <title>Creating a workbench</title>
+      <link>https://rivieradev2024-crazytrain.netlify.app/ai/creating-workbench/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/ai/creating-workbench/</guid>
+      <description>Launch a Workbench Once the Data Connection and Pipeline Server are fully created
+Create a workbench Make sure it has the following characteristics:
+Choose a name for it, like: My Workbench Image Selection: CUSTOM Crazy train lab Container Size: Small Keep the default cluster storage settings On the bottom, tick &amp;ldquo;Use a data connection&amp;rdquo; Scroll down to &amp;ldquo;Use existing data connection&amp;rdquo; Select from the list the &amp;ldquo;pipelines&amp;rdquo; data connection you previously created.</description>
+    </item>
+    
+    <item>
+      <title>Retrain the model</title>
+      <link>https://rivieradev2024-crazytrain.netlify.app/ai/retrain-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/ai/retrain-model/</guid>
+      <description>In this section you will navigate through the python code used to retrain the model. You will then adapt a data science pipeline and run it on Openshift. You will finally visualize your pipeline in Openshift AI dashboard and retreive it&amp;rsquo;s output in different formats.
+WARNING: You will run only the first steps of the model training inside the Jupyter Notebooks. The full traning will happen on Openshift side in order to limit the RAM needed for each participant.</description>
+    </item>
+    
+    <item>
+      <title>Model Serving</title>
+      <link>https://rivieradev2024-crazytrain.netlify.app/ai/model-serving/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rivieradev2024-crazytrain.netlify.app/ai/model-serving/</guid>
+      <description>At this point, you will deploy the model the just created into RHOAI model serving. If something went wrong with the model traning you can still do this section. Just follow the first &amp;ldquo;Fallback&amp;rdquo; section.
+Once again, in the following objects that you will create, please change &amp;ldquo;userX&amp;rdquo; with your real user ID.
+Fallback - You can skip if you have a tranined model In your Data Science project, create a data connection that refers to the global model registry where we stored a pre tranined model.</description>
+    </item>
+    
+  </channel>
+</rss>
