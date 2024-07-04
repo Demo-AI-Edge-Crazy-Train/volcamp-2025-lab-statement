@@ -22,7 +22,8 @@ oc get routes -o jsonpath='{range .items[*]}{.metadata.annotations.che\.routing\
 curl -X 'POST' 'http://localhost:8082/capture/test' -H 'accept: */*'
 ```
 
-5. From your browser, you should be able to see the train simulation and the traffic sign detection in real time
+
+5. From your browser, you should be able to see the train simulation and the traffic sign detection in real time. If not, refresh your browser.
 
 ![streaming video](/images/dev-section/streaming-video.png)
 
