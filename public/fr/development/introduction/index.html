@@ -12,22 +12,22 @@
     <title>Introduction :: Documentation du thème Hugo Learn</title>
 
     
-    <link href="/css/nucleus.css?1720016278" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1720016278" rel="stylesheet">
-    <link href="/css/hybrid.css?1720016278" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1720016278" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1720016278" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720016278" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1720016278" rel="stylesheet">
-    <link href="/css/theme.css?1720016278" rel="stylesheet">
-    <link href="/css/tabs.css?1720016278" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1720016278" rel="stylesheet">
+    <link href="/css/nucleus.css?1720081586" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1720081586" rel="stylesheet">
+    <link href="/css/hybrid.css?1720081586" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1720081586" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1720081586" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720081586" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1720081586" rel="stylesheet">
+    <link href="/css/theme.css?1720081586" rel="stylesheet">
+    <link href="/css/tabs.css?1720081586" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1720081586" rel="stylesheet">
     
-    <link href="/css/theme-red.css?1720016278" rel="stylesheet">
+    <link href="/css/theme-red.css?1720081586" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1720016278"></script>
+    <script src="/js/jquery-3.3.1.min.js?1720081586"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1720016278"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1720016278"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1720081586"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1720081586"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/\/fr";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1720016278"></script>
+<script type="text/javascript" src="/js/search.js?1720081586"></script>
 
     
   </div>
@@ -258,9 +258,9 @@
  
   
     
-      <li data-nav-id="/fr/development/capture-app/" title="Service Capture images" class="dd-item ">
+      <li data-nav-id="/fr/development/capture-app/" title="Capture and pre process image" class="dd-item ">
         <a href="/fr/development/capture-app/">
-        Service Capture images
+        Capture and pre process image
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -279,9 +279,9 @@
  
   
     
-      <li data-nav-id="/fr/development/intelligent-train/" title="Service intelligent-train" class="dd-item ">
+      <li data-nav-id="/fr/development/intelligent-train/" title="Predict command" class="dd-item ">
         <a href="/fr/development/intelligent-train/">
-        Service intelligent-train
+        Predict command
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -300,9 +300,9 @@
  
   
     
-      <li data-nav-id="/fr/development/train-ceq-app/" title="Service train-ceq-app" class="dd-item ">
+      <li data-nav-id="/fr/development/train-ceq-app/" title="Post process image" class="dd-item ">
         <a href="/fr/development/train-ceq-app/">
-        Service train-ceq-app
+        Post process image
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -321,30 +321,9 @@
  
   
     
-      <li data-nav-id="/fr/development/train-controller/" title="Service train-controller" class="dd-item ">
-        <a href="/fr/development/train-controller/">
-        Service train-controller
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/fr/development/monitoring-app/" title="Service monitoring-appp" class="dd-item ">
+      <li data-nav-id="/fr/development/monitoring-app/" title="Monitoring" class="dd-item ">
         <a href="/fr/development/monitoring-app/">
-        Service monitoring-appp
+        Monitoring
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -568,7 +547,12 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-introduction">1. Introduction</a></li>
+    <li><a href="#2-votre-environnement-de-laboratoire">2. Votre environnement de laboratoire</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -591,21 +575,18 @@
         
 
 
-<ol>
-<li>Introduction</li>
-</ol>
-<p>L&rsquo;application <strong>Crazy Train</strong> est composée de plusieurs microservices. L&rsquo;image ci-dessous décrit le fonctionnement global</p>
+<h2 id="1-introduction">1. Introduction</h2>
+<p>L&rsquo;objectif de cette partie est de vous familiariser avec les différents microservices de l&rsquo;application <strong>Crazy Train</strong>. Vous allez modifier le code de plusieurs projets Quarkus, Python et Nodejs, comprendre comment ils interagissent et tester l&rsquo;application dans son ensemble.</p>
+<p>L&rsquo;image ci-dessous décrit le fonctionnement global</p>
 <p><img alt="architecture" src="/images/dev-section/architecture.png"></p>
 <p>Voici une description de chaque service :</p>
-<p><strong>train-capture-image-app</strong>: Il s&rsquo;agit d&rsquo;un service Quarkus qui permet de démarrer, de tester et d&rsquo;arrêter la capture vidéo. Il expose des points d&rsquo;extrémité RESTful qui peuvent être appelés par d&rsquo;autres services ou clients pour contrôler la capture vidéo.</p>
-<p><strong>intelligent-train</strong>: Ce service est chargé d&rsquo;analyser les données de la vidéo capturée. Il utilise des techniques d&rsquo;apprentissage automatique pour interpréter les données vidéo et fournir des informations basées sur cette analyse.</p>
-<p><strong>train-ceq-app</strong>: il s&rsquo;agit d&rsquo;un service de gestion des événements qui reçoit des informations du train intelligent et d&rsquo;autres services, et qui déclenche les actions appropriées. Par exemple, si le train intelligent détecte un obstacle sur la voie, le service déclenche un événement pour arrêter le train.</p>
-<p><strong>contrôleur de train</strong>: Comme son nom l&rsquo;indique, ce service est probablement responsable du contrôle du train lui-même. Il reçoit des commandes de services tels que train-ceq et effectue des actions sur le train, telles que le démarrage, l&rsquo;arrêt, la modification de la vitesse, etc.</p>
-<p><strong>application de surveillance du train</strong>: Ce service est responsable de la surveillance de l&rsquo;ensemble du système. Il recueille les données de tous les autres services, telles que les événements déclenchés, les actions effectuées, l&rsquo;état du train, etc. et fournit une vue d&rsquo;ensemble de l&rsquo;état du système. Il pourrait également fournir des alertes ou des notifications en cas de détection de problèmes.</p>
+<p><strong>Capture and process image</strong> (projet capture-app): Il s&rsquo;agit d&rsquo;un service Quarkus qui permet de démarrer, de tester et d&rsquo;arrêter la capture vidéo. Il expose des points d&rsquo;extrémité RESTful qui peuvent être appelés par d&rsquo;autres services ou clients pour contrôler la capture vidéo.</p>
+<p><strong>Predict command</strong> (projet intelligent-train): Ce service est chargé d&rsquo;analyser les données de la vidéo capturée. Il utilise des techniques d&rsquo;apprentissage automatique pour interpréter les données vidéo et fournir des informations basées sur cette analyse.</p>
+<p><strong>Post process image</strong> (projet train-ceq-app): il s&rsquo;agit d&rsquo;un service de gestion des événements qui reçoit des informations du train intelligent et d&rsquo;autres services, et qui déclenche les actions appropriées. Par exemple, si le train intelligent détecte un obstacle sur la voie, le service déclenche un événement pour arrêter le train.</p>
+<p><strong>Control Train</strong> (projet train-controler): Comme son nom l&rsquo;indique, ce service est responsable du contrôle du train lui-même. Il reçoit des commandes de services tels que train-ceq et effectue des actions sur le train, telles que le démarrage, l&rsquo;arrêt, la modification de la vitesse, etc.</p>
+<p><strong>Monitoring</strong> (projet monitoring-app): Ce service est responsable de la surveillance de l&rsquo;ensemble du système. Il recueille les données de tous les autres services, telles que les événements déclenchés, les actions effectuées, l&rsquo;état du train, etc. et fournit une vue d&rsquo;ensemble de l&rsquo;état du système. Il pourrait également fournir des alertes ou des notifications en cas de détection de problèmes.</p>
 <p>Chaque service est indépendant et communique avec les autres de manière asynchrone (MQTT/Kafka). Cela permet une grande flexibilité et une grande évolutivité, car chaque service peut être développé, déployé et mis à l&rsquo;échelle indépendamment des autres.</p>
-<ol start="2">
-<li>Votre environnement de laboratoire</li>
-</ol>
+<h2 id="2-votre-environnement-de-laboratoire">2. Votre environnement de laboratoire</h2>
 <p>Vous allez utiliser OpenShift Dev Spaces. OpenShift Dev Spaces utilise Kubernetes et les conteneurs pour fournir un environnement de développement cohérent, sécurisé et sans configuration, accessible depuis une fenêtre de navigateur.</p>
 <p>Utilisez le lien suivant pour générer votre environnement OpenShift Dev Spaces :</p>
 <p><a href="https://devspaces.apps.riviera-dev-2024.sandbox2830.opentlc.com/f?url=https://github.com/Demo-AI-Edge-Crazy-Train/rivieradev-app"> <img alt="Contribuer" src="https://www.eclipse.org/che/contribute.svg"></a></p>
@@ -613,7 +594,7 @@
 <p>Cela ouvre l&rsquo;espace de travail, qui vous semblera assez familier si vous avez l&rsquo;habitude de travailler avec VS Code. Avant d&rsquo;ouvrir l&rsquo;espace de travail, une fenêtre contextuelle peut apparaître pour vous demander si vous avez confiance dans le contenu de l&rsquo;espace de travail. Cliquez sur Oui, je fais confiance aux auteurs pour continuer.</p>
 <p><img alt="trust-authors" src="/images/dev-section/trust-authors.png"></p>
 <p>L&rsquo;espace de travail contient toutes les ressources que vous allez utiliser pendant l&rsquo;atelier. Dans l&rsquo;explorateur de projets situé à gauche de l&rsquo;espace de travail, naviguez jusqu&rsquo;au dossier rivieradev-app et regardez les différents projets.</p>
-<p>![espace de travail](/images/dev-section/espace de travail.png)</p>
+<p><img alt="espace de travail" src="/images/dev-section/workspace.png"></p>
 
 
 <footer class="footline">
@@ -875,22 +856,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -922,7 +887,7 @@
 			<a class="nav nav-prev" href="/fr/development/" title="Développement (30min)"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/fr/development/capture-app/" title="Service Capture images" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/fr/development/capture-app/" title="Capture and pre process image" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -932,19 +897,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1720016278"></script>
-    <script src="/js/perfect-scrollbar.min.js?1720016278"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1720016278"></script>
-    <script src="/js/jquery.sticky.js?1720016278"></script>
-    <script src="/js/featherlight.min.js?1720016278"></script>
-    <script src="/js/highlight.pack.js?1720016278"></script>
+    <script src="/js/clipboard.min.js?1720081586"></script>
+    <script src="/js/perfect-scrollbar.min.js?1720081586"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1720081586"></script>
+    <script src="/js/jquery.sticky.js?1720081586"></script>
+    <script src="/js/featherlight.min.js?1720081586"></script>
+    <script src="/js/highlight.pack.js?1720081586"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1720016278"></script>
-    <script src="/js/learn.js?1720016278"></script>
-    <script src="/js/hugo-learn.js?1720016278"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1720081586"></script>
+    <script src="/js/learn.js?1720081586"></script>
+    <script src="/js/hugo-learn.js?1720081586"></script>
     
         
-            <script src="/mermaid/mermaid.js?1720016278"></script>
+            <script src="/mermaid/mermaid.js?1720081586"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

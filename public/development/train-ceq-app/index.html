@@ -9,25 +9,25 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Service train-ceq-app :: Documentation for Hugo Learn Theme</title>
+    <title>Post process image :: Documentation for Hugo Learn Theme</title>
 
     
-    <link href="/css/nucleus.css?1720016078" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1720016078" rel="stylesheet">
-    <link href="/css/hybrid.css?1720016078" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1720016078" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1720016078" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720016078" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1720016078" rel="stylesheet">
-    <link href="/css/theme.css?1720016078" rel="stylesheet">
-    <link href="/css/tabs.css?1720016078" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1720016078" rel="stylesheet">
+    <link href="/css/nucleus.css?1720081586" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1720081586" rel="stylesheet">
+    <link href="/css/hybrid.css?1720081586" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1720081586" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1720081586" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720081586" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1720081586" rel="stylesheet">
+    <link href="/css/theme.css?1720081586" rel="stylesheet">
+    <link href="/css/tabs.css?1720081586" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1720081586" rel="stylesheet">
     
-    <link href="/css/theme-red.css?1720016078" rel="stylesheet">
+    <link href="/css/theme-red.css?1720081586" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1720016078"></script>
+    <script src="/js/jquery-3.3.1.min.js?1720081586"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1720016078"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1720016078"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1720081586"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1720081586"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1720016078"></script>
+<script type="text/javascript" src="/js/search.js?1720081586"></script>
 
     
   </div>
@@ -284,9 +284,9 @@
  
   
     
-      <li data-nav-id="/development/capture-app/" title="Service Capture images" class="dd-item ">
+      <li data-nav-id="/development/capture-app/" title="Capture and pre process image" class="dd-item ">
         <a href="/development/capture-app/">
-        Service Capture images
+        Capture and pre process image
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -305,9 +305,9 @@
  
   
     
-      <li data-nav-id="/development/intelligent-train/" title="Service intelligent-train" class="dd-item ">
+      <li data-nav-id="/development/intelligent-train/" title="Predict command" class="dd-item ">
         <a href="/development/intelligent-train/">
-        Service intelligent-train
+        Predict command
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -326,9 +326,9 @@
  
   
     
-      <li data-nav-id="/development/train-ceq-app/" title="Service train-ceq-app" class="dd-item active">
+      <li data-nav-id="/development/train-ceq-app/" title="Post process image" class="dd-item active">
         <a href="/development/train-ceq-app/">
-        Service train-ceq-app
+        Post process image
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -347,30 +347,9 @@
  
   
     
-      <li data-nav-id="/development/train-controller/" title="Service train-controller" class="dd-item ">
-        <a href="/development/train-controller/">
-        Service train-controller
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/development/monitoring-app/" title="Service monitoring-app" class="dd-item ">
+      <li data-nav-id="/development/monitoring-app/" title="Monitoring" class="dd-item ">
         <a href="/development/monitoring-app/">
-        Service monitoring-app
+        Monitoring
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -555,7 +534,7 @@
             
           
           
-            <a href='/'>Welcome</a> > <a href='/development/'>Développement (30min)</a> > Service train-ceq-app
+            <a href='/'>Welcome</a> > <a href='/development/'>Développement (30min)</a> > Post process image
           
         
           
@@ -584,14 +563,14 @@
           
             <h1>
               
-              Service train-ceq-app
+              Post process image
             </h1>
           
 
         
 
 
-<p>The <strong>train-ceq-app</strong> is an application based on Apache Camel, a Java library for implementing application integrations using Enterprise Integration Patterns (EIP).
+<p><strong>train-ceq-app</strong> is an application based on Apache Camel, a Java library for implementing application integrations using Enterprise Integration Patterns (EIP).
 This application is mainly composed of Camel routes defined in the <strong>PostProcessingRoute.xml</strong> file. These routes define how messages are consumed, transformed and forwarded to other services or destinations.</p>
 <p>The <strong>postproscessing-route</strong> performs the following operations:</p>
 <ol>
@@ -627,13 +606,13 @@ This application is mainly composed of Camel routes defined in the <strong>PostP
 <p>In a camel route the data is continuously transformed by various actions. Sometimes it is necessary to perform a check on the original message and not on the transformed message. It is good practice to save the original message so that it can be retrieved later. With Camel this is done via the properties of the message header.</p>
 <p>In the <strong>train-ceq-app</strong> project, you are going to modify the <strong>PostProcessingRoute.xml</strong> file to save the initial message so that you can retrieve it later.</p>
 <ol>
-<li>Open the file <code>src/main/resources/PostProcessingRoute.xml</code>.</li>
-<li>Add the following instruction just after the line <code>&lt;log loggingLevel=&quot;DEBUG&quot; message=&quot;${body}&quot;/&gt;</code> :</li>
+<li>Open the file <code>src/main/resources/camel/PostProcessingRoute.xml</code>.</li>
+<li>Add the following instruction at the line <code>&lt;!-- add setHeader here --&gt;</code> :</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;setHeader</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;origin&#34;</span><span style="color:#f92672">&gt;&lt;simple&gt;</span>${body}<span style="color:#f92672">&lt;/simple&gt;&lt;/setHeader&gt;</span>
 </span></span></code></pre></div><p>This instruction saves the initial message in the message header under the name &ldquo;origin&rdquo;.</p>
 <ol start="3">
-<li>Next, add the following statement just after the line <code>&lt;toD uri=&quot;paho:{{command.mqtt.destination.topicName}}?brokerUrl={{train.mqtt.brokerUrl}}&quot;/&gt;</code> :</li>
+<li>Next, add the following statement at the line <code>&lt;!-- add setBody here --&gt;</code> :</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;setBody&gt;&lt;simple&gt;</span>${header.origin}<span style="color:#f92672">&lt;/simple&gt;&lt;/setBody&gt;</span>
 </span></span></code></pre></div><p>This instruction retrieves the original message saved in the header and puts it back in the message body.</p>
@@ -679,7 +658,7 @@ This application is mainly composed of Camel routes defined in the <strong>PostP
 <ul>
 <li>Run the command below</li>
 </ul>
-<pre tabindex="0"><code>./mvnw clean package
+<pre tabindex="0"><code>mvn clean package
 </code></pre>
 
 <footer class="footline">
@@ -960,22 +939,6 @@ This application is mainly composed of Camel routes defined in the <strong>PostP
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -988,10 +951,10 @@ This application is mainly composed of Camel routes defined in the <strong>PostP
 	 
 	 
 		
-			<a class="nav nav-prev" href="/development/intelligent-train/" title="Service intelligent-train"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/development/intelligent-train/" title="Predict command"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/development/train-controller/" title="Service train-controller" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/development/monitoring-app/" title="Monitoring" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1001,19 +964,19 @@ This application is mainly composed of Camel routes defined in the <strong>PostP
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1720016078"></script>
-    <script src="/js/perfect-scrollbar.min.js?1720016078"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1720016078"></script>
-    <script src="/js/jquery.sticky.js?1720016078"></script>
-    <script src="/js/featherlight.min.js?1720016078"></script>
-    <script src="/js/highlight.pack.js?1720016078"></script>
+    <script src="/js/clipboard.min.js?1720081586"></script>
+    <script src="/js/perfect-scrollbar.min.js?1720081586"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1720081586"></script>
+    <script src="/js/jquery.sticky.js?1720081586"></script>
+    <script src="/js/featherlight.min.js?1720081586"></script>
+    <script src="/js/highlight.pack.js?1720081586"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1720016078"></script>
-    <script src="/js/learn.js?1720016078"></script>
-    <script src="/js/hugo-learn.js?1720016078"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1720081586"></script>
+    <script src="/js/learn.js?1720081586"></script>
+    <script src="/js/hugo-learn.js?1720081586"></script>
     
         
-            <script src="/mermaid/mermaid.js?1720016078"></script>
+            <script src="/mermaid/mermaid.js?1720081586"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

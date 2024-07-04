@@ -62,6 +62,18 @@
                 href="http://localhost:1313/ai/"
                 />
   </url><url>
+    <loc>http://localhost:1313/development/capture-app/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/development/capture-app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/development/capture-app/"
+                />
+  </url><url>
     <loc>http://localhost:1313/development/</loc>
     <xhtml:link
                 rel="alternate"
@@ -84,18 +96,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/overview/organization/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/development/capture-app/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/development/capture-app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/development/capture-app/"
                 />
   </url><url>
     <loc>http://localhost:1313/overview/openshift/</loc>
@@ -132,18 +132,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/development/train-ceq-app/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/development/train-controller/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/development/train-controller/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/development/train-controller/"
                 />
   </url><url>
     <loc>http://localhost:1313/development/monitoring-app/</loc>

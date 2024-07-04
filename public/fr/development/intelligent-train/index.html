@@ -9,25 +9,25 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Service intelligent-train :: Documentation du thème Hugo Learn</title>
+    <title>Predict command :: Documentation du thème Hugo Learn</title>
 
     
-    <link href="/css/nucleus.css?1720016078" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1720016078" rel="stylesheet">
-    <link href="/css/hybrid.css?1720016078" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1720016078" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1720016078" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720016078" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1720016078" rel="stylesheet">
-    <link href="/css/theme.css?1720016078" rel="stylesheet">
-    <link href="/css/tabs.css?1720016078" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1720016078" rel="stylesheet">
+    <link href="/css/nucleus.css?1720081586" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1720081586" rel="stylesheet">
+    <link href="/css/hybrid.css?1720081586" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1720081586" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1720081586" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720081586" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1720081586" rel="stylesheet">
+    <link href="/css/theme.css?1720081586" rel="stylesheet">
+    <link href="/css/tabs.css?1720081586" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1720081586" rel="stylesheet">
     
-    <link href="/css/theme-red.css?1720016078" rel="stylesheet">
+    <link href="/css/theme-red.css?1720081586" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1720016078"></script>
+    <script src="/js/jquery-3.3.1.min.js?1720081586"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1720016078"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1720016078"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1720081586"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1720081586"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/\/fr";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1720016078"></script>
+<script type="text/javascript" src="/js/search.js?1720081586"></script>
 
     
   </div>
@@ -258,9 +258,9 @@
  
   
     
-      <li data-nav-id="/fr/development/capture-app/" title="Service Capture images" class="dd-item ">
+      <li data-nav-id="/fr/development/capture-app/" title="Capture and pre process image" class="dd-item ">
         <a href="/fr/development/capture-app/">
-        Service Capture images
+        Capture and pre process image
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -279,9 +279,9 @@
  
   
     
-      <li data-nav-id="/fr/development/intelligent-train/" title="Service intelligent-train" class="dd-item active">
+      <li data-nav-id="/fr/development/intelligent-train/" title="Predict command" class="dd-item active">
         <a href="/fr/development/intelligent-train/">
-        Service intelligent-train
+        Predict command
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -300,9 +300,9 @@
  
   
     
-      <li data-nav-id="/fr/development/train-ceq-app/" title="Service train-ceq-app" class="dd-item ">
+      <li data-nav-id="/fr/development/train-ceq-app/" title="Post process image" class="dd-item ">
         <a href="/fr/development/train-ceq-app/">
-        Service train-ceq-app
+        Post process image
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -321,30 +321,9 @@
  
   
     
-      <li data-nav-id="/fr/development/train-controller/" title="Service train-controller" class="dd-item ">
-        <a href="/fr/development/train-controller/">
-        Service train-controller
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/fr/development/monitoring-app/" title="Service monitoring-appp" class="dd-item ">
+      <li data-nav-id="/fr/development/monitoring-app/" title="Monitoring" class="dd-item ">
         <a href="/fr/development/monitoring-app/">
-        Service monitoring-appp
+        Monitoring
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -555,7 +534,7 @@
             
           
           
-            <a href='/fr/'>Welcome</a> > <a href='/fr/development/'>Développement (30min)</a> > Service intelligent-train
+            <a href='/fr/'>Welcome</a> > <a href='/fr/development/'>Développement (30min)</a> > Predict command
           
         
           
@@ -584,23 +563,26 @@
           
             <h1>
               
-              Service intelligent-train
+              Predict command
             </h1>
           
 
         
 
 
-<p>Dans cette section nous allons importer le nouveau model entraîné dans la première section.</p>
+<p>Dans cette section nous allons importer le nouveau model entraîné dans l&rsquo;activité précédente du lab.</p>
 <ul>
 <li>Ouvrez un nouveau terminal</li>
 </ul>
 <p><img alt="terminal" src="/images/dev-section/new-terminal-bash.png"></p>
 <ul>
-<li>Lancez les commandes ci-dessous :</li>
+<li>Lancez les commandes ci-dessous, remplacez user_id par le nom d&rsquo;utiliseur qui vous a été assigné :</li>
 </ul>
 <pre tabindex="0"><code>cd intelligent-train
-curl -o models/model.onnx http://minio.minio:9000/&lt;remplacez user_id par le nom d&#39;utiliseur qui vous a été assigné&gt;/models/model.onnx
+curl -o models/model.onnx http://minio.minio:9000/&lt;user_id&gt;/models/model.onnx
+</code></pre><p>Si vous n&rsquo;avez pas fini l&rsquo;entraînement du modèle, utilisez ces commandes :</p>
+<pre tabindex="0"><code>cd intelligent-train
+curl -o models/model.onnx http://minio.minio:9000/models/model.onnx
 </code></pre>
 
 <footer class="footline">
@@ -865,22 +847,6 @@ curl -o models/model.onnx http://minio.minio:9000/&lt;remplacez user_id par le n
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -909,10 +875,10 @@ curl -o models/model.onnx http://minio.minio:9000/&lt;remplacez user_id par le n
 	 
 	 
 		
-			<a class="nav nav-prev" href="/fr/development/capture-app/" title="Service Capture images"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/fr/development/capture-app/" title="Capture and pre process image"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/fr/development/train-ceq-app/" title="Service train-ceq-app" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/fr/development/train-ceq-app/" title="Post process image" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -922,19 +888,19 @@ curl -o models/model.onnx http://minio.minio:9000/&lt;remplacez user_id par le n
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1720016078"></script>
-    <script src="/js/perfect-scrollbar.min.js?1720016078"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1720016078"></script>
-    <script src="/js/jquery.sticky.js?1720016078"></script>
-    <script src="/js/featherlight.min.js?1720016078"></script>
-    <script src="/js/highlight.pack.js?1720016078"></script>
+    <script src="/js/clipboard.min.js?1720081586"></script>
+    <script src="/js/perfect-scrollbar.min.js?1720081586"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1720081586"></script>
+    <script src="/js/jquery.sticky.js?1720081586"></script>
+    <script src="/js/featherlight.min.js?1720081586"></script>
+    <script src="/js/highlight.pack.js?1720081586"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1720016078"></script>
-    <script src="/js/learn.js?1720016078"></script>
-    <script src="/js/hugo-learn.js?1720016078"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1720081586"></script>
+    <script src="/js/learn.js?1720081586"></script>
+    <script src="/js/hugo-learn.js?1720081586"></script>
     
         
-            <script src="/mermaid/mermaid.js?1720016078"></script>
+            <script src="/mermaid/mermaid.js?1720081586"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
