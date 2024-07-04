@@ -22,5 +22,5 @@ Si vous n'avez pas fini l'entraînement du modèle, utilisez ces commandes :
 
 ```
 cd intelligent-train
-curl -o models/model.onnx http://minio.minio:9000/models/model.onnx
+curl -o models/model.onnx http://minio.minio:9000/model-registry/models/model.onnx
 ```

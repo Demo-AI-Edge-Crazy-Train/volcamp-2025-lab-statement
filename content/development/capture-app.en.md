@@ -11,7 +11,7 @@ The main functionality of the **capture-app** microservice is to control video c
 
 In the **capture-app** project, you will add two new properties to the **application.properties** file and modify the **ScheduledCapture.java** class to load these properties.
 
-1. **Modify the configuration file**: Open the configuration file for your application. This is the file named `src/main/application.properties`. Add the following properties:
+1. **Modify the configuration file**: Open the configuration file for your application. This is the file named `src/main/resources/application.properties`. Add the following properties:
 2. Add the two new properties:
 
 ```properties
@@ -73,17 +73,14 @@ import io.vertx.mutiny.core.Vertx;
 
 @ApplicationScoped
 @Path("/capture")
-public class ScheduledCapture {
-    private VideoCapture camera; 
+public class ScheduledCapture{
+    private  VideoCapture camera; 
 
-    @Inject
-    ImageCaptureService imageCaptureService;
 
-    @Inject
-    ImageService imageService;
+    /* add mock config property here */
 
-    @Inject
-    Vertx vertx;
+    /* add videoPath config property here */
+
     // interval in milliseconds
     @ConfigProperty(name = "capture.interval")
     int interval;
@@ -106,24 +103,38 @@ public class ScheduledCapture {
     @ConfigProperty(name = "capture.videoDeviceIndex")
     int videoDeviceIndex;
 
-    @ConfigProperty(name = "capture.mock")
-    boolean mock;
-
-    @ConfigProperty(name = "capture.videoPath")
-    String videoPath;
-
     @ConfigProperty(name = "capture.videoPeriodicCapture")
     int videoPeriodicCapture;
+
+    
+    @Inject
+    ImageCaptureService imageCaptureService;
+
+    @Inject
+    ImageService imageService;
+
+    @Inject
+    Vertx vertx;
+    
 
     MqttPublisher mqttPublisher = null;
 
     private Long timerId;
 
     private volatile boolean stopRequested = false;
+
     private Thread testThread;
 
     private static final Logger LOGGER = Logger.getLogger(ScheduledCapture.class);
     Util util = null;
+
+    public boolean isStopRequested() {
+        return stopRequested;
+    }
+
+    public void setStopRequested(boolean stopRequested) {
+        this.stopRequested = stopRequested;
+    }
     // Start the camera when the application starts and set the resolution
     void onStart(@Observes StartupEvent ev) {
         Logger.getLogger(ScheduledCapture.class).info("The application is starting...");
@@ -131,8 +142,6 @@ public class ScheduledCapture {
             camera = new VideoCapture(videoDeviceIndex); 
             camera.set(Videoio.CAP_PROP_FRAME_WIDTH, 640); // Max resolution for Logitech C505
             camera.set(Videoio.CAP_PROP_FRAME_HEIGHT, 480); // Max resolution for Logitech C505
-            //camera.set(Videoio.CAP_PROP_AUTOFOCUS, 0); // Try to disable autofocus
-            //camera.set(Videoio.CAP_PROP_FOCUS, 255); // Try to disable autofocus
             camera.set(Videoio.CAP_PROP_EXPOSURE, 15); // Try to set exposure
         }
         util = new Util();
@@ -275,13 +284,12 @@ public class ScheduledCapture {
         if (testThread != null) {
             try {
                 testThread.join(); // Wait for the testThread to finish
+                testThread = null;
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt(); // Restore interrupted status
             }
-            testThread = null;
         }
         return Response.ok("Stop requested").build();       
-  
     }
 }
 ```
