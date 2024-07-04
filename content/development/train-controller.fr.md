@@ -1,6 +1,7 @@
 +++
 title = "Control train"
 draft = false
+menu = false
 weight = 6
 +++
 
