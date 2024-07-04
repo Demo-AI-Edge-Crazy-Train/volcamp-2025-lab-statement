@@ -302,8 +302,6 @@ Le fichier **application.properties** devrait ressembler à :
 
 ```properties
 %dev.quarkus.http.port=8082
-%dev.capture.mock=true
-%dev.catpure.videoPath=/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi
 %dev.catpure.videoPeriodicCapture=30
 quarkus.kafka.devservices.enabled=false
 quarkus.swagger-ui.always-include=true
@@ -319,6 +317,8 @@ capture.videoPeriodicCapture=${VIDEO_PERIODIC_CAPTURE:30}
 capture.saveImage=${SAVE_IMAGE:false}
 capture.mock=${MOCK:false}
 quarkus.log.level=${LOGGER_LEVEL:INFO}
+%dev.capture.mock=true
+%dev.catpure.videoPath=/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi
 ```
 
 7. Compilation du projet
