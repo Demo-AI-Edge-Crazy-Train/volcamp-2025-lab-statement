@@ -14,7 +14,7 @@ The image below describes the overall operation
 
 Below is a description of each service:
 
-**Capture and process image** (projectt capture-app): This is a Quarkus service that allows you to start, test and stop video capture. It exposes RESTful endpoints that can be called by other services or clients to control video capture.
+**Capture and process image** (project capture-app): This is a Quarkus service that allows you to start, test and stop video capture. It exposes RESTful endpoints that can be called by other services or clients to control video capture.
 
 **Predict command** (project intelligent-train): This service is responsible for analysing the data from the captured video. It uses machine learning techniques to interpret the video data and provide information based on this analysis.
 
@@ -37,11 +37,14 @@ Use the following link to generate your Openshift Dev Space environment :
 
 Login in with your OpenShift credentials (userX/yourpassword). If this is the first time you access Dev Spaces, you have to authorize Dev Spaces to access your account. In the Authorize Access window click on Allow selected permissions.
 
+
+
 This opens the workspace, which will look pretty familiar if you are used to work with VS Code. Before opening the workspace, a pop-up might appear asking if you trust the contents of the workspace. Click Yes, I trust the authors to continue.
 
 ![trust-authors](/images/dev-section/trust-authors.png)
 
+Wait for the workspace to become available, which takes a few minutes as it loads all the images and resources needed to build and run the microservices.
 
-The workspace contains all the resources you are going to use during the workshop. In the project explorer on the left of the workspace, navigate to the rivieradev-app folder and look at the different projects.
+In the project explorer on the left of the workspace, navigate to the rivieradev-app folder and look at the different projects.
 
 ![workspace](/images/dev-section/workspace.png)
