@@ -19,7 +19,7 @@ oc get routes -o jsonpath='{range .items[*]}{.metadata.annotations.che\.routing\
 
 4. Retournez à votre terminal et exécutez la commande suivante :
 ```
-curl -X 'POST'   'http://localhost:8082/capture/test'   -H 'accept: */*'
+curl -X 'POST'   'http://localhost:8082/capture/test' -H 'accept: */*'
 ```
 
 5. A partir de votre navigateur vous devriez visualiser en temps réel la simulation du train et la détéction des panneaux de signalisation
