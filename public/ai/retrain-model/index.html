@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.111.3">
+    <meta name="generator" content="Hugo 0.128.0">
     <meta name="description" content="">
 
 
@@ -12,22 +12,22 @@
     <title>Retrain the model :: Documentation for Hugo Learn Theme</title>
 
     
-    <link href="/css/nucleus.css?1720085683" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1720085683" rel="stylesheet">
-    <link href="/css/hybrid.css?1720085683" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1720085683" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1720085683" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720085683" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1720085683" rel="stylesheet">
-    <link href="/css/theme.css?1720085683" rel="stylesheet">
-    <link href="/css/tabs.css?1720085683" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1720085683" rel="stylesheet">
+    <link href="/css/nucleus.css?1720101490" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1720101490" rel="stylesheet">
+    <link href="/css/hybrid.css?1720101490" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1720101490" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1720101490" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720101490" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1720101490" rel="stylesheet">
+    <link href="/css/theme.css?1720101490" rel="stylesheet">
+    <link href="/css/tabs.css?1720101490" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1720101490" rel="stylesheet">
     
-    <link href="/css/theme-red.css?1720085683" rel="stylesheet">
+    <link href="/css/theme-red.css?1720101490" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1720085683"></script>
+    <script src="/js/jquery-3.3.1.min.js?1720101490"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1720085683"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1720085683"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1720101490"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1720101490"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/rivieradev2024-crazytrain.netlify.app\/";
+        var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1720085683"></script>
+<script type="text/javascript" src="/js/search.js?1720101490"></script>
 
     
   </div>
@@ -214,7 +214,7 @@
         
         ">
       <a href="/ai/">
-          <b>3. </b>Artificial Intelligence (1h)
+          <b>2. </b>Artificial Intelligence (1h)
           
             <i class="fas fa-check read-icon"></i>
           
@@ -349,13 +349,13 @@
  
   
     
-    <li data-nav-id="/development/" title="Développement (30min)" class="dd-item
+    <li data-nav-id="/development/" title="Development (30min)" class="dd-item
         
         
         
         ">
       <a href="/development/">
-          <b>2. </b>Développement (30min)
+          <b>3. </b>Development (30min)
           
             <i class="fas fa-check read-icon"></i>
           
@@ -545,6 +545,32 @@
  
 
           
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/devops/" title="DevOps (30min)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/devops/">
+          <b>4. </b>DevOps (30min)
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
         
     </ul>
 
@@ -569,7 +595,7 @@
                   
                     
                     
-                      <option id="en" value="https://rivieradev2024-crazytrain.netlify.app/ai/retrain-model/" selected>English</option>
+                      <option id="en" value="http://localhost:1313/ai/retrain-model/" selected>English</option>
                     
                   
               
@@ -713,7 +739,7 @@
 </ul>
 <h3 id="extract-the-images-and-their-annotations">Extract the images and their annotations</h3>
 <p>Click on <em>labeling-extraction.ipynb</em>. Run the whole notebook using the icon on the top:
-<img src="run-notebook.png" alt="run-notebook"></p>
+<img alt="run-notebook" src="/ai/retrain-model/run-notebook.png"></p>
 <p>You may have notice that those scripts has created in your filesystem a <em>dataset</em> directory. This <em>dataset</em> directory contains a <em>labels</em> and a <em>images</em> sub-directory. It contains the extracted images and labels. Jump down on the same notebook on the section &ldquo;Select a random image and display its boundind boxes&rdquo;. Re-run that cell. It choose a random image from the <em>dataset/images</em> and display in the notebook the corresponding bounding boxes saved under <em>dataset/labels</em>.</p>
 <h3 id="generate-synthetic-data">Generate synthetic data</h3>
 <p>You can close the preivous notebook and open the <em>synthetic-data.ipynb</em> notebook. This notebook generates random synthetic data. Those are artifically created data that will add more data to the model training. Run the whole notebook as explained on previous section. Have a quick look at the code and see exemples on the visualization sections. Re-run the visualizaton step to display more synthetic data exemples.</p>
@@ -732,7 +758,7 @@ Open <em>comparaison.ipynb</em> notebook and simply look at the code.</p>
 <h3 id="fix-the-pipeline">Fix the pipeline</h3>
 <p>You can notice that this pipeline has 4 nodes and 2 bindings. 1 binding is missing between the third (<em>transfer-learning.ipynb</em>) and fourth step (<em>comparaison.ipynb</em>). Click on the black dot on the right hand side of the third step (<em>transfer-learning.ipynb</em>).  Hold down the mouse key until you reached the black dot of the left hand side of the fourth step (<em>comparaison.ipynb</em>).</p>
 <p>You should have a similar result at the end:
-<img src="full-pipeline.png" alt="full-pipeline"></p>
+<img alt="full-pipeline" src="/ai/retrain-model/full-pipeline.png"></p>
 <h3 id="review-the-node-properties">Review the node properties</h3>
 <p>Right click on the second step of the pipeline (<em>synthetic-data.ipynb</em>). This will open a menu. Click on &ldquo;Open Properties&rdquo;. They appear on the right hand side. Scroll down and see some properties such as:</p>
 <ul>
@@ -747,7 +773,7 @@ Open <em>comparaison.ipynb</em> notebook and simply look at the code.</p>
 <p>You can notice on the top of the right hand side properties menu that 3 different panels are available (pipeline properties, pipeline parameters, node properties). Feel free to navigate to the other panels.</p>
 <h3 id="request-a-gpu-for-the-training-step">Request a GPU for the training step</h3>
 <p>Right click on the third step of the pipeline (<em>transfer-learning.ipynb</em>). This will open a menu. Click on &ldquo;Open Properties&rdquo;. They appear on the right hand side. Look for the <strong>GPU</strong> property and select <strong>1</strong>. This will request 1 GPU for your model traning.
-<img src="full-pipeline-gpu-count.png" alt="full-pipeline-gpu-count">
+<img alt="full-pipeline-gpu-count" src="/ai/retrain-model/full-pipeline-gpu-count.png">
 Scroll down to bottom.<br>
 The nodes containing GPUs has &ldquo;Taints&rdquo;. It means that by default no workload can be scheduled on nodes with taints. We need to add a toleration to allow the training step to use a GPU. Taints and tolerations work together to ensure that pods are not scheduled onto inappropriate nodes.<br>
 <strong>Click Add under Kubernetes Tolerations</strong> (at the bottom of the node properties panel). Fill up as follow:</p>
@@ -757,28 +783,28 @@ The nodes containing GPUs has &ldquo;Taints&rdquo;. It means that by default no 
 <li>Effect: select <strong>NoSchedule</strong></li>
 </ul>
 <p>You should have at the end:
-<img src="full-pipeline-toleration.png" alt="full-pipeline-toleration"></p>
+<img alt="full-pipeline-toleration" src="/ai/retrain-model/full-pipeline-toleration.png"></p>
 <h2 id="run-the-pipeline">Run the pipeline</h2>
 <p>It&rsquo;s now time to run the pipeline on Openshift. Click on the &ldquo;Run Pipeline&rdquo; button on the top of Elyra GUI. See bellow:
-<img src="elyra-run.png" alt="elyra-run">
+<img alt="elyra-run" src="/ai/retrain-model/elyra-run.png">
 Click on the &ldquo;<strong>Save and Submit</strong>&rdquo; button.<br>
 Fill up the configurations. <strong>Choose 10 epochs</strong> as a pipeline parameter. It corresponds to the total number of iterations of all the training data in one cycle for training the machine learning model. Not enough epochs will cause your model to be inefficient. Too much epochs will cause your model to overfit (and thus beeing inefficient on predicting new data):
-<img src="elyra-run-config.png" alt="elyra-run-config">
+<img alt="elyra-run-config" src="/ai/retrain-model/elyra-run-config.png">
 After a few moments, you will see a successful popup displayed. From this popup, you can click on &ldquo;Run Details&rdquo; to skip some instructions of the next session.
-<img src="elyra-run-success.png" alt="elyra-run-success"></p>
+<img alt="elyra-run-success" src="/ai/retrain-model/elyra-run-success.png"></p>
 <h2 id="visualizing-your-pipelines">Visualizing your pipelines</h2>
 <h3 id="retreive-the-pipeline-runs">Retreive the pipeline runs</h3>
 <p>If you missed the shortcut from elyra popup, follow thoses steps to retreive your pipeline run. Otherwise pass to the next paragraph.
-You can now go back to Openshift AI dashboard: <a href="https://rhods-dashboard-redhat-ods-applications.apps.riviera-dev-2024.sandbox2830.opentlc.com/,window=_blank%5D">https://rhods-dashboard-redhat-ods-applications.apps.riviera-dev-2024.sandbox2830.opentlc.com</a>
+You can now go back to Openshift AI dashboard: <a href="https://rhods-dashboard-redhat-ods-applications.apps.riviera-dev-2024.sandbox2830.opentlc.com/,window=_blank]">https://rhods-dashboard-redhat-ods-applications.apps.riviera-dev-2024.sandbox2830.opentlc.com</a>
 On the left hand side click on &ldquo;Data Science Pipelines&rdquo;, then on &ldquo;Runs&rdquo;. Here can see the pipeline execution. One run should be visible as you created one during the previous section. Click on it.</p>
 <p>You can see the status of your pipeline run. If you click on a node it displays some information such as the &ldquo;Logs&rdquo; panel. If you select the &ldquo;Main&rdquo; container from that panel, you will see the logs associated to the notebooks execution:
-<img src="pipeline-run-logs.png" alt="pipeline-run-logs"></p>
+<img alt="pipeline-run-logs" src="/ai/retrain-model/pipeline-run-logs.png"></p>
 <p>Wait for the pipeline to complete. You should have something like that:
-<img src="pipeline-run-succedded.png" alt="pipeline-run-succedded"></p>
+<img alt="pipeline-run-succedded" src="/ai/retrain-model/pipeline-run-succedded.png"></p>
 <h2 id="optional---retreiving-pipelines-output">OPTIONAL - Retreiving pipelines output</h2>
 <p>All the pipeline outputs are stored into the object storage. Connect to the S3 console using this link: <a href="https://minio-console-minio.apps.riviera-dev-2024.sandbox2830.opentlc.com">https://minio-console-minio.apps.riviera-dev-2024.sandbox2830.opentlc.com</a>. Connect with the same username we gave you at the begining of the lab. The password is <code>minio123</code>. You should see few buckets. Click on the one corresponding to your username. There should be one directory in the bucket that coresponds to your pipeline run. It starts with &ldquo;traffic-sign&rdquo;. Open it. Here you can see html, ipynb files and archives. Click on the <em>comparaison.html</em> file. A menu pops up on the right hand side. Click download and open this file locally on your browser. Note the diffenrece in the scores of the base and new model. In this exemple we lost precision on the original dataset. But we can now detect &ldquo;lego&rdquo; traffic signs with the new model.
-<img src="output-base-model.png" alt="output-base-model">
-<img src="output-new-model.png" alt="output-new-model"></p>
+<img alt="output-base-model" src="/ai/retrain-model/output-base-model.png">
+<img alt="output-new-model" src="/ai/retrain-model/output-new-model.png"></p>
 
 
 <footer class="footline">
@@ -1142,6 +1168,22 @@ On the left hand side click on &ldquo;Data Science Pipelines&rdquo;, then on &ld
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
 
@@ -1164,19 +1206,19 @@ On the left hand side click on &ldquo;Data Science Pipelines&rdquo;, then on &ld
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1720085683"></script>
-    <script src="/js/perfect-scrollbar.min.js?1720085683"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1720085683"></script>
-    <script src="/js/jquery.sticky.js?1720085683"></script>
-    <script src="/js/featherlight.min.js?1720085683"></script>
-    <script src="/js/highlight.pack.js?1720085683"></script>
+    <script src="/js/clipboard.min.js?1720101490"></script>
+    <script src="/js/perfect-scrollbar.min.js?1720101490"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1720101490"></script>
+    <script src="/js/jquery.sticky.js?1720101490"></script>
+    <script src="/js/featherlight.min.js?1720101490"></script>
+    <script src="/js/highlight.pack.js?1720101490"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1720085683"></script>
-    <script src="/js/learn.js?1720085683"></script>
-    <script src="/js/hugo-learn.js?1720085683"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1720101490"></script>
+    <script src="/js/learn.js?1720101490"></script>
+    <script src="/js/hugo-learn.js?1720101490"></script>
     
         
-            <script src="/mermaid/mermaid.js?1720085683"></script>
+            <script src="/mermaid/mermaid.js?1720101490"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

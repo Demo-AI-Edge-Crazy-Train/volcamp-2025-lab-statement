@@ -2,230 +2,242 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/ai/getting-connected/</loc>
+    <loc>http://localhost:1313/ai/getting-connected/</loc>
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/overview/goal/</loc>
+    <loc>http://localhost:1313/overview/goal/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/overview/goal/"
+                href="http://localhost:1313/fr/overview/goal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/overview/goal/"
+                href="http://localhost:1313/overview/goal/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/overview/</loc>
+    <loc>http://localhost:1313/overview/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/overview/"
+                href="http://localhost:1313/fr/overview/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/overview/"
+                href="http://localhost:1313/overview/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/overview/architecture/</loc>
+    <loc>http://localhost:1313/overview/architecture/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/overview/architecture/"
+                href="http://localhost:1313/fr/overview/architecture/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/overview/architecture/"
+                href="http://localhost:1313/overview/architecture/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/ai/creating-project/</loc>
-  </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/development/introduction/</loc>
+    <loc>http://localhost:1313/ai/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/development/introduction/"
+                href="http://localhost:1313/fr/ai/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/development/introduction/"
+                href="http://localhost:1313/ai/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/ai/</loc>
+    <loc>http://localhost:1313/ai/creating-project/</loc>
+  </url><url>
+    <loc>http://localhost:1313/development/introduction/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/ai/"
+                href="http://localhost:1313/fr/development/introduction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/ai/"
+                href="http://localhost:1313/development/introduction/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/development/capture-app/</loc>
+    <loc>http://localhost:1313/development/capture-app/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/development/capture-app/"
+                href="http://localhost:1313/fr/development/capture-app/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/development/capture-app/"
+                href="http://localhost:1313/development/capture-app/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/ai/creating-workbench/</loc>
+    <loc>http://localhost:1313/ai/creating-workbench/</loc>
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/development/</loc>
+    <loc>http://localhost:1313/development/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/development/"
+                href="http://localhost:1313/fr/development/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/development/"
+                href="http://localhost:1313/development/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/overview/organization/</loc>
+    <loc>http://localhost:1313/overview/organization/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/overview/organization/"
+                href="http://localhost:1313/fr/overview/organization/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/overview/organization/"
+                href="http://localhost:1313/overview/organization/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/overview/openshift/</loc>
+    <loc>http://localhost:1313/devops/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/overview/openshift/"
+                href="http://localhost:1313/fr/devops/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/overview/openshift/"
+                href="http://localhost:1313/devops/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/development/intelligent-train/</loc>
+    <loc>http://localhost:1313/overview/openshift/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/development/intelligent-train/"
+                href="http://localhost:1313/fr/overview/openshift/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/development/intelligent-train/"
+                href="http://localhost:1313/overview/openshift/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/ai/retrain-model/</loc>
-  </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/development/train-ceq-app/</loc>
+    <loc>http://localhost:1313/development/intelligent-train/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/development/train-ceq-app/"
+                href="http://localhost:1313/fr/development/intelligent-train/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/development/train-ceq-app/"
+                href="http://localhost:1313/development/intelligent-train/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/ai/model-serving/</loc>
+    <loc>http://localhost:1313/ai/retrain-model/</loc>
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/development/monitoring-app/</loc>
+    <loc>http://localhost:1313/development/train-ceq-app/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/development/monitoring-app/"
+                href="http://localhost:1313/fr/development/train-ceq-app/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/development/monitoring-app/"
+                href="http://localhost:1313/development/train-ceq-app/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/development/start-services/</loc>
+    <loc>http://localhost:1313/ai/model-serving/</loc>
+  </url><url>
+    <loc>http://localhost:1313/development/monitoring-app/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/development/start-services/"
+                href="http://localhost:1313/fr/development/monitoring-app/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/development/start-services/"
+                href="http://localhost:1313/development/monitoring-app/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/development/test-services/</loc>
+    <loc>http://localhost:1313/development/start-services/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/development/test-services/"
+                href="http://localhost:1313/fr/development/start-services/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/development/test-services/"
+                href="http://localhost:1313/development/start-services/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/development/conclusion/</loc>
+    <loc>http://localhost:1313/development/test-services/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/development/conclusion/"
+                href="http://localhost:1313/fr/development/test-services/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/development/conclusion/"
+                href="http://localhost:1313/development/test-services/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/categories/</loc>
+    <loc>http://localhost:1313/development/conclusion/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/categories/"
+                href="http://localhost:1313/fr/development/conclusion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/categories/"
+                href="http://localhost:1313/development/conclusion/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/tags/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/tags/"
+                href="http://localhost:1313/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/tags/"
+                href="http://localhost:1313/categories/"
                 />
   </url><url>
-    <loc>https://rivieradev2024-crazytrain.netlify.app/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://rivieradev2024-crazytrain.netlify.app/fr/"
+                href="http://localhost:1313/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rivieradev2024-crazytrain.netlify.app/"
+                href="http://localhost:1313/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
                 />
   </url>
 </urlset>

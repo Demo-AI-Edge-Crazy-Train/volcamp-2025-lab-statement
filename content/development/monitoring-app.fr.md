@@ -32,12 +32,8 @@ Ces propriétés configurent l'application pour utiliser le connecteur SmallRye 
 
 Ajoutez l'annotation `@Incoming("train-monitoring")` à la méthode `process`. Ci-dessous le résultat :
 
-```java
-@Incoming("train-monitoring")
-public void process(String message) {
-    // code existant
-}
-```
+![code annotation](/images/dev-section/monitoring-code.png)
+
 
 L'annotation `@Incoming` indique que cette méthode doit être appelée chaque fois qu'un message est lu du canal `train-monitoring`. Le message est passé à la méthode en tant que paramètre.
 

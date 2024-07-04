@@ -321,9 +321,10 @@ quarkus.log.level=${LOGGER_LEVEL:INFO}
 
 Before committing your changes, you need to build the project to ensure that there are no compilation errors.
 
-- Open a new terminal
+- Open a terminal 
 
-![terminal](/images/dev-section/new-terminal-bash.png)
+![first terminal](/images/dev-section/first-terminal.png)
+
 
 - Run the commands below 
 

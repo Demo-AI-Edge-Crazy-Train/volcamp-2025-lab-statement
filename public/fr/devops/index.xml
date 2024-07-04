@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevOps (30min) on Documentation du thème Hugo Learn</title>
+    <link>http://localhost:1313/fr/devops/</link>
+    <description>Recent content in DevOps (30min) on Documentation du thème Hugo Learn</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="http://localhost:1313/fr/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pipelines CI/CD</title>
+      <link>http://localhost:1313/fr/devops/ci-cd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/devops/ci-cd/</guid>
+      <description>Dans cette étape, vous devrez déployer les pipelines CI/CD qui construiront les images de conteneur des cinq composants clés du train :&#xA;capture-app intelligent-train monitoring-app train-ceq-app train-controller Pour vous aider, un Chart Helm est présent dans le mono repo de l&amp;rsquo;application (dossier tekton-pipelines).&#xA;Vous déploierez les pipelines tekton depuis votre environnement OpenShift DevSpaces (ce sera plus simple).&#xA;Pour cela, ouvrez un terminal dans VScode.&#xA;Ouvrez le menu hamburger (trois traits horizontaux en haut, à gauche) depuis votre workspace DevSpaces.</description>
+    </item>
+    <item>
+      <title>GitOps</title>
+      <link>http://localhost:1313/fr/devops/gitops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/devops/gitops/</guid>
+      <description>Dans cette étape, vous devrez déployer dans OpenShift les images de conteneur des cinq composants clés du train :&#xA;capture-app intelligent-train monitoring-app train-ceq-app train-controller Pour vous aider, un Chart Helm est présent dans le mono repo de l&amp;rsquo;application (dossier deployment).&#xA;Vous déploierez les composants depuis votre environnement OpenShift DevSpaces (ce sera plus simple).&#xA;Pour cela, ouvrez un terminal dans VScode.&#xA;Ouvrez le menu hamburger (trois traits horizontaux en haut, à gauche) depuis votre workspace DevSpaces.</description>
+    </item>
+  </channel>
+</rss>

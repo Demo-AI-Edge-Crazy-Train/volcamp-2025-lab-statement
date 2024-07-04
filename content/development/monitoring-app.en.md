@@ -32,12 +32,7 @@ These properties configure the application to use the SmallRye Kafka connector t
 
 Add the `@Incoming("train-monitoring")` annotation to the `process` method. Below is the result:
 
-```java
-@Incoming("train-monitoring")
-public void process(String message) {
-    // existing code
-}
-```
+![code annotation](/images/dev-section/monitoring-code.png)
 
 The `@Incoming` annotation indicates that this method should be called whenever a message is read from the `train-monitoring` channel. The message is passed to the method as a parameter.
 

@@ -325,7 +325,7 @@ Avant de committer vos modifications, vous devez construire le projet  pour vous
 
 - Ouvrez un nouveau terminal
 
-![terminal](/images/dev-section/new-terminal-bash.png)
+![first terminal](/images/dev-section/first-terminal.png)
 
 - Lancez les commandes ci-dessous 
 
