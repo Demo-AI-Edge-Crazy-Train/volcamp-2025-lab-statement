@@ -4,7 +4,7 @@ draft= false
 weight= 2
 +++
 
-1. Introduction 
+## 1. Introduction 
 
 L'objectif de cette partie est de vous familiariser avec les différents microservices de l'application **Crazy Train**. Vous allez modifier le code de plusieurs projets Quarkus, Python et Nodejs, comprendre comment ils interagissent et tester l'application dans son ensemble.
 
@@ -26,7 +26,7 @@ Voici une description de chaque service :
 
 Chaque service est indépendant et communique avec les autres de manière asynchrone (MQTT/Kafka). Cela permet une grande flexibilité et une grande évolutivité, car chaque service peut être développé, déployé et mis à l'échelle indépendamment des autres.
 
-2. Votre environnement de laboratoire
+## 2. Votre environnement de laboratoire
 
 Vous allez utiliser OpenShift Dev Spaces. OpenShift Dev Spaces utilise Kubernetes et les conteneurs pour fournir un environnement de développement cohérent, sécurisé et sans configuration, accessible depuis une fenêtre de navigateur.
 
