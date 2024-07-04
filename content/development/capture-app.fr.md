@@ -319,11 +319,11 @@ Avant de committer vos modifications, vous devez construire le projet  pour vous
 
 ![terminal](/images/dev-section/new-terminal-bash.png)
 
-- Lancez la commande ci-dessous 
+- Lancez les commandes ci-dessous 
 
 ```
 cd capture-app
 mvn clean package
 ```
 
-Vérifiez qu'il n'existe aucune erreur et passez à la section suivante.
+Vérifiez qu'il n'existe aucune erreur et fermez le terminal.

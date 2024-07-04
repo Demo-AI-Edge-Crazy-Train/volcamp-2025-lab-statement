@@ -96,8 +96,11 @@ Before committing your changes, you need to build the project to ensure that the
 
 ![terminal](/images/dev-section/new-terminal-bash.png)
 
-- Run the command below 
+- Run the commands below 
 
 ```
+cd train-ceq-app
 mvn clean package
 ```
+
+Check that there are no errors then close the terminal.
