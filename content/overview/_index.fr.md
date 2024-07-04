@@ -5,7 +5,7 @@ chapter = true
 pre = "<b>1. </b>"
 +++
 
-### Chapter 1
+### Partie 1
 
 # Présentation
 
