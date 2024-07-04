@@ -6,8 +6,9 @@ weight= 2
 
 1. Introduction 
 
+The aim of this part is to familiarise you with the different microservices in the **Crazy Train** application. You will modify the code of several Quarkus, Python and Nodejs projects, understand how they interact and test the application as a whole.
 
-The **Crazy Train** application is made up of several microservices. The image below describes the overall operation
+The image below describes the overall operation
 
 ![architecture](/images/dev-section/architecture.png)
 
