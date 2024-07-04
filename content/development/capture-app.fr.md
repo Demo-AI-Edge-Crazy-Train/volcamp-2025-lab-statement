@@ -79,9 +79,11 @@ public class ScheduledCapture{
     private  VideoCapture camera; 
 
 
-    /* add mock config property here */
+    @ConfigProperty(name = "capture.mock")
+    boolean mock;
 
-    /* add videoPath config property here */
+    @ConfigProperty(name = "capture.videoPath")
+    String videoPath;
 
     // interval in milliseconds
     @ConfigProperty(name = "capture.interval")

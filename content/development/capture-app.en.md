@@ -76,10 +76,11 @@ import io.vertx.mutiny.core.Vertx;
 public class ScheduledCapture{
     private  VideoCapture camera; 
 
+    @ConfigProperty(name = "capture.mock")
+    boolean mock;
 
-    /* add mock config property here */
-
-    /* add videoPath config property here */
+    @ConfigProperty(name = "capture.videoPath")
+    String videoPath;
 
     // interval in milliseconds
     @ConfigProperty(name = "capture.interval")
