@@ -13,7 +13,18 @@ showVisitedLinks = true
 disableBreadcrumb = false
 disableNextPrev = false
 themeVariant = "red"
-openshift_domain = "cluster-GUID.GUID.sandboxID.opentlc.com"
+openshift_domain = "riviera-dev-2024.sandbox2830.opentlc.com"
+minioPass = "minio123"
+minioEndpoint = "https://minio-s3-minio.apps.riviera-dev-2024.sandbox2830.opentlc.com"
+minioConsole = "https://minio-console-minio.apps.riviera-dev-2024.sandbox2830.opentlc.com"
+gitRepoName = "workshop-model-traning"
+gitAIRepoUrl = "https://github.com/Demo-AI-Edge-Crazy-Train/workshop-model-training"
+baseModelBucket = "model-registry"
+newModelName = "new"
+newModelServerName = "Traffic Sign Detection"
+newModelDataConnection = "pipelines"
+newModelPath = "models/model.onnx"
+newModelServerSize = "Small"
 
 # Anglais est la langue par défaut
 defaultContentLanguage = "fr"
