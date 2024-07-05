@@ -12,7 +12,7 @@ weight= 8
 
 ![ Start all applications](/images/dev-section/start-all-aps-task.png)
 
-3. Click on **Continue without scanning the task outoput**.
+3. Click on **Continue without scanning the task output**.
 
 ![ Scan task](/images/dev-section/scan-task-output.png)
 
