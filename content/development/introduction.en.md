@@ -43,7 +43,9 @@ This opens the workspace, which will look pretty familiar if you are used to wor
 
 ![trust-authors](/images/dev-section/trust-authors.png)
 
-Wait for the workspace to become available, which takes a few minutes as it loads all the images and resources needed to build and run the microservices.
+Wait for the workspace to become available, which takes a few minutes to sets up a complex development environment with several services (**Kafka**, **Zookeeper**, **Mosquitto**) and tools (**OpenShift CLI**, **Maven**, **Python**, **Node.js**), and ensures that all the necessary dependencies are installed (like **OpenCV**).
+
+
 
 In the project explorer on the left of the workspace, navigate to the rivieradev-app folder and look at the different projects.
 

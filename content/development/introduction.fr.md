@@ -41,7 +41,7 @@ Cela ouvre l'espace de travail, qui vous semblera assez familier si vous avez l'
 
 ![trust-authors](/images/dev-section/trust-authors.png)
 
-Attendez que l'espace de travail soit disponible, cela prend quelques minutes car il charge toutes les images et les ressources nécessaire à la construction et l'execution des microservices.
+Attendez que l'espace de travail soit disponible, ce qui prend quelques minutes pour mettre en place un environnement de développement complexe avec plusieurs services (**Kafka**, **Zookeeper**, **Mosquitto**), les outils (**OpenShift CLI**, **Maven**, **Python**, **Node.js**), et s'assurer que toutes les dépendances nécessaires sont installées (comme **OpenCV**).
 
 Dans l'explorateur de projets situé à gauche de l'espace de travail, naviguez jusqu'au dossier rivieradev-app et regardez les différents projets.
 
