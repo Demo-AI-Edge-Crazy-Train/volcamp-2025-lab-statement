@@ -6,7 +6,9 @@ weight = 9
 
 We are going to simulate the operation of the train:
 1. Open a new terminal
+
 ![terminal](/images/dev-section/new-terminal-bash.png)
+
 2. Execute the command below to retrieve the URL of the monitoring console:  
 ```
 oc get routes -o jsonpath='{range .items[*]}{.metadata.annotations.che\.routing\.controller\.devfile\.io/endpoint-name}{"\t"}http://{.spec.host}{"\n"}{end}' | grep monitoring-svc | cut -f 2
