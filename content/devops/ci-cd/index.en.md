@@ -90,17 +90,6 @@ The warning message *"WARNING: Kubernetes configuration file is group-readable. 
 {{% /notice %}}
 
 Typically, pipelines will start immediately.
-Follow their progress with the following command.
-
-```sh
-watch tkn -n "$TEST_NS" pipelineruns list
-```
-
-You can also follow the logs of a pipeline with the following command (a menu will ask you to choose the pipelinerun to display).
-
-```sh
-tkn -n "$TEST_NS" pipelineruns logs -f
-```
 
 Open the [OpenShift console]({{< param ocpConsole >}}) and navigate to **Administrator** > **Pipelines** > **Pipelines** > **PipelineRuns**.
 

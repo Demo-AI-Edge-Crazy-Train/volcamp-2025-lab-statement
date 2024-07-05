@@ -90,17 +90,6 @@ Le message d'avertissement *"WARNING: Kubernetes configuration file is group-rea
 {{% /notice %}}
 
 Normalement, les pipelines doivent démarrer immédiatement.
-Suivez leur avancée à l'aide de la commande suivante.
-
-```sh
-watch tkn -n "$TEST_NS" pipelineruns list
-```
-
-Vous pouvez aussi suivre les logs d'un pipeline à l'aide de la commande suivante (un menu vous demandera de choisir le pipelinerun à afficher).
-
-```sh
-tkn -n "$TEST_NS" pipelineruns logs -f
-```
 
 Ouvrez la [console OpenShift]({{< param ocpConsole >}}) et naviguez dans **Administrator** > **Pipelines** > **Pipelines** > **PipelineRuns**.
 
