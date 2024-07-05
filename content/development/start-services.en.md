@@ -26,11 +26,11 @@ Select 'no' on the pop-up which indicates that a new process has started and tha
 - **Log capture-app**
 ![capture-app application log](/images/dev-section/start-capture-log.png)
 
--  intelligent-train log**!
-Log intelligent-train application](/images/dev-section/intelligent-train-log.png)
+-  **intelligent-train log**
+![Log intelligent-train application](/images/dev-section/intelligent-train-log.png)
 
 - **Log train-ceq-app**
-Train-ceq-app log (/images/dev-section/train-ceq-log.png)
+![Train-ceq-app log](/images/dev-section/train-ceq-log.png)
 
 -  Monitoring-app log**! 
 ![Monitoring-app application log](/images/dev-section/train-monitoring-log.png)
