@@ -24,8 +24,9 @@ You previoulsy cloned a git repository. You should see on the file browser on th
 
 ### Extract the images and their annotations
 
-Click on *labeling-extraction.ipynb*. Run the whole notebook using the icon on the top:
+Click on *labeling-extraction.ipynb*. Run the whole notebook using the icon on the top and click on restart the kernel when asked to (see bellow):
 ![run-notebook](run-notebook.png)
+![restart-kernel](restart-kernel.png)
 
 You may have noticed that those scripts has created in your filesystem a *dataset* directory. This *dataset* directory contains a *labels* and a *images* sub-directory. It contains the extracted images and labels. Jump down on the same notebook on the section "Select a random image and display its boundind boxes". Re-run that cell. It chooses a random image from the *dataset/images* and displays in the notebook the corresponding bounding boxes saved under *dataset/labels*.
 
