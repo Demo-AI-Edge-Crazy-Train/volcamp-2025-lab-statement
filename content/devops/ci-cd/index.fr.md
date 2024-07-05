@@ -63,6 +63,10 @@ Créez les objets dans votre projet OpenShift de test.
 helm template pipelines /projects/rivieradev-app/tekton-pipelines --set namespace="$TEST_NS" | oc apply -f -
 ```
 
+{{% notice note %}}
+Le message d'avertissement *"WARNING: Kubernetes configuration file is group-readable. This is insecure."* peut être ignoré.
+{{% /notice %}}
+
 Ouvrez la [console OpenShift]({{< param ocpConsole >}}) et naviguez dans **Administrator** > **Pipelines** > **Pipelines** > **Pipelines**.
 
 ![](pipelines.png)
@@ -80,6 +84,10 @@ Créez les objets dans votre projet OpenShift de test.
 ```sh
 helm template pipelines /projects/rivieradev-app/tekton-pipelines --set namespace="$TEST_NS" --set runPipelines=true | oc create -f -
 ```
+
+{{% notice note %}}
+Le message d'avertissement *"WARNING: Kubernetes configuration file is group-readable. This is insecure."* peut être ignoré.
+{{% /notice %}}
 
 Normalement, les pipelines doivent démarrer immédiatement.
 Suivez leur avancée à l'aide de la commande suivante.

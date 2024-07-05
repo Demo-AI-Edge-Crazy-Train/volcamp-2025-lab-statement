@@ -52,6 +52,10 @@ Créez les objets dans votre projet OpenShift de test.
 helm template deployment /projects/rivieradev-app/deployment --set namespace="$TEST_NS" | oc apply -f -
 ```
 
+{{% notice note %}}
+Le message d'avertissement *"WARNING: Kubernetes configuration file is group-readable. This is insecure."* peut être ignoré.
+{{% /notice %}}
+
 Suivez la progression des Pods l'aide de la commande suivante.
 
 ```sh
