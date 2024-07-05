@@ -1,5 +1,5 @@
 +++
-title = "Capture and pre process image"
+title = "Capture image"
 draft= false
 weight= 3
 +++
