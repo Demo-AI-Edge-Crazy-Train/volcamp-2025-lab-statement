@@ -4,6 +4,8 @@ draft = false
 weight = 1
 [[resources]]
   src = '**.png'
+[[resources]]
+  src = '**.svg'
 +++
 
 Dans cette étape, vous devrez déployer les pipelines CI/CD qui construiront les images de conteneur des cinq composants clés du train :
@@ -15,8 +17,21 @@ Dans cette étape, vous devrez déployer les pipelines CI/CD qui construiront le
 - **train-controller**
 
 Pour vous aider, un Chart Helm est présent dans le mono repo de l'application (dossier `tekton-pipelines`).
+Ce chart Helm contient des pipelines Tekton multi-architecture.
+En effet, la carte Nvidia Jetson Orin dans le train est une architecture arm64.
+Votre laptop est probablement une architecture x86_64.
+
+Pour construire ces images de conteneur multi-architecture, nous avons besoin de :
+
+- Un cluster OpenShift composé de Compute nodes x86_64 et arm64.
+- Un pipeline Tekton orchestrant les constuctions d’image sur ces deux noeuds et combinant les images résultantes en un manifeste qui est ensuite déposé sur la registry quay.io.
+- Du stockage persistant de type AWS EFS pour stocker le code source, les artefacts et les images de conteneurs avant leur envoi sur la registry quay.io.
+
+![](pipelines.svg)
 
 Vous déploierez les pipelines tekton depuis votre environnement OpenShift DevSpaces (ce sera plus simple).
+
+## Déployer les pipelines Tekton
 
 Pour cela, ouvrez un terminal dans VScode.
 
@@ -29,10 +44,11 @@ Depuis le terminal, découvrez les projets auxquels vous avez accès.
 oc get projects
 ```
 
-Vous devriez voir deux projets OpenShift :
+Vous devriez voir trois projets OpenShift :
 
 - Votre workspace DevSpaces (`$USERID-devspaces-$RANDOM`)
 - Le projet de test (`$USERID-test`)
+- Le projet OpenShift AI (`$USERID`)
 
 Récupérez le nom du projet de test dans une variable d'environnement.
 
@@ -41,39 +57,23 @@ TEST_NS=$(oc get projects -o name -l env=test | cut -d / -f 2 | head -n 1)
 echo "Using namespace $TEST_NS"
 ```
 
-Générez les manifests YAML des pipelines tekton.
-
-```sh
-helm template pipelines /projects/rivieradev-app/tekton-pipelines --set namespace="$TEST_NS" > /projects/rivieradev-app/tekton-pipelines.yaml
-```
-
-Ouvrez le fichier YAML généré dans VScode.
-
-```sh
-code-oss /projects/rivieradev-app/tekton-pipelines.yaml
-```
-
-Observez les objets Kubernetes générés.
-
 Créez les objets dans votre projet OpenShift de test.
 
 ```sh
 helm template pipelines /projects/rivieradev-app/tekton-pipelines --set namespace="$TEST_NS" | oc apply -f -
 ```
 
-Générez les manifests YAML des PipelineRun tekton.
+Ouvrez la [console OpenShift]({{< param ocpConsole >}}) et naviguez dans **Administrator** > **Pipelines** > **Pipelines** > **Pipelines**.
 
-```sh
-helm template pipelines /projects/rivieradev-app/tekton-pipelines --set namespace="$TEST_NS" --set runPipelines=true > /projects/rivieradev-app/tekton-pipelineruns.yaml
-```
+![](pipelines.png)
 
-Ouvrez le fichier YAML généré dans VScode.
+Ouvrez les quatre pipelines, un à un, et observez leur différences.
+Comment sont exécutées les tâches de construction sur les architectures arm64 et x86_64 ?
+En parallèle ou en série ?
 
-```sh
-code-oss /projects/rivieradev-app/tekton-pipelineruns.yaml
-```
+![](pipeline-buildah.png)
 
-Observez les objets Kubernetes générés.
+## Lancer les pipelines Tekton
 
 Créez les objets dans votre projet OpenShift de test.
 
@@ -93,6 +93,19 @@ Vous pouvez aussi suivre les logs d'un pipeline à l'aide de la commande suivant
 ```sh
 tkn -n "$TEST_NS" pipelineruns logs -f
 ```
+
+Ouvrez la [console OpenShift]({{< param ocpConsole >}}) et naviguez dans **Administrator** > **Pipelines** > **Pipelines** > **PipelineRuns**.
+
+![](pipelineruns.png)
+
+Cliquez sur le PipelineRun du composant **train-controller**.
+Ouvrez l'onglet YAML, pressez la combinaison de touches **Ctrl** + **F** et saisissez `taskRunSpecs:`.
+
+Quelles fonctions de Kubernetes avons-nous utilisé pour placer les tâches Tekton ARM64 sur les noeuds correspondants ?
+
+![](pipelinerun-taskrunspecs.png)
+
+## Étape suivante
 
 Les pipelines mettent environ 20 minutes pour les plus lents à se terminer.
 Pendant que ça compile, c'est le moment de passer à l'étape suivante !
