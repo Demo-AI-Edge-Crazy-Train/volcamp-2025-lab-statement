@@ -28,7 +28,7 @@ mp.messaging.incoming.train-monitoring.value.deserializer=org.apache.kafka.commo
 
 These properties configure the application to use the SmallRye Kafka connector to read messages from the Kafka `train-monitoring` topic. The deserializer is configured to convert the Kafka messages, which are bytes, into character strings.
 
-2. **Modify the ImageProcessing class: Open the file `src/main/java/org/redhat/demo/crazytrain/processing/ImageProcessing.java`.
+2. **Modify the ImageProcessing** class: Open the file `src/main/java/org/redhat/demo/crazytrain/processing/ImageProcessing.java`.
 
 Add the `@Incoming("train-monitoring")` annotation to the `process` method. Below is the result:
 
