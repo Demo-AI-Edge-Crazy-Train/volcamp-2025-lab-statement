@@ -27,7 +27,7 @@ Pour construire ces images de conteneur multi-architecture, nous avons besoin de
 - Un pipeline Tekton orchestrant les constuctions d’image sur ces deux noeuds et combinant les images résultantes en un manifeste qui est ensuite déposé sur la registry quay.io.
 - Du stockage persistant de type AWS EFS pour stocker le code source, les artefacts et les images de conteneurs avant leur envoi sur la registry quay.io.
 
-![](pipelines.svg)
+[![](pipelines.svg)](https://www.itix.fr/fr/blog/build-multi-architecture-container-images-with-kubernetes-buildah-tekton-aws/)
 
 Vous déploierez les pipelines tekton depuis votre environnement OpenShift DevSpaces (ce sera plus simple).
 

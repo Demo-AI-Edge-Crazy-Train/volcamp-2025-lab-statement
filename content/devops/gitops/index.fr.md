@@ -15,6 +15,10 @@ Dans cette étape, vous devrez déployer dans OpenShift les images de conteneur 
 - **train-controller**
 
 Pour vous aider, un Chart Helm est présent dans le mono repo de l'application (dossier `deployment`).
+Le chart Helm est conçu pour déployer les images construites à l'étape précédente.
+Cependant, pour vous éviter une attente de 20 minutes, ces images ont été mises à votre disposition sur [quay.io](https://quay.io/organization/riviera-dev-2024).
+
+## Déploiement
 
 Vous déploierez les composants depuis votre environnement OpenShift DevSpaces (ce sera plus simple).
 
@@ -29,10 +33,11 @@ Depuis le terminal, découvrez les projets auxquels vous avez accès.
 oc get projects
 ```
 
-Vous devriez voir deux projets OpenShift :
+Vous devriez voir trois projets OpenShift :
 
 - Votre workspace DevSpaces (`$USERID-devspaces-$RANDOM`)
 - Le projet de test (`$USERID-test`)
+- Le projet OpenShift AI (`$USERID`)
 
 Récupérez le nom du projet de test dans une variable d'environnement.
 
@@ -40,20 +45,6 @@ Récupérez le nom du projet de test dans une variable d'environnement.
 TEST_NS=$(oc get projects -o name -l env=test | cut -d / -f 2 | head -n 1)
 echo "Using namespace $TEST_NS"
 ```
-
-Générez les manifests YAML des pipelines tekton.
-
-```sh
-helm template deployment /projects/rivieradev-app/deployment --set namespace="$TEST_NS" > /projects/rivieradev-app/deployment.yaml
-```
-
-Ouvrez le fichier YAML généré dans VScode.
-
-```sh
-code-oss /projects/rivieradev-app/deployment.yaml
-```
-
-Observez les objets Kubernetes générés.
 
 Créez les objets dans votre projet OpenShift de test.
 
@@ -67,4 +58,35 @@ Suivez la progression des Pods l'aide de la commande suivante.
 oc -n "$TEST_NS" get pods -w
 ```
 
-Note: les pods ne peuvent se déployer correctement qu'une fois que les pipelines de la section précédente se sont exécuté avec succès.
+{{% notice tip %}}
+Vous pouvez aussi utiliser la [console OpenShift]({{< param ocpConsole >}}).
+Dans ce cas, naviguez dans **Administrator** > **Workload** > **Pods** et sélectionnez votre projet dans la liste déroulante.
+{{% /notice %}}
+
+## Tests
+
+Ouvrez la [console OpenShift]({{< param ocpConsole >}}) et naviguez dans **Administrator** > **Networking** > **Routes**.
+
+![](routes.png)
+
+Cliquez avec le bouton droit sur l'URL de la route **monitoring-app** et ouvrez l'URL dans une nouvelle fenêtre.
+Placez cette fenêtre dans un coin de votre écran.
+
+Ouvrez la [console OpenShift]({{< param ocpConsole >}}) et naviguez dans **Administrator** > **Workload** > **Pods**.
+
+![](pods.png)
+
+Cliquez sur le Pod du composant **capture-app**.
+Ouvrez l'onglet **Terminal**.
+
+Saisissez la commande suivante dans le terminal :
+
+```sh
+curl -X POST 'http://localhost:8080/capture/test' -H 'accept: */*'
+```
+
+![](start-capture.png)
+
+Si tout se passe bien, vous devriez voir la vidéo démarrer dans la fenêtre du composant **monitoring-app**.
+
+![](monitoring-app.png)
