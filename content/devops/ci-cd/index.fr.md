@@ -59,12 +59,27 @@ Créez les objets dans votre projet OpenShift de test.
 
 ```sh
 helm template pipelines /projects/rivieradev-app/tekton-pipelines --set namespace="$TEST_NS" | oc apply -f -
-helm template pipelines /projects/rivieradev-app/tekton-pipelines --set namespace="$TEST_NS" | oc create -f -
 ```
 
-Les commandes `oc apply` et `oc create` sont utilisées successivement, ce qui peut être surprenant.
-Les pipelinesrun ont un nom généré aléatoirement et ne peuvent donc pas être créé par la commande `oc apply`.
-Et si vous souhaitez modifier une variable Helm et itérer, il est important d'utiliser `oc apply` pour mettre à jour les objets existants.
+Générez les manifests YAML des PipelineRun tekton.
+
+```sh
+helm template pipelines /projects/rivieradev-app/tekton-pipelines --set namespace="$TEST_NS" --set runPipelines=true > /projects/rivieradev-app/tekton-pipelineruns.yaml
+```
+
+Ouvrez le fichier YAML généré dans VScode.
+
+```sh
+code-oss /projects/rivieradev-app/tekton-pipelineruns.yaml
+```
+
+Observez les objets Kubernetes générés.
+
+Créez les objets dans votre projet OpenShift de test.
+
+```sh
+helm template pipelines /projects/rivieradev-app/tekton-pipelines --set namespace="$TEST_NS" --set runPipelines=true | oc create -f -
+```
 
 Normalement, les pipelines doivent démarrer immédiatement.
 Suivez leur avancée à l'aide de la commande suivante.
