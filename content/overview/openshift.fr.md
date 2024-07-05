@@ -3,11 +3,7 @@ title: "OpenShift"
 weight: 4
 ---
 
-## OpenShift cluster
-
-TODO
-
-## Détails du cluster OpenShift
+## Cluster OpenShift
 
 * **URL de la console du cluster OCP :** `{{< param ocpConsole >}}`
 

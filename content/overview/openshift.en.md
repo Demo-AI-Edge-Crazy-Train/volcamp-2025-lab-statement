@@ -5,10 +5,6 @@ weight: 4
 
 ## OpenShift cluster
 
-TODO
-
-## OpenShift cluster details
-
 * **OCP Cluster console URL :** `{{< param ocpConsole >}}`
 
 * **OCP Cluster API URL :** `{{< param ocpApi >}}`
