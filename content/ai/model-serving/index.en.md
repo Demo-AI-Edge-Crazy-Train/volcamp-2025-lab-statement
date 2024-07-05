@@ -35,7 +35,6 @@ In your project create a model server. You can click here to go to see all your 
 - Serving runtime: ```OpenVINO Model Server```
 - Number of model server replicas to deploy: ```1```
 - Model server size ```{{< param newModelServerSize >}}```
-- Accelerator ```None```
 - Model route ```unchecked```
 - Token authorization ```unchecked```
 

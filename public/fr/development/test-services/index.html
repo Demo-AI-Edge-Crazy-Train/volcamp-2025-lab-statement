@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr" class="js csstransforms3d">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Hugo 0.111.3">
     <meta name="description" content="">
 
 
@@ -12,22 +12,22 @@
     <title>Test services :: Documentation du thème Hugo Learn</title>
 
     
-    <link href="/css/nucleus.css?1720101490" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1720101490" rel="stylesheet">
-    <link href="/css/hybrid.css?1720101490" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1720101490" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1720101490" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720101490" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1720101490" rel="stylesheet">
-    <link href="/css/theme.css?1720101490" rel="stylesheet">
-    <link href="/css/tabs.css?1720101490" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1720101490" rel="stylesheet">
+    <link href="/css/nucleus.css?1720160224" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1720160224" rel="stylesheet">
+    <link href="/css/hybrid.css?1720160224" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1720160224" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1720160224" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720160224" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1720160224" rel="stylesheet">
+    <link href="/css/theme.css?1720160224" rel="stylesheet">
+    <link href="/css/tabs.css?1720160224" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1720160224" rel="stylesheet">
     
-    <link href="/css/theme-red.css?1720101490" rel="stylesheet">
+    <link href="/css/theme-red.css?1720160224" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1720101490"></script>
+    <script src="/js/jquery-3.3.1.min.js?1720160224"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1720101490"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1720101490"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1720160224"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1720160224"></script>
 <script type="text/javascript">
     
-        var baseurl = "http:\/\/localhost:1313\/\/fr";
+        var baseurl = "https:\/\/rivieradev2024-crazytrain.netlify.app\/\/fr";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1720101490"></script>
+<script type="text/javascript" src="/js/search.js?1720160224"></script>
 
     
   </div>
@@ -532,7 +532,7 @@
                   
                     
                     
-                      <option id="en" value="http://localhost:1313/development/test-services/">English</option>
+                      <option id="en" value="https://rivieradev2024-crazytrain.netlify.app/development/test-services/">English</option>
                     
                   
               
@@ -546,7 +546,7 @@
                   
                     
                     
-                      <option id="fr" value="http://localhost:1313/fr/development/test-services/" selected>Français</option>
+                      <option id="fr" value="https://rivieradev2024-crazytrain.netlify.app/fr/development/test-services/" selected>Français</option>
                     
                   
               
@@ -651,15 +651,15 @@
 <p>Nous allons simuler le fonctionnement du train :</p>
 <ol>
 <li>Ouverez un nouveau terminal
-<img alt="terminal" src="/images/dev-section/new-terminal-bash.png"></li>
+<img src="/images/dev-section/new-terminal-bash.png" alt="terminal"></li>
 <li>Executez la commande ci-dessous pour récupérer l&rsquo;URL de la console de monitoring :</li>
 </ol>
 <pre tabindex="0"><code>oc get routes -o jsonpath=&#39;{range .items[*]}{.metadata.annotations.che\.routing\.controller\.devfile\.io/endpoint-name}{&#34;\t&#34;}{.spec.host}{&#34;\n&#34;}{end}&#39; | grep monitoring-svc | cut -f 2
-</code></pre><p><img alt="URL monitoring" src="/images/dev-section/get-url-monitoring.png"></p>
+</code></pre><p><img src="/images/dev-section/get-url-monitoring.png" alt="URL monitoring"></p>
 <ol start="3">
 <li>Copiez l&rsquo;URL, lancez une nouvelle fênetre de votre navigateur en mode anonyme (afin d&rsquo;avoir un cache vide), insérez l&rsquo;URL.</li>
 </ol>
-<p><img alt="URL monitoring" src="/images/dev-section/monitoring-console.png"></p>
+<p><img src="/images/dev-section/monitoring-console.png" alt="URL monitoring"></p>
 <ol start="4">
 <li>Retournez à votre terminal et exécutez la commande suivante :</li>
 </ol>
@@ -667,7 +667,7 @@
 </code></pre><ol start="5">
 <li>A partir de votre navigateur vous devriez visualiser en temps réel la simulation du train et la détéction des panneaux de signalisation. Si la vidéo ne démarre pas, actualisez votre navigateur.</li>
 </ol>
-<p><img alt="streaming video" src="/images/dev-section/streaming-video.png"></p>
+<p><img src="/images/dev-section/streaming-video.png" alt="streaming video"></p>
 <p>Bravo ! la simulation a bien fonctionné :) maintenant vous pouvez arrêter la simulation en fermant tous les terminaux.</p>
 
 
@@ -1022,19 +1022,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1720101490"></script>
-    <script src="/js/perfect-scrollbar.min.js?1720101490"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1720101490"></script>
-    <script src="/js/jquery.sticky.js?1720101490"></script>
-    <script src="/js/featherlight.min.js?1720101490"></script>
-    <script src="/js/highlight.pack.js?1720101490"></script>
+    <script src="/js/clipboard.min.js?1720160224"></script>
+    <script src="/js/perfect-scrollbar.min.js?1720160224"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1720160224"></script>
+    <script src="/js/jquery.sticky.js?1720160224"></script>
+    <script src="/js/featherlight.min.js?1720160224"></script>
+    <script src="/js/highlight.pack.js?1720160224"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1720101490"></script>
-    <script src="/js/learn.js?1720101490"></script>
-    <script src="/js/hugo-learn.js?1720101490"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1720160224"></script>
+    <script src="/js/learn.js?1720160224"></script>
+    <script src="/js/hugo-learn.js?1720160224"></script>
     
         
-            <script src="/mermaid/mermaid.js?1720101490"></script>
+            <script src="/mermaid/mermaid.js?1720160224"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

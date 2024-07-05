@@ -22,7 +22,7 @@ weight= 3
     * That should look like:
 ![02-02-launch-workbench-01.png](02-02-launch-workbench-01.png)
 ![02-02-launch-workbench-02.png](02-02-launch-workbench-02.png)
-* Create the workbench and wait for your workbench to be fully started
+* Create the workbench and wait for your workbench status to be “Running” 
 * Once it is, click the **Open** Link to connect to it.
 ![02-03-open-link.png](02-03-open-link.png)
 
@@ -41,8 +41,7 @@ We will clone the content of our Git repo so that you can access all the materia
 * Using the Git UI:
   * Open the Git UI in Jupyter:
 ![git-clone-1.png](git-clone-1.png)
-* Enter the URL of the Git repo:
-```{{< param gitAIRepoUrl >}}```
+* Enter the URL of the Git repo: ```{{< param gitAIRepoUrl >}}```. Select also "Download the repository".
 ![git-clone-2.png](git-clone-2.png)
 
 At this point, your project is ready for the work we want to do in it.

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.128.0">
+    <meta name="generator" content="Hugo 0.111.3">
     <meta name="description" content="">
 
 
@@ -12,22 +12,22 @@
     <title>Model Serving :: Documentation for Hugo Learn Theme</title>
 
     
-    <link href="/css/nucleus.css?1720101490" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1720101490" rel="stylesheet">
-    <link href="/css/hybrid.css?1720101490" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1720101490" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1720101490" rel="stylesheet">
-    <link href="/css/auto-complete.css?1720101490" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1720101490" rel="stylesheet">
-    <link href="/css/theme.css?1720101490" rel="stylesheet">
-    <link href="/css/tabs.css?1720101490" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1720101490" rel="stylesheet">
+    <link href="/css/nucleus.css?1720160224" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1720160224" rel="stylesheet">
+    <link href="/css/hybrid.css?1720160224" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1720160224" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1720160224" rel="stylesheet">
+    <link href="/css/auto-complete.css?1720160224" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1720160224" rel="stylesheet">
+    <link href="/css/theme.css?1720160224" rel="stylesheet">
+    <link href="/css/tabs.css?1720160224" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1720160224" rel="stylesheet">
     
-    <link href="/css/theme-red.css?1720101490" rel="stylesheet">
+    <link href="/css/theme-red.css?1720160224" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1720101490"></script>
+    <script src="/js/jquery-3.3.1.min.js?1720160224"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1720101490"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1720101490"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1720160224"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1720160224"></script>
 <script type="text/javascript">
     
-        var baseurl = "http:\/\/localhost:1313\/";
+        var baseurl = "https:\/\/rivieradev2024-crazytrain.netlify.app\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1720101490"></script>
+<script type="text/javascript" src="/js/search.js?1720160224"></script>
 
     
   </div>
@@ -595,7 +595,7 @@
                   
                     
                     
-                      <option id="en" value="http://localhost:1313/ai/model-serving/" selected>English</option>
+                      <option id="en" value="https://rivieradev2024-crazytrain.netlify.app/ai/model-serving/" selected>English</option>
                     
                   
               
@@ -724,11 +724,11 @@
 </ul>
 <h2 id="create-a-model-server">Create a Model Server</h2>
 <p>In your project create a model server. You can click here to go to see all your deployed models:
-<img alt="go-to-models" src="/ai/model-serving/go-to-models.png"></p>
+<img src="go-to-models.png" alt="go-to-models"></p>
 <ul>
 <li>
 <p>Click <strong>Add model server</strong>
-<img alt="add-model-server.png" src="/ai/model-serving/add-model-server.png"></p>
+<img src="add-model-server.png" alt="add-model-server.png"></p>
 </li>
 <li>
 <p>Here is the info you need to enter:</p>
@@ -739,14 +739,13 @@
 <li>Serving runtime: <code>OpenVINO Model Server</code></li>
 <li>Number of model server replicas to deploy: <code>1</code></li>
 <li>Model server size <code>Small</code></li>
-<li>Accelerator <code>None</code></li>
 <li>Model route <code>unchecked</code></li>
 <li>Token authorization <code>unchecked</code></li>
 </ul>
 <ul>
 <li>
 <p>The result should look like:
-<img alt="add-model-server-config.png" src="/ai/model-serving/add-model-server-config.png"></p>
+<img src="add-model-server-config.png" alt="add-model-server-config.png"></p>
 </li>
 <li>
 <p>You can click on <strong>Add</strong> to create the model server.</p>
@@ -757,7 +756,7 @@
 <ul>
 <li>
 <p>Click <strong>Deploy model</strong>
-<img alt="select-deploy-model.png" src="/ai/model-serving/select-deploy-model.png"></p>
+<img src="select-deploy-model.png" alt="select-deploy-model.png"></p>
 </li>
 <li>
 <p>Here is the information you will need to enter. <strong>If are on the fallback track, please change the &ldquo;Existing data connection - Name&rdquo; with the name of the data connection you created (Model Registry)</strong>:</p>
@@ -771,14 +770,14 @@
 </li>
 <li>
 <p>The result should look like:
-<img alt="deploy-a-model.png" src="/ai/model-serving/deploy-a-model.png"></p>
+<img src="deploy-a-model.png" alt="deploy-a-model.png"></p>
 </li>
 <li>
 <p>Click on <strong>Deploy</strong>.</p>
 </li>
 <li>
 <p>If the model is successfully deployed you will see its status as green after few seconds.
-<img alt="model-deployed-success.png" src="/ai/model-serving/model-deployed-success.png"></p>
+<img src="model-deployed-success.png" alt="model-deployed-success.png"></p>
 </li>
 </ul>
 <p>We will now confirm that the model is indeed working by querying it!</p>
@@ -793,7 +792,7 @@
 </li>
 <li>
 <p>In the popup, you will see a few URLs for our model server.
-<img alt="inference-url.png" src="/ai/model-serving/inference-url.png"></p>
+<img src="inference-url.png" alt="inference-url.png"></p>
 </li>
 <li>
 <p>Note or copy the <strong>RestUrl</strong>, which should be something like <code>http://modelmesh-serving.{user}:8008</code></p>
@@ -1206,19 +1205,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1720101490"></script>
-    <script src="/js/perfect-scrollbar.min.js?1720101490"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1720101490"></script>
-    <script src="/js/jquery.sticky.js?1720101490"></script>
-    <script src="/js/featherlight.min.js?1720101490"></script>
-    <script src="/js/highlight.pack.js?1720101490"></script>
+    <script src="/js/clipboard.min.js?1720160224"></script>
+    <script src="/js/perfect-scrollbar.min.js?1720160224"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1720160224"></script>
+    <script src="/js/jquery.sticky.js?1720160224"></script>
+    <script src="/js/featherlight.min.js?1720160224"></script>
+    <script src="/js/highlight.pack.js?1720160224"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1720101490"></script>
-    <script src="/js/learn.js?1720101490"></script>
-    <script src="/js/hugo-learn.js?1720101490"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1720160224"></script>
+    <script src="/js/learn.js?1720160224"></script>
+    <script src="/js/hugo-learn.js?1720160224"></script>
     
         
-            <script src="/mermaid/mermaid.js?1720101490"></script>
+            <script src="/mermaid/mermaid.js?1720160224"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
