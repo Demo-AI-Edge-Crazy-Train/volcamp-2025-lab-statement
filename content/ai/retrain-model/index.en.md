@@ -54,7 +54,7 @@ Here you see a graphical interface where you can create and run your data scienc
 
 ### Fix the pipeline
 
-You can notice that this pipeline has 4 nodes and 2 bindings. 1 binding is missing between the third (*transfer-learning.ipynb*) and fourth step (*comparison.ipynb*). Click on the black dot on the right hand side of the third step (*transfer-learning.ipynb*).  Hold down the mouse key until you reached the black dot of the left hand side of the fourth step (*comparison.ipynb*).
+You can notice that this pipeline has 4 nodes and 2 bindings. 1 binding is missing between the third (*transfer-learning*) and fourth step (*comparison*). Click on the black dot on the right hand side of the third step (*transfer-learning*).  Hold down the mouse key until you reached the black dot of the left hand side of the fourth step (*comparison*).
 
 You should have a similar result at the end:
 ![full-pipeline](full-pipeline.png)
@@ -104,7 +104,7 @@ After a few moments, you will see a successful popup displayed. From this popup,
 
 ### Retreive the pipeline runs
 
-If you missed the shortcut from elyra popup, follow thoses steps to retreive your pipeline run. Otherwise pass to the next paragraph.
+**If you missed the shortcut from elyra popup**, follow thoses steps to retreive your pipeline run. Otherwise pass to the next paragraph.
 You can now go back to Openshift AI dashboard: [https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}}](https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}})
 On the left hand side **click on "Data Science Pipelines", then on "Runs"**. Here can see the pipeline execution. One run should be visible as you created one during the previous section. Click on it.
 
@@ -116,6 +116,6 @@ Wait for the pipeline to complete. You should have something like that:
 
 ## Retreiving pipelines output
 
-All the pipeline outputs are stored into the object storage. Connect to the S3 console using this link: [{{< param minioConsole >}}]({{< param minioConsole >}}). **Connect with the same username** we gave you at the begining of the lab. **The password is ```{{< param minioPass >}}```**. You should see few buckets. Click on the one corresponding to your username. There should be one directory in the bucket that coresponds to your pipeline run. It starts with "traffic-sign". Open it. Here you can see html, ipynb files and archives. Click on the *comparison.html* file. A menu pops up on the right hand side. Click download and open this file locally on your browser. Note the difference in the scores of the base and new model. In this example we lost precision on the original dataset. But we can now detect "lego" traffic signs with the new model.
+All the pipeline outputs are stored into the object storage. Connect to the S3 console using this link: [{{< param minioConsole >}}]({{< param minioConsole >}}). **Connect with the same username** we gave you at the begining of the lab. **The password is ```{{< param minioPass >}}```**. You should see few buckets. Click on the one corresponding to your username. There you have an "results.csv" file corresponding to your model performance. Download it if you wish.There should be one directory in the bucket that coresponds to your pipeline run. It starts with "traffic-sign". Open it. Here you can see html, ipynb files and archives. Click on the *comparison.html* file. A menu pops up on the right hand side. Click download and open this file locally on your browser. Note the difference in the scores of the base and new model. In this example we lost precision on the original dataset. But we can now detect "lego" traffic signs with the new model.
 ![output-base-model](output-base-model.png)
 ![output-new-model](output-new-model.png)

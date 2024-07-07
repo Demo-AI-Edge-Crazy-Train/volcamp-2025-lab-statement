@@ -14,8 +14,6 @@ Each person attending this lab will have a unique user account in which to do th
 
 In a new window or tab, open the following URL and log in:
 
-[hugo](https://gohugo.io/)
-
 * The Red Hat OpenShift AI Dashboard URL for our shared environment: [https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}}](https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}})
 * Enter your credentials (distributed on a paper during the lab)
 * The result should look like:

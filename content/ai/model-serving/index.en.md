@@ -81,7 +81,7 @@ Once the model is served, we can use it as an endpoint that can be queried. We'l
 
 We will now use this URL to query the model. Go back to the your running workbench i.e the jupyter notebooks environment.
 
-- In your running workbench, navigate to the notebook `inference/inference.ipynb`.
+- In your running workbench, navigate to the notebook `inference/inference.ipynb`. **Update the variable** "RestUrl" with the endpoint your previously copied.
 - Execute the cells of the notebook, and ensure you understand what is happening.
 
 The first section queries the base model that has been deployed globally for everyone. The second section takes your RestUrl endpoint and queries the model that you have tranined and deploy. You should see that with the base model, only the speed limit traffic signs are recognized. After your model re-training you now have a model that can better detect lego traffic signs. Congratulations!
