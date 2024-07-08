@@ -31,6 +31,16 @@ To build these multi-architecture container images, we need :
 
 You'll deploy the tekton pipelines from your OpenShift DevSpaces environment (it'll be easier).
 
+## Fetch the last version from Git
+
+We just fixed the code of the Tekton pipelines.
+Please fetch the last version.
+
+```sh
+cd /projects/rivieradev-app
+git pull
+```
+
 ## Deploying Tekton pipelines
 
 To do this, open a terminal in VScode.
