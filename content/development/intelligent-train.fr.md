@@ -15,12 +15,12 @@ Dans cette section nous allons importer le nouveau model entraîné dans l'activ
 
 ```
 cd intelligent-train
-curl -sSfL -o models/model.onnx http://minio.minio:9000/<user_id>/models/model.onnx
+curl -fL -o models/model.onnx http://minio.minio:9000/<user_id>/models/model.onnx
 ```
 
 Si vous n'avez pas fini l'entraînement du modèle, utilisez ces commandes :
 
 ```
 cd intelligent-train
-curl -sSfL -o models/model.onnx http://minio.minio:9000/model-registry/models/model.onnx
+curl -fL -o models/model.onnx http://minio.minio:9000/model-registry/models/model.onnx
 ```
