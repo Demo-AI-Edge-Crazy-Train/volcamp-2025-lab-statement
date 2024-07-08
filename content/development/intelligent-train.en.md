@@ -15,11 +15,11 @@ In this section we will import the new model trained before.
 
 ```
 cd intelligent-train
-curl -sSfL -o models/model.onnx http://minio.minio:9000/<user_id>/models/model.onnx
+curl -fL -o models/model.onnx http://minio.minio:9000/<user_id>/models/model.onnx
 ```
 If you have not finish the training of the model use the commands below,
 
 ```
 cd intelligent-train
-curl -sSfL -o models/model.onnx http://minio.minio:9000/model-registry/models/model.onnx
+curl -fL -o models/model.onnx http://minio.minio:9000/model-registry/models/model.onnx
 ```
