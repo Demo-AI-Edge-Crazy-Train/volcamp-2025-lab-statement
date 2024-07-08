@@ -31,6 +31,16 @@ Pour construire ces images de conteneur multi-architecture, nous avons besoin de
 
 Vous déploierez les pipelines tekton depuis votre environnement OpenShift DevSpaces (ce sera plus simple).
 
+## Télécharger la dernière version du dépot Git
+
+Nous avons corrigé le code des pipelines Tekton.
+Pensez à télécharger la dernière version.
+
+```sh
+cd /projects/rivieradev-app
+git pull
+```
+
 ## Déployer les pipelines Tekton
 
 Pour cela, ouvrez un terminal dans VScode.
