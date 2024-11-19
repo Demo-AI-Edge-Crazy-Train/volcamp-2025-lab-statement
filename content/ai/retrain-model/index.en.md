@@ -106,7 +106,9 @@ After a few moments, you will see a successful popup displayed. From this popup,
 
 **If you missed the shortcut from elyra popup**, follow thoses steps to retreive your pipeline run. Otherwise pass to the next paragraph.
 You can now go back to Openshift AI dashboard: [https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}}](https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}})
-On the left hand side **click on "Data Science Pipelines", then on "Runs"**. Here can see the pipeline execution. One run should be visible as you created one during the previous section. Click on it.
+On the left hand side **click on "Experiments", then on "Experiments and runs"**. Choose the expriment associated with your pipeline name. 
+![experiments-and-runs](experiments-and-runs.png)
+**Click on the run**. Here can see the pipeline execution. One run should be visible as you created one during the previous section. Click on it.
 
 You can see the status of your pipeline run. If you click on a node it displays some information such as the "Logs" panel. If you select the "Main" container from that panel, you will see the logs associated to the notebooks execution:
 ![pipeline-run-logs](pipeline-run-logs.png)
