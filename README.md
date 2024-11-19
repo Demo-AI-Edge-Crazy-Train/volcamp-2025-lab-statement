@@ -1,3 +1,3 @@
-# Enoncé du Lab pour le Riviera Dev 2024
+# Enoncé du Lab pour le Red Hat Open Tour 2024
 
--> [Riviera Dev 2024 - Lab "Crazy Train"](https://rivieradev2024-crazytrain.netlify.app/)
+-> [Open Tour 2024 - Lab "Crazy Train"](https://open-tour-2024.netlify.app/)
