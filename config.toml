@@ -1,6 +1,6 @@
-baseURL = 'https://rivieradev2024-crazytrain.netlify.app/'
+baseURL = 'https://open-tour-2024.netlify.app/'
 languageCode = 'en-us'
-title = 'Riviera Dev 2024 - Lab "Crazy Train"'
+title = 'Red Hat Open Tour 2024 - Lab "Crazy Train"'
 
 theme = 'hugo-theme-learn'
 
@@ -13,12 +13,12 @@ showVisitedLinks = true
 disableBreadcrumb = false
 disableNextPrev = false
 themeVariant = "red"
-openshift_domain = "riviera-dev-2024.sandbox2830.opentlc.com"
+openshift_domain = "crazy-train.sandbox1730.opentlc.com"
 minioPass = "minio123"
-minioEndpoint = "https://minio-s3-minio.apps.riviera-dev-2024.sandbox2830.opentlc.com"
-minioConsole = "https://minio-console-minio.apps.riviera-dev-2024.sandbox2830.opentlc.com"
-ocpConsole = "https://console-openshift-console.apps.riviera-dev-2024.sandbox2830.opentlc.com/"
-ocpApi = "https://api.riviera-dev-2024.sandbox2830.opentlc.com:6443"
+minioEndpoint = "https://minio-s3-minio.apps.crazy-train.sandbox1730.opentlc.com"
+minioConsole = "https://minio-console-minio.apps.crazy-train.sandbox1730.opentlc.com"
+ocpConsole = "https://console-openshift-console.apps.crazy-train.sandbox1730.opentlc.com/"
+ocpApi = "https://api.crazy-train.sandbox1730.opentlc.com:6443"
 gitRepoName = "workshop-model-training"
 gitAIRepoUrl = "https://github.com/Demo-AI-Edge-Crazy-Train/workshop-model-training"
 baseModelBucket = "model-registry"
@@ -35,11 +35,11 @@ defaultContentLanguageInSubdir= true
 
 [Languages]
 [Languages.en]
-title = "Documentation for Hugo Learn Theme"
+title = "Mission Impossible - Help Tom Cruise leverage OpenShift AI to stop the crazy train before it’s too late !"
 weight = 1
 languageName = "English"
 
 [Languages.fr]
-title = "Documentation du thème Hugo Learn"
+title = "Mission Impossible - Aidez Tom Cruise à tirer parti d'OpenShift AI pour arrêter le train fou avant qu'il ne soit trop tard !"
 weight = 2
 languageName = "Français"
