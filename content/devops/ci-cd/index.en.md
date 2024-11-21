@@ -37,7 +37,7 @@ We just fixed the code of the Tekton pipelines.
 Please fetch the last version.
 
 ```sh
-cd /projects/rivieradev-app
+cd /projects/opentour2024-app
 git pull
 ```
 
@@ -70,7 +70,7 @@ echo "Using namespace $TEST_NS"
 Create the objects in your OpenShift test project.
 
 ```sh
-helm template pipelines /projects/rivieradev-app/tekton-pipelines --set namespace="$TEST_NS" | oc apply -f -
+helm template pipelines /projects/opentour2024-app/tekton-pipelines --set namespace="$TEST_NS" | oc apply -f -
 ```
 
 {{% notice note %}}
@@ -92,7 +92,7 @@ Parallel or serial?
 Create the objects in your OpenShift test project.
 
 ```sh
-helm template pipelines /projects/rivieradev-app/tekton-pipelines --set namespace="$TEST_NS" --set runPipelines=true | oc create -f -
+helm template pipelines /projects/opentour2024-app/tekton-pipelines --set namespace="$TEST_NS" --set runPipelines=true | oc create -f -
 ```
 
 {{% notice note %}}

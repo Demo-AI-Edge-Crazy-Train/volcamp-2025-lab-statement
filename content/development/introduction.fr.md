@@ -32,7 +32,7 @@ Vous allez utiliser OpenShift Dev Spaces. OpenShift Dev Spaces utilise Kubernete
 
 Utilisez le lien suivant pour générer votre environnement OpenShift Dev Spaces : 
 
-[ ![Contribuer](https://www.eclipse.org/che/contribute.svg)](https://devspaces.apps.riviera-dev-2024.sandbox2830.opentlc.com/f?url=https://github.com/Demo-AI-Edge-Crazy-Train/rivieradev-app)
+[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://devspaces.apps.{{< param openshift_domain >}}/f?url={{< param gitAppRepoUrl >}})
 
 
 Connectez-vous avec vos identifiants OpenShift (userX/mot-de-passe). Si c'est la première fois que vous accédez à Dev Spaces, vous devez autoriser Dev Spaces à accéder à votre compte. Dans la fenêtre Autoriser l'accès, cliquez sur Autoriser les permissions sélectionnées.

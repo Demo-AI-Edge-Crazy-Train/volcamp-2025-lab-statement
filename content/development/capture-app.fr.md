@@ -16,7 +16,7 @@ Dans le projet **capture-app**, vous allez ajouter deux nouvelles propriétés d
 
 ```properties
 %dev.capture.mock=true
-%dev.capture.videoPath=/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi
+%dev.capture.videoPath=/projects/opentour2024-app/capture-app/src/main/resources/videos/track-christmas-tree.avi
 ```
 
 3. Enregistrez vos modifications.
@@ -312,13 +312,13 @@ capture.interval=${INTERVAL:100}
 capture.periodicCapture=${PERIODIC_CAPTURE:30}
 capture.brokerMqtt=${MQTT_BROKER:tcp://localhost:1883}
 capture.topic=${MQTT_TOPIC:train-image}
-capture.videoPath=${VIDEO_PATH:/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi}
+capture.videoPath=${VIDEO_PATH:/projects/opentour2024-app/capture-app/src/main/resources/videos/track-christmas-tree.avi}
 capture.videoPeriodicCapture=${VIDEO_PERIODIC_CAPTURE:30}
 capture.saveImage=${SAVE_IMAGE:false}
 capture.mock=${MOCK:false}
 quarkus.log.level=${LOGGER_LEVEL:INFO}
 %dev.capture.mock=true
-%dev.catpure.videoPath=/projects/rivieradev-app/capture-app/src/main/resources/videos/track-christmas-tree.avi
+%dev.catpure.videoPath=/projects/opentour2024-app/capture-app/src/main/resources/videos/track-christmas-tree.avi
 ```
 
 7. Compilation du projet

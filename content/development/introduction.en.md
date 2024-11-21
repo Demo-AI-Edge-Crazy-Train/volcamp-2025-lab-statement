@@ -32,7 +32,7 @@ You are going to use OpenShift Dev Spaces. OpenShift Dev Spaces uses Kubernetes 
 
 Use the following link to generate your Openshift Dev Space environment : 
 
-[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://devspaces.apps.riviera-dev-2024.sandbox2830.opentlc.com/f?url=https://github.com/Demo-AI-Edge-Crazy-Train/rivieradev-app)
+[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://devspaces.apps.{{< param openshift_domain >}}/f?url={{< param gitAppRepoUrl >}})
 
 
 Login in with your OpenShift credentials (userX/yourpassword). If this is the first time you access Dev Spaces, you have to authorize Dev Spaces to access your account. In the Authorize Access window click on Allow selected permissions.
@@ -47,6 +47,6 @@ Wait for the workspace to become available, which takes a few minutes to sets up
 
 
 
-In the project explorer on the left of the workspace, navigate to the rivieradev-app folder and look at the different projects.
+In the project explorer on the left of the workspace, navigate to the opentour2024-app folder and look at the different projects.
 
 ![workspace](/images/dev-section/workspace.png)

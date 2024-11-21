@@ -49,7 +49,7 @@ echo "Using namespace $TEST_NS"
 Créez les objets dans votre projet OpenShift de test.
 
 ```sh
-helm template deployment /projects/rivieradev-app/deployment --set namespace="$TEST_NS" | oc apply -f -
+helm template deployment /projects/opentour2024-app/deployment --set namespace="$TEST_NS" | oc apply -f -
 ```
 
 {{% notice note %}}
