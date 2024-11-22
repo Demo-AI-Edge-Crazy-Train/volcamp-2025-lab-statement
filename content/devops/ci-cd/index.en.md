@@ -56,7 +56,7 @@ oc get projects
 
 You should see three OpenShift projects:
 
-- Your DevSpaces workspace (`$USERID-devspaces-$RANDOM`)
+- Your DevSpaces workspace (`$USERID-devspaces`)
 - The test project (`$USERID-test`)
 - The OpenShift AI project (`$USERID`)
 
