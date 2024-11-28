@@ -35,7 +35,7 @@ oc get projects
 
 Vous devriez voir trois projets OpenShift :
 
-- Votre workspace DevSpaces (`$USERID-devspaces-$RANDOM`)
+- Votre workspace DevSpaces (`$USERID-devspaces`)
 - Le projet de test (`$USERID-test`)
 - Le projet OpenShift AI (`$USERID`)
 
@@ -49,7 +49,7 @@ echo "Using namespace $TEST_NS"
 Créez les objets dans votre projet OpenShift de test.
 
 ```sh
-helm template deployment /projects/rivieradev-app/deployment --set namespace="$TEST_NS" | oc apply -f -
+helm template deployment /projects/opentour2024-app/deployment --set namespace="$TEST_NS" | oc apply -f -
 ```
 
 {{% notice note %}}

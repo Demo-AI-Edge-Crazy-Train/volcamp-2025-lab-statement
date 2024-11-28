@@ -17,6 +17,12 @@ oc get routes -o jsonpath='{range .items[*]}{.metadata.annotations.che\.routing\
 
 ![URL monitoring](/images/dev-section/monitoring-console.png)
 
+{{% notice warning %}}
+**Google Chrome** semble transformer l'URL HTTP en URL HTTP**S**.
+Si vous obtenez un message d'erreur disant *"Application is not available. The application is currently not serving requests at this endpoint. It may not have been started or is still starting."*, vérifiez le schéma de l'URL (HTTP/HTTPS) ou ouvrez l'URL à l'aide d'un autre navigateur.
+Firefox semble fonctionner parfaitement pour cette utilisation.
+{{% /notice %}}
+
 4. Retournez à votre terminal et exécutez la commande suivante :
 ```
 curl -X 'POST'   'http://localhost:8082/capture/test' -H 'accept: */*'

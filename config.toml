@@ -21,6 +21,7 @@ ocpConsole = "https://console-openshift-console.apps.crazy-train.sandbox1730.ope
 ocpApi = "https://api.crazy-train.sandbox1730.opentlc.com:6443"
 gitRepoName = "workshop-model-training"
 gitAIRepoUrl = "https://github.com/Demo-AI-Edge-Crazy-Train/workshop-model-training"
+gitAppRepoUrl = "https://github.com/Demo-AI-Edge-Crazy-Train/opentour2024-app"
 baseModelBucket = "model-registry"
 newModelName = "new"
 newModelServerName = "Traffic Sign Detection"
