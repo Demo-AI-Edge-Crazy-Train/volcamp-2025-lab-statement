@@ -1,6 +1,5 @@
-# Enoncé du Lab pour le Red Hat Open Tour 2024
+# Enoncé du Lab pour Volcamp 2025
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2a715fca-07c9-4b01-aeaf-096e83bbaf76/deploy-status)](https://app.netlify.com/projects/open-tour-2025/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/43c6baf8-a67c-415a-a15d-ba71118be16c/deploy-status)](https://app.netlify.com/projects/volcamp2025/deploys)
 
-
--> [Open Tour 2025 - Lab "Crazy Train"](https://open-tour-2025.netlify.app/)
+-> [Volcamp 2025 - Lab "Crazy Train"](https://volcamp2025.netlify.app/)
