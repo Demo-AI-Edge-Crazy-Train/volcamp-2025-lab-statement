@@ -43,6 +43,6 @@ Cela ouvre l'espace de travail, qui vous semblera assez familier si vous avez l'
 
 Attendez que l'espace de travail soit disponible, ce qui prend quelques minutes pour mettre en place un environnement de développement complexe avec plusieurs services (**Kafka**, **Zookeeper**, **Mosquitto**), les outils (**OpenShift CLI**, **Maven**, **Python**, **Node.js**), et s'assurer que toutes les dépendances nécessaires sont installées (comme **OpenCV**).
 
-Dans l'explorateur de projets situé à gauche de l'espace de travail, naviguez jusqu'au dossier opentour2024-app et regardez les différents projets.
+Dans l'explorateur de projets situé à gauche de l'espace de travail, naviguez jusqu'au dossier volcamp2025-app et regardez les différents projets.
 
 ![espace de travail](/images/dev-section/workspace.png)

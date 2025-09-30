@@ -47,6 +47,6 @@ Wait for the workspace to become available, which takes a few minutes to sets up
 
 
 
-In the project explorer on the left of the workspace, navigate to the opentour2024-app folder and look at the different projects.
+In the project explorer on the left of the workspace, navigate to the volcamp2025-app folder and look at the different projects.
 
 ![workspace](/images/dev-section/workspace.png)
