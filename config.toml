@@ -1,4 +1,4 @@
-baseURL = 'https://open-tour-2025.netlify.app/'
+baseURL = 'https://volcamp2025.netlify.app/'
 languageCode = 'en-us'
 title = 'Red Hat Open Tour 2024 - Lab "Crazy Train"'
 
@@ -13,15 +13,15 @@ showVisitedLinks = true
 disableBreadcrumb = false
 disableNextPrev = false
 themeVariant = "red"
-openshift_domain = "crazy-train.sandbox1935.opentlc.com"
+openshift_domain = "crazy-train.sandbox1893.opentlc.com"
 minioPass = "minio123"
-minioEndpoint = "https://minio-s3-minio.apps.crazy-train.sandbox1935.opentlc.com"
-minioConsole = "https://minio-console-minio.apps.crazy-train.sandbox1935.opentlc.com"
-ocpConsole = "https://console-openshift-console.apps.crazy-train.sandbox1935.opentlc.com/"
-ocpApi = "https://api.crazy-train.sandbox1935.opentlc.com:6443"
+minioEndpoint = "https://minio-s3-minio.apps.crazy-train.sandbox1893.opentlc.com"
+minioConsole = "https://minio-console-minio.apps.crazy-train.sandbox1893.opentlc.com"
+ocpConsole = "https://console-openshift-console.apps.crazy-train.sandbox1893.opentlc.com/"
+ocpApi = "https://api.crazy-train.sandbox1893.opentlc.com:6443"
 gitRepoName = "workshop-model-training"
 gitAIRepoUrl = "https://github.com/Demo-AI-Edge-Crazy-Train/workshop-model-training"
-gitAppRepoUrl = "https://github.com/Demo-AI-Edge-Crazy-Train/opentour2025-app"
+gitAppRepoUrl = "https://github.com/Demo-AI-Edge-Crazy-Train/volcamp2025-app"
 baseModelBucket = "model-registry"
 newModelName = "new"
 newModelServerName = "Traffic Sign Detection"
